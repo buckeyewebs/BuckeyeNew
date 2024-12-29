@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre+Medium:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web+new:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define light and dark mode background and text colors */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom underline hover effect for navigation links */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust position if needed */
+  width: 100%;
+  height: 2px; /* Adjust thickness if needed */
+  background-color: white; /* Set underline color */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}

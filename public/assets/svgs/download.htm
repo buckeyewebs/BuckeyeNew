@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>CUOnline Student Portal</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Content/img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Content/img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Content/img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/Content/img/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/Content/img/fav.png">
+
+    <link href="/Content/css/bootstrap.css" rel="stylesheet"/>
+<link href="/Content/css/style.css" rel="stylesheet"/>
+<link href="/Content/css/style_cuonline_portal.css" rel="stylesheet"/>
+
+
+    <script src="/Content/js/jquery-1.10.2.js"></script>
+<script src="/Content/js/bootstrap.js"></script>
+
+    
+    <script src="/Content/js/html5shiv.js"></script>
+<script src="/Content/js/less-1.3.3.js"></script>
+<script src="/Content/js/MenuActivation.js"></script>
+
+
+
+</head>
+<style>
+    .main_body .content_area {
+        padding: 0 0 10px 0;
+        margin: 10px 0;
+    }
+
+        .main_body .content_area .title_search_area {
+            border-radius: 0;
+        }
+
+    .question_box h3 {
+        margin: 50px 0;
+        text-align: center;
+        font-size: 30px;
+    }
+.sweet-alert>h2 {
+  font-size: 1.5rem !important;
+}
+
+</style>
+
+
+<body>
+    <script>
+
+        //paste this code under the head tag or in a separate js file.
+        // Wait for window load
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+
+    <div class="container">
+            <div class="main_body">
+                <div style="min-height: 250px;" class="content_area">
+                    <style>
+    .no-js #loader {
+        display: none;
+    }
+
+    .js #loader {
+        display: block;
+        position: absolute;
+        left: 100px;
+        top: 0;
+    }
+
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(../Content/img/Preloader_2.gif) center no-repeat #fff;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<div class="se-pre-con">
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="/Content/js/LoginPage.js"></script>
+<link href="/Content/css/LoginPage.css" rel="stylesheet" />
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://rawgit.com/RobinHerbots/Inputmask/4.x/dist/jquery.inputmask.bundle.js"></script>
+
+
+
+<style>
+.imp_notice_msg{float: left;}
+.imp_notice_msg img{float:left; width:50px;}
+.imp_notice_msg p{color: #fff; font-weight: bold; float:left;}
+</style>
+
+<div class="row row2">
+<div class="col-md-12" style="padding: 0;">
+<div class="row top_blue_bg">
+<div class="main_center_alligned">
+<div class="col-md-12">1
+<div class="row">
+<div class="col-md-6 top_logo"><img alt="Logo" src="/Content/img/logo_with_text.png" /></div>
+<div class="col-md-6 top_comsis">
+<img id="StudentConsole" alt="Logo" src="/Content/img/CUOnlineStudentConsole.png" />
+<img id="ParentConsole" alt="Logo" src="/Content/img/CUOnlineParentConsole.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal Start -->
+ <div class="modal show" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"  onclick= "$('.modal').removeClass('show').addClass('fade');" data-dismiss="modal">&times;</button>
+         
+		  <!--<h2 class="modal-title"><p>Datesheet Spring 2024<br>
+		   <h2 class="modal-title"><p>Bus Route Registration<br>
+		   <h2 class="modal-title"><p><b style="font-size: 17px; color: blue;">Message for Parents about Non Academic or Recreational Trips</b><br>-->
+		   <h2 class="modal-title"><p><b style="font-size: 17px; color: blue;">Additional Internet Coverage</b><br>
+		   
+		 
+        </div>
+        <div class="modal-body" text-align: justify;>
+		
+          <!--<p>Dear Students!</p>
+		  <br>
+		  <b style="font-size: 16px; color: blue; ">
+Attention Students,<br>
+<div>Attention Students, <br> Datesheet for Spring 2024 examination available, 
+<a ta<br>rget="_blank" href="../../PortalSubmissions/Portal Attachments/Date Sheets_SP24_STUDENT_PORTAL.zip"><b>
+Click here to download.<br />-->
+
+<!--<div>Attention Students, <br> a.   Any student who has completed degree requirements and wishes to improve their CGPA and grades should submit his/her request to the exams office through the head of the department by July 20, 2024. No request received after this date will be considered, and the student's name will be forwarded to the Controller's office for final result notification (FRN).
+<br>
+b.  Online clearance for respective graduates has been initiated on the portal by the exams office and will be available for respective students from July 10, 2024. Respective students are required to get their online clearance completed by July 20, 2024. 
+</div>-->
+
+<!--<div>Attention Students, <br> This is to inform all students that the bus route registration process for the upcoming academic session (FALL -2024) will now be conducted online through the student's portal from 2nd September 2024. 
+<br>This new process replaces the previous manual bus route registration method.
+All students are strongly advised to complete their bus route registration promptly. 
+<br>Please note that the university's transport facility is available on a first-come, first-served basis, and we have a limited number of seats. Early registration will increase your chances of securing a spot on university transport.
+<br>For any assistance, please contact the university's support team.
+<br><br>051-9049-5932
+<br><a target="_blank" href="../../PortalSubmissions/Portal Attachments/Bus Route Registration Screen.png"><b>
+Click here to view Bus Route Registration Screen.<br />-->
+
+<div><Strong>Dear Students,</Strong>
+<br>
+Considering the high demand for internet services at the Islamabad campus, 
+we are pleased to announce that additional internet coverage is now available in areas where Internet service was previously unavailable.<br>
+now you can connect to the internet in those open areas using the newly provided User IDs available through the CU-Online portal<br>
+<br><a target="_blank" href="../../PortalSubmissions/Portal Attachments/UserManual_StudentWi-Fi_Access.pdf"><b>
+Click here to Download User Manual.<br />
+
+<br />
+<!--
+<a target="_blank" href="https://youtu.be/er1sdydBrsA"><b>
+<br />
+Click here to view the video of Exams Guidelines for Students at COMSATS
+</b></a><br />-->
+<!--
+apply through this link <a href="https://www.aspireleaders.org/program/aspire-leaders/" target"_blank">https://www.aspireleaders.org/program/aspire-leaders/</a><br />
+<br />
+-->
+</div>
+
+</b></a>
+</b>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal End -->
+
+
+<div class="row row2">
+<div class="main_center_alligned">
+<div class="col-md-12">
+<div class="row">
+
+
+
+
+<span style='display:none;' class='imp_notice_msg'>
+<img src='http://demo.dmassolutions.com/new.gif' title='' alt='' />
+<p>If you are unable to login your account, Please use forget password link (Password will be sent to your registered email address).<br>
+if your registered email address is not correct, please contact academic/registrar office to correct/update your email address.</p>
+</span>
+
+<div class="col-md-8 notice_board">
+<h3><img src="/Content/img/NoticeBoardtitle.png" /></h3>
+<ul>
+
+<!--
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/RoshanKal.jpg">
+<b>
+Content Here
+</b>
+</a>
+</li>
+
+///////////////////////////////////////////////////////////////////
+
+<li class="list-item">
+<a href="javascript:void(0);">
+<b>
+Content Here
+</b>
+</a>
+</li>
+-->
+
+<li class="list-item">
+<a target="_blank" href="https://forms.gle/gZeFpvPhQtmdd7Ns6">
+<b>
+Dear All,<br><br>
+
+1. The Directorate of Planning, Development and Human Resource Development is organizing a seminar titled " Introductory Seminar on GRE " on Friday, November 22, 2024, from 10:30 am to 12:30 pm, at the Video Conferencing Room, Junaid Zaidi Library, Library Basement.<br>
+
+2.         The purpose of this virtual session is to prepare and guide young faculty members/final year students who are interested in the GRE exam which is a prerequisite test for admission in many USA universities.<br>
+
+3.         If you are interested in attending the said seminar, please fill the Expression of Interest Form at the following web link before or by November 21, 2024, https://forms.gle/gZeFpvPhQtmdd7Ns6
+</b>
+</a>
+</li>
+
+
+
+<li class="list-item">
+<a href="javascript:void(0);">
+<b>
+Subject: Speech contest arranged by City traffic department Islamabad (27th November, 2024) <br>
+Dear Students, <br>
+
+It is being announced that a Speech Competition is being arranged by City Traffic Police Islamabad on 27th November, 2024 at the Chamber of Commerce Office in Sector G8 Islamabad. The purpose of this contest is to inculcate traffic sense among students. The theme of the speech is as follows:
+"Hum agar arz karen to shikayat hogi".<br>
+Candidates who are interested in participating in the event can register themselves by visiting Mr., Haris in Student Affairs section by 19th November, 2024."
+</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/SPORTSSECTION.pdf">
+<b>
+TRIALS OF CUI ATHLETICS TEAM FOR HEC INTERVARSITY (MEN & WOMEN) CHAMPIONSHIP.
+</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/erasmus.pdf">
+<b>Erasmus Mundus Joint Master Degree Program 2025-26
+</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="http://ww2.comsats.edu.pk/complaintportal"><b>
+Student Online Complaint System <br> Submit your complaint now! for further details Click here 
+</b></a>
+</li>
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/wqwdqw.pdf">
+<b>
+SUSI Exchange Program 2025 in the USA 
+</b>
+</a>
+</li>
+
+<li class="list-item">
+
+Join the movement for educational equity! <a target="_blank" href="https://iteachforpakistan.org/?gad_source=1&gclid=Cj0KCQjwveK4BhD4ARIsAKy6pMIbh_ikFHfbGGvW_Dd-77_nKRtgjpP1x2OPrbcXgNVBzwgbd4LUz0UaArwFEALw_wcB">Teach For Pakistan's </a>
+Fellowship Program is dedicated to cultivating leaders committed to lifelong advocacy 
+against educational inequity. Our highly selective, paid Fellowship empowers top graduates from Pakistan's leading universities through a rigorous
+Leadership Development program, allowing them to initiate impactful educational reforms at the grassroots level.<br><br>
+
+With a 30-year vision, we hope for COMSATS University Islamabad graduates to hold key leadership positions across various industries, shaping the
+future of our nation. Through our program, we equip them with the skills needed to make a positive impact.<br><br>
+
+Explore a world of opportunities! Our <a target="_blank" href="https://www.youtube.com/watch?v=ftPZNt49tt8">Alumni,</a>
+such as Amna Akhtar, have secured prestigious scholarships like the Fulbright, 
+excelled at top graduate schools like Harvard, and made a mark at pioneering organizations like McKinsey. Currently, 150 Fellows
+are transforming government schools in Islamabad and Karachi, and 302 Alumni impacting over 26,000 children across 95 schools.<br><br>
+
+Teach For Pakistan is a partner of the global movement <a target="_blank" href="https://teachforall.org/">Teach For All</a>, a network committed to developing collective
+leadership to ensure all children can fulfill their potential.<br> <br>
+
+Don't miss out on joining us in the fight for educational equity.<br>
+ 
+ 
+
+<a target="_blank" href="https://www.tfaforms.com/5145617" >
+<b>
+Apply Now: https://www.tfaforms.com/5145617
+</b>
+</a>
+
+We are actively seeking individuals who would be an excellent fit for our program and would like to invite you to engage in a conversation with our recruiters. <br>
+If you are interested in scheduling a meeting, please take a moment to fill out the following form:<br> 
+<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfHYQwFuE_9drTV1eX7ZV53NfXzqt5n_3POwlHzTI6vKQsHgw/viewform">Meet a Recruiter</a>
+</li>
+
+
+<li class="list-item">
+
+Career Pakistan is offering online Internships (Online)<br>
+Minimum hours: 5 to 10 hours per week -- Flexible timings <br>
+Location: Anywhere (since these are online Work-From-Home internships)<br>
+Number of positions: Multiple positions<br><br>
+
+- Operations Intern<br>
+- Marketing and Communication Intern<br>
+- Brand Ambassador Program Intern<br>
+- Corporate Social Responsibility (CSR) Intern<br>
+- Event Management Intern<br>
+- Social Media Intern<br>
+- Sales Intern<br>
+- Public Relations (PR) Intern<br>
+- Talent Hunt Intern<br>
+- Magazine Writing Intern<br>
+- CV Writing Intern<br>
+- Difficult English Vocabulary Coach Intern (for coaching kids)<br>
+- Podcast Host Intern<br>
+- Youth Life Coach Trainee<br>
+<br>
+Employment at Career Pakistan: If you work hard, Career Pakistan will offer you employment upon completion of the internship.<br>
+<br>
+Essential Requirements:<br>
+You can be a university student, a recent graduate (Bachelor's or Master's),  a gap-year student, or an unemployed professional.<br><br>
+<br>
+Career Pakistan's Overview:<br>
+Top employers universally recognize Career Pakistan as the country's leading executive recruitment company. We recruit for 150+ prestigious companies across various sectors. Our LinkedIn page has 500K followers.<br>
+- Website (with a list of 150+ clients on the first page):<br>
+www.careerpakistan.pk<br>
+- Photos of 100+ Career Pakistan's Talk World events:<br>
+https://lnkd.in/eQC7JN2<br>
+- Company LinkedIn page (with 500K followers):<br>
+https://lnkd.in/epJxzszX<br>
+
+How to apply:<br><br>
+To apply, please answer the questions on this form.<br>
+https://bit.ly/cpint<br>
+
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/wefwegweg.jpg"><b>Honhaar Scholarships by Government of Punjab for Undergraduate Programs.</b></a>
+<br />
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/wefwefwefwef.pdf"><b>Download PDF</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ascascacs.jpeg">
+<b>
+French Seminar on 'Studying in France'
+</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0);">
+<b>Invitation: Seminar on 'Study in France' for CUI Students.<br /><br />
+
+International Office, COMSATS University Islamabad is organizing a hybrid French Awareness Seminar on "Studying in France" for CUI students from all Campuses of CUI on Thursday, October 03, 2024, from 11:15 am to 12:15 pm in the Video Conference Room, Junaid Zaidi Library, Basement, COMSATS University Islamabad (for Islamabad Campus) and online for all other Campuses of CUI.<br />
+Mr. Rao Naufil Rayan from Campus France, French Embassy Islamabad, will be the resource person for this seminar.<br />
+All CUI students are invited to attend this excellent opportunity.<br />
+</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdvsdvsd.pdf">
+<b>
+Public Service Message For Prevention of Conjunctivits 
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/SIUK.jpg">
+<b>
+SI UK Mini Expo
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Kinship.jpg">
+<b>
+Kinship Concession Advertisement
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/qweth.zip">
+<b>
+Pakistan Education Endowment Fund (PEEF) Scholarships for AI and Cyber Security Programs – Spring & Fall 2024 Intakes
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ccmp2.pdf">
+<img src="../../PortalSubmissions/Portal Attachments/ccmp.png" style="width: 400px; align=center;" />
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/rthbwedv.zip">
+<b>
+FW: Note Verbale No D8IU/24/485 - D-8 International University Admissions Opening for 2024-2025
+</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/dfvdas.jpeg">
+<b>
+Pakistan Air Force Recruitment Drive on 11th September 2024
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/yumnerv.jpg">
+<b>
+Undergraduate Scholarships for Students of Balochistan and Erstwhile FATA.
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);">
+<b>
+Dear Students,
+We are excited to announce that representatives from the University of Liverpool will be available for an online session!<br />
+This is a unique opportunity for you to learn about their diverse range of programs, scholarships, and exchange opportunities. <br />
+Why should you attend?<br />
+ - Explore New Horizons: Discover exciting undergraduate and postgraduate programs that align with your career goals and passions.<br />
+ - Get Inspired: Hear first-hand from university representatives about their academic excellence, innovative research, and vibrant student life.<br />
+ - Expand Your Network: Connect with experts and advisors who can guide you on your journey to studying abroad and building a global career.<br />
+Event Details:<br />
+ - Date: [9th September]<br />
+ - Time: [12:45 PM]<br />
+ - Venue: [Library video conference room]<br />
+We look forward to seeing you there!<br /><br />
+
+Regards,<br />
+Student Affairs
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);">
+<b>
+Pakistan Air Force Recruitment Drive. ( Commissioned officers male/female)
+PAF (Pakistan Air Force) mobile e-testing van along with PAF personnel shall be visiting CUI-Islamabad campus on 11th September 2024.
+ They shall be parked near Student Services Center, where they intend to take intelligence based  e-test with in their pre-fabricated van. The tests are for recruitment in PAF as commissioned officers male and female.
+Interested students are requested to pls visit the mobile van on 11th September 2024 along with original CNIC, Matric, FA/FSc/O and A levels certificates and mark sheets. The activity starting time shall be 9:30 am.
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/yuimyum.docx">
+<b>
+Scotland Pakistan Scholarship for Young Women and Girls For the year 2024-2025 (SP-2024 and FA-2024 Intakes)
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);">
+<b>
+Dear Student,<br>
+Ragging or bullying will result in a Rs. 5000/- fine and possible withdrawal of bus privileges. Strictly prohibited.<br />
+
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>Job and Internship opportunities!
+</b></a><br /><br />
+<a target="_blank" href="https://ww2.comsats.edu.pk/cdc/jobs.aspx"><b>Click Here for Job</b></a><br />
+<a target="_blank" href="https://ww2.comsats.edu.pk/cdc/internships.aspx"><b>Click Here for Internship</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ewwef.jpg">
+<b>Global Undergraduate Semester Exchange Program for Pakistan</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ergerg.zip">
+<b>PROVISION OF ENDORSED MERIT LISTS & SCHOLARSHIP APPLICATION FORMS (SAFs) FOR LOCAL/DOMICILED STUDENTS OF BALOCHISTAN ENROLLED IN BS/MASTERS & MS/ M.PHIL DEGREE PROGRAMS FOR THE SCHOLARSHIP POLICY 2023-24</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/1234.jpeg">
+<b>Undergraduate Scholarship Programme For Students of GILGIT - BALTISTAN</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>Al-Khidmat Foundation Scholarship Advert
+</b></a><br /><br />
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/imageeee.jpg"><b>Click Here for Ad</b></a><br />
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Detailss.docx"><b>Details</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/11.png"><b>ZONG Digital Trainee Executive Program - Launch 2024
+</b></a><br />
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/33.jpg"><b>Start Career</b></a><br />
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/22.png"><b>Scan QR Code</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0);">
+<b>
+YOUTH DEVELOPMENT CENTER QUETIONNAIRE <br /><br />
+Dear Students, Please fill in the questionnaire in the below mentioned links. This information is mandatory and is required to be filled by all students at the earliest<br /><br />
+
+YOUTH DEVELOPMENT CENTER QUESTIONNAIRE<br />
+<a target="_blank" href="https://docs.google.com/forms/d/1kV6OLK1apt4WrczWi8UKxPcFpJrUN6kkZ9BzMqZJBoE">(https://docs.google.com/forms/d/1kV6OLK1apt4WrczWi8UKxPcFpJrUN6kkZ9BzMqZJBoE)</a><br /><br />
+
+DIGITAL YOUTH HUB WEBSITE AND MOBILE APP<br />
+
+ <a target="_blank" href="https://docs.google.com/forms/d/1wIy-h4RQLOOle_8BFE9W2uzt4UGvmW2fZBal-rQDFaQ/">(https://docs.google.com/forms/d/1wIy-h4RQLOOle_8BFE9W2uzt4UGvmW2fZBal-rQDFaQ/)</a>
+ 
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/beef.zip">
+<b>
+BEEF Scholarship for  STUDENTS OF BALOCHISTAN ENROLLED IN BS/MASTERS & MS  Degree Programs.
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<b>
+Career Development Centre, CUI, Islamabad campus has come across this exciting opportunity by Career Launchpad to sign-up for following online courses by PAFLA made by Google. Which develops the skills crucial for professional growth at any stage of a student's career. Make your summer productive and spend some time on your professional development. List of courses are mentioned below:<br /><br />
+
+ - Effective communication<br />
+ - Networking<br />
+ - Personal branding<br />
+ - Critical thinking<br />
+ - Problem-solving<br />
+ - Time management<br /> <br />
+
+Link for signup: <a target="_blank" href="https://docs.google.com/document/d/1rx4MXrf5pobDy-CsGyQ3rEr_wQHk6iVnsjWwPuWWG0I/edit?usp=sharing">https://docs.google.com/document/d/1rx4MXrf5pobDy-CsGyQ3rEr_wQHk6iVnsjWwPuWWG0I/edit?usp=sharing</a> <br />
+ 
+ 
+About Career Launchpad:<br />
+Career Launchpad is a career accelerator designed to equip participants with essential skills, industry exposure, and personalized coaching for success in today’s job market. They have a 100% placement rate, having successfully placed over 400 fellows in top companies worldwide, including Jazz, Easypaisa, Binance, and Draper University. They have worked with students from universities across Islamabad, offering personalized coaching and industry exposure that have helped them secure their dream jobs within months of completing the program.<br />
+ 
+If you have any query please feel free to contact us at <a href="mailto:careerdevcenter@comsats.edu.pk">careerdevcenter@comsats.edu.pk</a>.
+</b>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/RoshanKal.jpeg">
+<b>
+Roshan Kal Internship Program is back and better than ever! <br />
+Join them for an unforgettable summer of learning and growth to develop your skills alongside industry leaders. Apply now and be part of something extraordinary! <br />
+Application Link: <a target="_blank" href="https://roshankal.rozee.pk">https://roshankal.rozee.pk</a>
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<b>
+"Join HBL’s Digital Fee Payment Awareness Campaign!" <br>
+Dear CUI Students, <br>
+ 
+We are excited to invite you all to an awareness campaign hosted by HBL on 30th May 2024 at 10:30 am in Seminar Hall – ECE Department to learn about HBL’s various Digital Fee Payment Options available to you and how to make your fee payment more efficient.
+HBL Team will be on hand to answer your questions and demonstrate how to use digital payment channels.
+ 
+Looking forward to seeing you all there!
+</b>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/GradNest.pdf"><b>Gradnest Program For BS/BBA Students:<br /> <br />
+Jaffer Business Systems (Private) Limited (JBSPL), a reputable IT company in Pakistan, with the aim to solve business challenges with IT Solutions in a creative way.<br /><br />
+They are thrilled to announce the launch of GradNest’24, groundbreaking Management Trainee Program designed to cultivate the next generation of leaders in Pakistan! <br /><br />
+
+GradNest’24 is the opportunity to unearth the future leaders!<br />
+
+This program offers brightest final semester students an unparalleled chance to:<br />
+
+   - Tackle real-world projects: Gain invaluable practical experience by working on cutting-edge initiatives alongside JBSPL's industry experts.<br />
+   - Embrace mentorship: Learn from seasoned professionals who will guide you on your path to becoming a future leader.<br />
+   - Experience cutting-edge training: Sharpen your skills and stay ahead of the curve with our comprehensive training programs.<br /><br />
+   
+Ready to learn more?    <br />                                                                             
+
+We would be pleased to present the GradNest’24 program to your students at your Lahore/Islamabad campus. We propose a session on Day, Date, from Time.<br /> 
+
+We believe GradNest’24 is a perfect fit for XYZ Universities exceptional students, and we're excited about the prospect of partnering with you on this journey. Together, let's cultivate future leaders!<br /><br />
+
+Cick Here to Download!
+
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+Seminar on "International Education Opportunities",<br />
+A Gateway to study abroad.<br />
+Date: May 30, 2024 Thursday <br />
+Time: 1115-1230pm<br />
+Venue: Video Conference Room.<br />
+</b></a>
+</li
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Leverify.png"><b>Greetings from Leverify:<br /> <br />
+Target Audience: 8th Semester Students and Fresh Graduates<br /> <br />
+We hope this email finds you in the best of health and spirits. We are reaching out to share an exciting initiative by Leverify i.e Market Readiness Program. Through this initiative, we aimed to empower fresh graduates with the skills, knowledge, and mindset necessary for successful entry and growth in the competitive job market. We have identified substantial topics and developed detailed contents for a 5 days workshop after extensive research. We have devised the following objectives for this program <br /><br />
+
+Objectives of Market Readiness Program<br /><br />
+
+ - To enhance the professional competencies of students and their grasp on industry trends for gaining market competitiveness.<br />
+ - To help students gain assistance in clear, actionable career planning and goal setting.<br /><br />
+ 
+ We believe that this program can significantly enhance the employability of students by providing them with a tangible connection between their academic achievements and the expectations of the job market. We would like to arrange a virtual meeting with the Director/ Dean along with you at your earliest convenience to discuss the content and our roll out plan.<br /> <br />
+
+Thank you for considering this initiative. We are looking forward to the possibility of collaborating with your university to make a meaningful impact on the future of students.
+
+</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/world_symposiam.pdf"><b>
+Symposium on the World Quantum Day (22/05/2024)
+</b></a>
+</li>
+
+<li class="list-item">
+<b>
+COMSATS University Islamabad Campus is hosting Islamabad Traffic Police Mobile Van staff and officers for issuance of Learners Driving License, 
+renewal of driving license on 21st and 22nd May 2024. All students and CUI employees are welcome to avail this facility within the Student Affairs Center.	
+</b>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>Career Launchpad: Invitation to Cohort 6 Applications!<br />
+About Career Launchpad:<br />
+
+Career Launchpad is a career accelerator program to train university graduating students and young professionals to excel in their careers by bridging skills-gap in the job market and fostering entrepreneurial skills. A diverse cohort of individuals is recruited and trained over a period of 2 months. We've completed 5 successful cohorts so far. You can learn more about us on our LinkedIn.<br />
+
+AdVentures Studio is pleased to announce the opening of applications for Cohort 6 of the Career Launchpad. Over the course of 2 months, fellows will be able to participate in:<br />
+
+ - Skill-building Workshops<br />
+
+ - Mentoring Sessions<br />
+
+ - Networking Events<br />
+
+ - Team Projects<br />
+
+ - Mock Interviews<br />
+
+ - Employability Workshops<br />
+
+
+We request you to share this email with the student body. Please find attached a one-pager for more details. For any queries, feel free to reach out at <a href="mailto:mahad@careerlaunchpad.pk">mahad@careerlaunchpad.pk</a> or <a href="mailto:ahmad@careerlaunchpad.pk">ahmad@careerlaunchpad.pk</a><br />
+
+The link to apply is:  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0PBoJeVpyi95040oleZELWQ67aZk30gCE5RfRR-HdeEY1sg/viewform" target="_blank">Application Form</a><br />
+
+About Adventures:<br />
+
+Adventures is an incubation and acceleration platform working with young entrepreneurs and startups. With a diverse team of experts and a proven track record of success, Adventures creates environments where startups can thrive and succeed through strategic guidance, mentorship, funding opportunities, and access to a global network of investors and industry leaders.
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ddfvdfvf.pdf"><b>Scholarships for Excellent Foreign Students</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>ATTENTION:<br /> 
+Dear students and employees, a team from traffic police Rawalpindi is scheduled to visit CUI Islamabad campus on Thursday 28th March 2024 from 9 am to 1 pm for on the spot issuance of learners driving licenses to eligible applicants. Please Bring original and copies of National ID Cards along. </b></a>
+</li>
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>DIYA Scholarship Updated Form & Advertisement Attached (New)</b></a><br />
+<a href="../../PortalSubmissions/Portal Attachments/diya1.docx"><b>Click to Download</b></a><br />
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/diya2.pdf"><b>Click to Download</b></a>
+</li><li class="list-item">
+<a href="javascripte:void(0);"><b>ATTENTION:<br /> 
+Dear Students, Display of Student ID card is mandatory with in the campus premises, non-compliance shall result in fine after 15th March 2024</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/rqwrq.pdf"><b>Aspire Leaders Program: Deadline in 10 days!
+<br />
+The Aspire Leaders Program is a fully funded, online program designed by Harvard University that will provide students with the skills, knowledge, and network they need to succeed in their careers and make a positive impact on the world. The program will cover a wide range of topics, including leadership development, public policy, social entrepreneurship, and critical thinking. You can learn more about the program here. 
+
+Kindly disseminate information about the program amongst your students and encourage them to apply. Ask them to apply through this link: <a href="https://www.aspireleaders.org/program/aspire-leaders/" target="_blank">https://www.aspireleaders.org/program/aspire-leaders/</a>
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/rthrt.zip"><b>U.S. Embassy Islamabad is seeking applications from qualified students to participate in the Foreign National Student Intern Program (FNSIP) for the summer of year 2024. The description of the program and what it offers to students along with eligibility criteria and details of required documentation is given in the attached documents, email and weblink as well. <br />
+
+Therefore, it is requested to kindly disseminate the information/email among your relevant students for information and encourage them to apply directly and avail opportunities. All required documents must be sent via email to PakInternship@state.gov before the deadline i.e. March 17, 2024  please.</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ssdfwe_updated.zip"><b>Punjab Educational Endowment Fund (PEEF)  Master's Level Scholarships  for Academic Year 2023-24 (Fall - 2023 and Spring - 2024 Intakes Only)</b></a>
+</li>
+
+
+
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>KINSHIP CONCESSION PECUNIARY:<br />
+The last to apply for Kinship Concession Pecuniary of Spring 24 semester is 15th March, 2024. Please visit Student Affairs to submit the application before the deadline.</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/wsdcwe.docx"><b>Skoltech and The Gorchakov Fund Launch Fellowship for Foreign Experts in STEM, 2024 (Due Date: June 2, 2024, 11:59 p.m. (Moscow time))</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b> 
+It is to inform that student's bus service will resume operation after the winter break, starting from February 12, 2024.<br />
+<br />
+
+The timings will be observed in SP-24 as per the following schedule.<br />
+
+1st arrival in campus 8:00 am<br />
+
+2nd arrival 11:00 am<br />
+
+1st drop 2:45 pm<br />
+
+2nd drop 5:45 pm<br />
+<br />
+
+Shuttle service for MS.<br />
+
+Pick up time.<br />
+
+Aabpara: 4:30 pm<br />
+
+Faizabad: 4:45 pm<br />
+
+Khanna pull: 5:00 pm<br />
+
+Arrival in campus 5:15 pm<br />
+
+Departure from campus at 9:15 pm.<br />
+<br />
+
+It is further mentioned that on every Friday One pick and one drop will be observed.<br />
+
+1st Arrival time in Campus 8.00 AM<br />
+
+Departure from Campus at 1.40 PM</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdvsdvs.pdf"><b>Erasmus+ Information Session scheduled on February 15, 2024</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/MEDIA DIVISION_FINAL_2024_For Female Afghan Refugees.jpg"><b>Graduate Scholarship Program 2024 For Female Afghan Refugees</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ElectionQuiz-2024.jpg"><b>INVITATION - YOUNG VOTERS ELECTION QUIZ CONTEST
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Abdullah.zip"><b>Abdullah Foundation Scholarship Program 
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/everf.pdf"><b>Study in the Kingdom of Saudi Arabia</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+NUST OLYMPIAD 24,<br />
+The NUST Olympiad Ambassadorship Program presents a remarkable opportunity for students to partake in significant sporting events, engage with eminent intellectuals nationwide, and gain comprehensive exposure to university life.<br />
+This experience ensures the cultivation of a confident attitude, poised to significantly contribute to their future endeavors while affording them a memorable and enriching period in their lives. Don't miss this amazing opportunity to become a part of something bigger.<br />
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeAa_lia0VYBfvvRCRbzrPZqHFBdkVJbGGZVIAesPzcVr4pUw/viewform" target="_blank">Register here:</a>
+</b></a>
+</li>
+
+
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+Dear Students,<br />
+The students selected for PM Laptop scheme have been informed to the respective Coordinators of departments. The laptops will be distributed on 7th and 8th December 2023.  For detailed distribution schedule of your department and list of required documents to bring along, Please contact your respective department coordinator.
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/erher.jpeg"><b>
+Announcement of PEEF Undergraduate Special Quota Scholarship for the year 2023-24
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Fw Announcement of BEEF Scholarship for 2022-23.zip"><b>
+Announcement of BEEF Scholarship for 2022-23
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="https://docs.google.com/forms/d/1xsGIGFm-sqM8UvXjEwxDQl8A8O1ENNlBPGJ0Uq30RsU/viewform?edit_requested=true"><b>
+PHC Winter Internship Program 2023
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Pakistan 2024 Program Flyer (6).pdf"><b>
+Invitation of Applications for the ASPIRE Leaders Program, 2024
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdvsvsv.zip"><b>
+Startups Batch-12 at SSBC
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/dbeb.zip"><b>
+PPL Scholarship For Higher Professional Education 2023-24
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/advert.jpeg"><b>
+Coastal Region Higher Education Scholarship Program for Balochistan Batch-II
+</b></a>
+
+<a target="_blank" href="https://www.youtube.com/watch?v=vcy0X9c6lrc"><b>
+Click Here to Watch Tutorial
+</b></a>
+
+</li>
+
+<li class="list-item">
+<a target="_blank" href="https://forms.gle/Q5n45Ysx44CVrjNf7"><b>
+Times Higher Education Impact Ranking 2024
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="http://ww2.comsats.edu.pk/alumni/Register.aspx"><b>
+CDC Alumni Form
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+3rdTriaging Session - National Idea Bank (NIB) III<br />
+Dear Students,<br />
+Assalam-o-Alaikum<br />
+I hope this email finds you in good health. Details of Training Session 3 of NIB III are as under.  You are all encouraged to register and attend the session. <br />
+NIB-III Training Session: 𝗠𝗮𝗸𝗶𝗻𝗴 <br />𝗖𝗼𝗺𝗺𝗲𝗿𝗰𝗶𝗮𝗹 𝗦𝗲𝗻𝘀𝗲
+Date: 𝟭𝟱 𝗢𝗰𝘁𝗼𝗯𝗲𝗿 𝟮𝟬𝟮𝟯 Time: 𝟭𝟭:𝟬𝟬 𝗔𝗠 𝗣<br />𝗮𝗸𝗶𝘀𝘁𝗮𝗻 𝗧𝗶𝗺𝗲
+Join us for an insightful session on 'Making Commercial Sense.' An innovative idea is always the best solution for existing problems. A good idea generates good revenue for an innovator. Learn the art of commercializing your innovative idea that can benefit you.<br />
+Learn the art of balancing risk and reward, ensuring that every decision contributes to your business's long-term prosperity. Don't miss this chance to gain the financial acumen needed to thrive in today's competitive business landscape.<br />
+Register now for the most awaited training session about the commercialization of an idea:<br />
+Click here to register: <a href="https://nibpk.org/nib-event-registration/" target"_blank">https://nibpk.org/nib-event-registration/</a><br />
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/yjnytuj.zip"><b>
+Announcement of PEEF Undergraduate Scholarship (Fall-2023 Intake)
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+Dear Students,<br />
+National Idea Bank (NIB) is the initiative of Honorable President of Pakistan, Dr Arif Alvi, and was inaugurated by him in February 2021 at his presidency. NIB is a platform to recognize and support innovative ideas in Pakistan. The outstanding ideas are not only getting recognition but also chances for further implementation as industrial integration or investor’s attraction. Winners of NIB 2021and 2022 were given recognition and awards by the President of Pakistan, on 27th January 2022 and 20th March 2023. A complete overview of NIB program can be found at <a href="https://nibpk.org/" target"_blank">https://nibpk.org/</a>. <br />
+
+After a great success of NIB I and II we have now opened the 3rd call for Ideas for NIB 2023. COMSATS University Islamabad invites you use your brain in solving Pakistan's top problem. Calling all Students and Faculty! National Idea Bank III is ready to accept new ideas, and this time, they are on a mission to tackle one of our nation's most pressing challenges: <br />
+
+The negative balance of trade. We import a lot and export very little, but together, we can find the opportunities to change that narrative.<br />
+
+Exciting Prize: This year, NIB has even more enticing prize – Unlock a Trip to Silicon Valley, USA: Join NIB III for a Chance of a Lifetime!<br />
+
+Are you eager to explore Silicon Valley, learn from successful entrepreneurs, and connect with potential investors to back your brilliant ideas? The National Idea Bank, Pakistan's premier platform for groundbreaking ideas, initiated by the President of Pakistan in 2021, is calling you to make a difference.<br />
+
+COMSATS University Islamabad along with 100+ other NIB partners are proud to join forces in the quest to inspire, innovate, and influence the trade landscape. <br />
+National Idea Bank is our platform to make a difference and potentially launch your ideas onto the world stage. Don't miss out – let's bridge the trade gap together!<br />
+
+Save the Date: On October 1 at 2:00 pm Pakistan Time, don't miss the chance to hear from the NIB Founder and Chairperson of ASPIRE Pakistan on the captivating topic of "Good Ideas."<br />
+
+During this session, the NIB Founder and ASPIRE Chairperson. Mr. Hassan Syed, will discuss how to recognize and evaluate promising ideas. He will outline five crucial steps to evaluate your concept in its early stages.<br />
+
+Reserve Your Spot: Register now to secure your place in this online training session. Join us on a journey to shape the future of trade.<br />
+
+Click here to register: <a href="https://nibpk.org/nib-event-registration/" target"_blank">https://nibpk.org/nib-event-registration/</a><br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+Dear Students,<br />
+It is to inform that deadline to apply online for the Scotland Scholarship has been extended up to 30th September 2023. For details, for any further information refer previous announcement or visit Student Affairs..<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/wsewefw.pdf"><b>
+Trianing Session - National Idea Bank (NIB) III
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Future Sustainability Leaders.pdf"><b>
+Invitation to Nominate Students for the Future Sustainability Leaders Program
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Subject.pdf"><b>
+Brainstorming - Online Briefing Session for Scotland Scholarship for Young Women and Girls
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+Dear Students,<br />
+Those who are studying under Worker Welfare Board (Federal or KPK or Punjab) scholarship in CUI, and they have not submitted WWB official award letter yet, are advised to submit award letter in Student Financial Aid Office at Student Affairs Section at the earliest.<br />
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdsdcascasc.zip"><b>
+Annoucement of Schoalrships (Scotland Pakistan Scholarships for Young Women and Girls - Bachelor's Programme , Undergraduate Scholarship Program for Students of Gilgit Baltistan , UNDERGRADUATE PROGRAM (UGRAD)</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/wdvwevwef.zip"><b>
+USAID MNBSP Flood Affected Scholarship Phase-II for Two Semesters 
+</b></a>
+</li>
+
+<li class="list-item">
+Pakistan Post Summer Internship Program-2023 <br />
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdcsdc.jpg"><b>Click here</b></a>
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/hgntn.jpg"><b>Click here</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/abcxyz.pdf"><b>
+Pakistan Post Summer Internship Program-2023
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Excellence Scholarship For Pakistani Students for the Academic Year 2024-25.pdf"><b>
+
+Excellence Scholarships for Pakistani Students for the Academic Year 2024-25
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Pakistan-Scotland-Scholarship-bachelors-23.pdf"><b>
+
+Annoucement of Schoalrships (Scotland Pakistan Scholarships for Young Women and Girls - Bachelor's Programme , Undergraduate Scholarship Program for Students of Gilgit Baltistan , UNDERGRADUATE PROGRAM (UGRAD)
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+On the spot issuance of Learner Driving License<br />
+Dear Students,<br />
+CUI Islamabad Campus is hosting Chief Traffic Officer Rawalpindi’s Learners Driving License Team where they will provide on the spot issuance of Learners Driving License. <br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Speechcompetition.jpeg"><b>
+Speech Competition<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+PM Laptop scheme<br />
+Dear Students,<br />
+Please note that the verification portal is open. Those students whose application for PM Laptop scheme needs to be amended can visit the Student Affairs Section on 26th June to get the issue resolved.<br />
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+PM'S NATIONAL YOUTH LAPTOP SCHEME 2023 <br />
+<a href="../../PortalSubmissions/Portal Attachments/PM Laptop scheme brochure.pdf" target="_blank">Click Here to Download</a><br />
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+Datesheet Spring-2023 <br />
+<a href="../../PortalSubmissions/Portal Attachments/departments_DateSheet_Final_010620231700.rar" target="_blank">Click Here to Download</a><br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0)"><b>Instructions for Student appearing in Terminal Examinations:-<br/>
+
+1. Students are required to download their admit card from CMS and bring printed copy of admit and original student Id card along to examinations hall. The Admit card will be available online on Saturday, June 10, 2023. Students are allowed to appear in exams of only those courses which are appearing in admit card.<br/>
+2. Mobile phone / smart watches and any other electronic gadget / device that has function of communication / Store data, books, written material are strictly prohibited to bring into examination hall.  Such items, if found in possession of any student during the paper/exam, shall be treated as equivalent to other such material that can be used for cheating and unfair means. These devices/gadgets shall be confiscated and sent to the UMCC which shall decide about the penalties to be imposed to return such items. The invigilator may ask to see / check such devices / gadgets during point of examination.<br/>
+3. Student without ID Card and Admit Card is not allowed to sit in the examination room and both documents must be displayed on a corner of table or chair.<br/>
+4. Student/candidate is not allowed to enter exams hall after 30 minutes start of exams.<br/>
+5. Any Gadgets / Mobile Phones / Smart watches are not allowed inside the examination room. The students are advised NOT to bring them to the university during examination and in case of any damage to confiscated mobile/device, CUI administration will not be responsible.<br/>
+6. Students are not allowed to leave the examination hall before one hour has elapsed, anyone leaving the examination hall for any reason shall not be allowed to re-enter. <br/>
+7. Students with shortage of attendance are not allowed to appear in the Examination of respective paper.<br/>
+8. Students are required to be respectful to invigilators and other officials dealing with the examination process.<br/>
+9. No eatables allowed inside examination hall.</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+Expansion of Services of Students Affairs Service Center.<br />
+The Student Affairs Service Center will be extending its operation uninterrupted, i.e. till 05:00 pm weekdays. in addition to previous service desks such as Examinations and Accounts, Students Services Center will also be providing services of Admissions, Transport and Academics sections, with the help of their parent offices.<br />
+</b></a>
+</li>
+
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Code of Conduct.pdf"><b>
+Code of Conduct for Students<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+ICMA HR Summit, Job Fair & Exhibition, 27th of May at Pakistan-China Center (Islamabad)<br />
+ICMA Pakistan, having an ever-growing student body of 25000+, is hosting a Mega HR Summit, Job Fair & Exhibition 2023 on Saturday, 27th of May at Pakistan-China Friendship Center Islamabad.<br />
+The ICMA HR Summit provides a platform to learn from experts in the field, network with peers, and stay up-to-date on the latest management and HR trends. Attending this summit can help enhance your leadership and HR skills, increase your knowledge, and bring new ideas to the table to help improve your organization's HR strategies.<br />
+Moreover, the ICMA HR Summit promises to be a valuable and informative event for attendees, and having the students & staff from your university involved, would be highly beneficial. Kindly consider group of 25-30 students to attend the summit to gain valuable insights and knowledge in the field of HR. Participants in the ICMA HR Summit will receive a certificate upon completion of the event. Please provide the ICMA HR Summit Link to nominated staff & students so they can register themselves to attend this summit as it will be highly knowledgeable.
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/FW COMSATS BEEF Scholarships for 2020, 2021, and 2022 sessions.zip"><b>
+COMSATS BEEF Scholarships for 2020, 2021, and 2022 sessions<br />
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/PEEF - AJK Scholarships 2022-23 (Fall-2022 & Spring-2023 Intakes only).docx"><b>
+PEEF - AJK Scholarships 2022-23<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+USAID scholarship:<br />
+Those students who applied through HEC's online portal must have to submit their documents in hard form to Student Financial Aid Office in Student Affairs section, Faculty Block 2, Ground floor, ".
+Deadline to submit the documents is 16-05-2023.
+For querries, Please contact 051-90495140
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/1st National Energy Efficiency and Conservation Arts and Mobile App Competition.pdf"><b>
+1st National Energy Efficiency and Conservation (EE&C) Arts and Mobile App Competition<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/abcxyz.zip"><b>
+Training in Science Diplomacy<br />
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/PolandScholarship.zip"><b>
+UNESCO/Poland Co-Sponsoed Fellowships Programme in Engineering Cycle 2023<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/phd_announcement.pdf"><b>
+Islamic Development Bank scholarship for PhD and Post Doctoral positions.<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+Folllow us now to stay up-to-date on the latest opportunities and insights at COMSATS University's Career Development Centre. Dont's miss out on the chance to jumpstart your career and make valuable industry connections.<br />
+</b></a>
+<a target="_blank" href="https://m.facebook.com/story.php?story_fbid=545695114376942&id=100068093731618&mibextid=Nif5oz">Follow Us on Facebook</a><br />
+<a target="_blank" href="https://www.instagram.com/cdc_cui/">Follow Us on Instagram</a><br />
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/AspireProgram.zip"><b>
+The Aspire Leaders Program for Pakistani Students<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/PEEFScholarShip.zip"><b>
+PEEF scholarship<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="https://www.acu.uk/funding-opportunities/for-students/scholarships/queen-elizabeth-commonwealth-scholaships/"><b>
+Queen Elizabeth Commonwealth Scholarship-2023<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Flyer Batch 11.jpg"><b>
+Student Startup Business Center (SSBC) enrollment is Open Now<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascripte:void(0);"><b>
+USAID Flood affected scholarship for Spring 21 and Fall 20 undergraduate students from EE and CS Departments <br />
+<a href="../../PortalSubmissions/Portal Attachments/Template for US AID flood affected schoalrs.docx" target="_blank">Click Here to Apply</a><br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/wertb.jpg"><b>
+Synergy Bootcamp (14th to 16th March, 2023)<br />
+<a href="https://buff.ly/3Sk1PYu" target="_blank">Click Here to Apply</a><br />
+Deadline: March 6, 2023
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/pmyp.png"><b>
+PMYP Twitter Space/Instagram Live Session (February 23, 2023 at 10:00 PM)
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Amazon2.jpg"><b>
+AMAZON Boot Camp on FBA Wholesale & Virtual Assistance
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>Fully-Funded: TWAS-IsDB Postdoctoral Fellowship Program for Developing Countries 2023 (March 06, 2023)<br />
+Application Procedures:<br />
+How-to-Apply: <br />
+To be considered for TWAS-IsDB Postdoctoral Fellowship Program:<br />
+- Applications must be submitted only online via the link on the bottom of the webpage. Applications submitted by any other means will not be considered.<br />
+- No applications will be accepted after the deadline. Therefore, it is recommended to submit your electronic application, as early as possible<br />
+- Incomplete applications will not be considered.<br />
+- Please note that a researcher may only submit one application at a time and for only one kind of grant or fellowship (i.e. either an IsDB-TWAS Fellowship, or a TWAS Research Grant or the OWSD Early Career Women Scientists (ECWS) Fellowship).<br />
+    For any queries, please write to isdb@twas.org
+</a>
+<a href="https://twas.org/node/14623" target="_blank">Click Here to Apply</a>
+</b>
+</li>
+
+<li class="list-item">
+<a target="_blank"  href="../../PortalSubmissions/Portal Attachments/KOICA- Scholarship Program for Master Degree (2023).pdf"><b>KOICA - Scholarship Program for Master's Degree (2023)</a><br />
+<a href="https://www.koica.go.kr/sites/ciat/index.do" target="_blank">Click Here to Apply</a><br />
+<a href="https://www.ead.gov.pk/" target="_blank">Click Here to Apply</a>
+</b>
+</li>
+
+<li class="list-item">
+<a target="_blank"  href="../../PortalSubmissions/Portal Attachments/UG-I(Ph-III) final Add.jpg"><b>Undergraduate Scholarships Announced by HEC for Students of Balochistan & FATA. <br />
+<a href="http://hec.gov.pk/site/bf3" target="_blank">Click Here to Apply</a>
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank"  href="../../PortalSubmissions/Portal Attachments/sdcsd.zip"><b>PEEF Master’s Level Scholarship 2022-23 for Minority Students <br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+Seminar / Outreach Session for PhD Scholarship Program under US-Pakistan Knowledge Corridor.<br /><br />
+
+HEC offers 1,000 PhD Scholarships under the initiative of “US-Pakistan Knowledge Corridor”, while focus is to encourage/aware the Non-PhD faculty members and students (Masters and Graduating students of BS Programs) in the field of Engineering and Technology, Physical Sciences, Social Sciences, Biological & Medical Sciences, Agriculture & Veterinary Sciences and Business & Entrepreneurship to make US their destination to carry out PhD studies under the said scholarship scheme.  
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/PG-V Add (BAL,FATA-II).jpg"><b>
+Postgraduate Scholarship Announced by HEC for Students of Balochistan & FATA.<br /><br />
+The scholarships offered by the HEC for students of Baluchistan and FATA (Phase-II) of subject for Postgraduate (MS/ M.Phil.) studies in all disciplines.  The Scholarships are being offered for the academic year 2022-2023.<br />
+Applicants are required to submit application online through HEC website:<a target="_blank" href="http://hec.gov.pk/site/phobf">http://hec.gov.pk/site/phobf</a> <br />
+Last Date for submission of online application form is Monday, December 19, 2022. 
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank"  href="../../PortalSubmissions/Portal Attachments/Fw _Announcement_of_PEEF_Undergraduate_Scholarship_(Fall-2022_Intake).zip"><b>
+Announcement of PEEF Undergraduate Scholarship (Fall-2022 Intake)<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank"  href="../../PortalSubmissions/Portal Attachments/Fw _Higher_Professional_Education_Scholarship_FY_2022_-23_-_Advertisement_published_Oct_24_&_25,_2022.zip"><b>
+Higher Professional Education Scholarship FY 2022 -23<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank"  href="../../PortalSubmissions/Portal Attachments/FORUM_ON_INTERNATIONALIZATION_OF_HIGHER_EDUCATION_2022_0001.pdf"><b>
+Forum on Internationalization of Higher Education 2022<br />
+</b></a>
+</li>
+
+<li class="list-item">
+<a  href="javascript:void(0);"><b>
+"MCW Young Leaders Fellowship Program, USA 2023 Fully Funded Due Date November 18, 2022".<br />
+It is requested to upload information (along with attachments) on the CUI website, news, blogs, student portal, etc. and also circulate it to the faculty members of CUI, please.  <br />
+Financial Coverage<br />
+
+ - International Economy Flights for International Participants
+ - Housing from the evening of July 10 – July 20, 2023
+ - Three meals per day from July 11 – July 19, 2023
+ - Round Trip Travel from New York, New York to Burlington, Vermont
+ - MCW will cover economy flight costs
+ - Public Transportation to/from JFK, LaGuardia, and Newark Airports
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank"  href="../../PortalSubmissions/Portal Attachments/thumbnail_image001.jpg"><b>
+"Prime Minister's National Innovation Award | Call for Innovative Ideas"<br />
+</b></a>
+</li>
+
+
+
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+"SUSI 2023 Summer Exchange Program 2023-USA | Fully Funded | Due Date 28 October 2022 For Pakistan".<br />
+It is requested to upload information (along with attachments) on the CUI website, news, blogs, scholarship portal, etc. and also circulate it to the faculty members of CUI, please.  <br />
+How to Apply?<br />
+ - The application form is very simple and easy to fill (Attached).<br />
+ - Complete an application form and submit it to SUSISLExchange@state.gov latest by October 28, 2022. Only emailed applications will be considered for review. Take special care in answering the essay questions. While saving the file and e-mailing the application, kindly use the following format for the subject line: Applicant Name, Name of Institution, City in which you study, for e.g., YOUR NAME, COMSATS University Islamabad, ISLAMABAD. (This is important, please do not ignore this!).<br />
+ For more information, please visit: <br />
+<a  target="_blank" href="https://pk.usembassy.gov/education-culture/susi-student-leaders-comparative-public-policymaking-program/">https://pk.usembassy.gov/education-culture/susi-student-leaders-comparative-public-policymaking-program/<a>
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+“Attention: Competition Alert- Essay Competition for Students- Knowing Kazakhstan- Last Date 30 October 2022". <br />
+It is requested to upload information (along with attachments) on the CUI website, news, blogs, student portal, etc. and also circulate it to the faculty members of CUI, please.
+<br />
+Please send the Essay along with your Fullname, School/University, and CNIC/Passport Copy by email before 30 October 2022 (5 PM PST) at <a href="mailto:knowingkazakhstan@gmail.com">knowingkazakhstan@gmail.com</a>
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="https://forms.gle/AKEJ8DaNDrecaEYs8"><b>
+Information required for "Times Higher Education Impact Ranking 2023".
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/asawde.zip"><b>
+Scotland Pakistan Scholarship Scheme for Young Women and Girls 2022-23 are now open
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdsdc.zip"><b>
+Implementation Status: Streamlining Correct Use of Pakistan Political Map-MoFEPT
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Request to Participate in 2022 ICIT 2022.pdf"><b>
+Request to Participate in 2022 ICIT 2022-NUCES
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="https://hansenleadershipinstitute.org/"><b>
+Hansen Summer Institute 2023 in USA (Fully Funded) Due Date: January 15, 2023
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdvsdvs.jpg"><b>
+Application now open for UPG Sustainability Leadership Class of 2023 - Fully Funded (Due Date: 31 December 2022))
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+1st International Academic conference on the Sustainable Development Goals 5-7 October 2022
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="https://www.iucn.org/Gender%20and%20Climate%20Awards"><b>
+Gender and Climate Awards - Promoting the inclusion and leadership of women in climate action (Due Date:: November 1st, 2022)
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ICIT2022_Poster.jpg"><b>
+Invitation to 5th International Conference on Innovation and Technopreneurship (ICIT 2022) on 22nd and 23rd September 2022
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Post Pandemic Career Outlook.pdf"><b>
+Online Symposium on Post Pandemic Career Outlook
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdvsdv.zip"><b>
+Online International Training Programme on "Modern Concepts in Plant Diseases & Pest Management for Enhancing Quality and Productivity", at the School of Agricultural Sciences, University of Zambia (UNZA), Zambia ,11-14 October 2022
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/09-2022 (2).pdf"><b>
+DEVELOPMENT OF APO-CERTIFIED PRODUCTIVITY SPECIALIST BY MALYSIA AND APO JAPAN, INTERNATIONAL SCHOLARSHIP PROGRAM (FACE TO FACE).
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/HUawei 2022.jfif"><b>
+Huawei Seeds for the Future Programme 2022
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+Dear Students, <br /> 
+On behalf of the Head and Faculty of Architecture Department, we extend our heart felt congratulations to you. <br /> 
+This is to apprise you that Orientation for Fall 2022 is scheduled to be held on Sunday, September 11th, 2022 at the Department of Architecture, COMSATS University Islamabad, Islamabad Campus. <br /> 
+Details of program are given below: <br /> 
+Venue: Academic Block II- 3rd Floor, Room -321, Department of Architecture <br /> 
+Timings: 09:30am to 1:30 pm <br /> 
+Please attend the Orientation at the time mentioned above. <br /> 
+Thanks 
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/My Thesis in 1000 words.pdf"><b>
+Call For Participation: The 1st edition of the Award "My Thesis in 1000 words". (For PhD Students Only)
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/METI Government of Japan Internship 2022.pdf"><b>
+METI Government of Japan Internship 2022 (Due Date: 30th September 2022)
+<br />
+</b></a>
+<b><a target="_blank" href="https://internshipprogram.go.jp/english/foreign/">FOREIGN NATIONALS | METI Government of JAPAN Japan Internship Program </a></b>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+In line with the CUI Islamabad campus transport operations, registration schedule of continuing students of undergraduate programs for Semester FALL-2022 to avail university transport facility is finalized as under:<br /> 
+Commencement of Transport Registration:   01-09-2022 <br /> 
+Closing Date of Transport Registration:   06-09-2022 <br /> 
+Closing Date of Transport Fee Submission: 09-09-2022 <br /> 
+Deadline of Late Fee with Fine Rs.2,000/-: 16-09-2022 <br /> 
+</b></a>
+</li>
+
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ltr n en.pdf"><b>
+INTERNATIONAL WORKSHOP ON EFFICIENT FOOD STORAGE TECHNOLOGIES AND MANAGEMENT PRACTICES BY INDIA AND APO JAPAN, INTERNATIONAL SCHOLARSHIP PROGRAM (DIGITAL MULTI COUNTRY COURSE)
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/20220818_updted brochure - Webinar on Industry 4.0 Smart Agriculture-1.pdf"><b>
+Webinar on 'Industry 4.0 driven Climate-Smart Agriculture: Challenges and Opportunities for Developing Countries', Wednesday, August 24, 2022
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/International Training Workshop.pdf"><b>
+China Satellite Navigation office with other organizations are organising the International Training Workshop on Beidou Technologies and its applications in the Belt and Road Counties and Regions (19-20 September 2022 in this regard the Ministry of Foreign Affairs (MoFA), facilitates and informs to all suitable nominees submit their applications directly to on the given email (global@beidou.org) with attached all required documents.  <br />
+
+
+2. It is requested to upload information (along with attachments) on the CUI website, news, blogs, scholarships page, etc. and upload it on the portal of all graduate & undergraduate students of CUI and also Circulate it to the employees of CUI, please.  
+</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);">
+<b>
+Asia Foundation Development Fellows Program for the year 2023, in this regard the International Office, CUI facilitates this program to the COMSATS University Islamabad (CUI). The applications for the 2023 Asia Foundation Development Fellows: “Emerging Leadership for Asia’s Future program are now open to provide highly qualified, young professionals from Asia with an unparalleled opportunity to strengthen their leadership skills and gain in-depth knowledge of Asia’s critical development challenges”. <br /><br />
+Eligibility Criteria:<br /><br />
+
+Asia Foundation Development Fellows must: <br /><br />
+
+- Have a demonstrable record of experience and accomplishment related to The Asia Foundation’s fields of expertise: governance and law, economic development, women’s empowerment and gender equality, environment, and regional cooperation; <br />
+- Be thoughtful, committed, respected and inspirational leaders within their professional fields and within their larger community; <br />
+- Be under 40 years of age by January 1, 2023; <br />
+- Be conversant in English (TOEFL exam results are not required); <br />
+- Be available and able to participate in all program components on the program dates specified; and <br />
+- Be resident nationals or citizens of the following countries and region where The Asia Foundation has programs: Afghanistan; Bangladesh; Bhutan; Cambodia; China; India; Indonesia; Japan; Korea; Laos; Malaysia; Mongolia; Myanmar; Nepal; Pacific Islands; Pakistan; Philippines; Singapore; Sri Lanka; Thailand; Timor-Leste; and, Vietnam. <br /><br />
+
+For more information, visit <a target="_blank" href="https://asiafoundation.org/what-we">https://asiafoundation.org/what-we</a>
+</b>
+</a>
+</li>
+
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdcs.pdf"><b>
+NBP Loan Scheme for the Session 2020-2021 and 2021-2022 (Date Extended). 
+</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/vbgfd.jpg"><b>
+Scholarship Offer by Fatmeed Scholarship Program 2022-2023 and Student Loan Scheme Offer by National Bank of Pakistan for the year 2020-21 & 2021-22
+</b></a>
+</li>
+
+
+
+<li class="list-item">
+<b>
+
+The students who are expected to complete their degree requirements in the current semester i.e. Spring 2022 are directed to submit clearance form by July 22, 2022, so that their degree and transcript may be processed.
+</b>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0)"><b>
+Student Startup Business Center (SSBC) has extended deadline for registration of Business Ideas/FYP upto 30th May, 2022, so Hurry Up and Don’t be Late! And register your idea at ssbc.comsats.edu.pk for a chance to win seed funding and free incubation facility. 
+<br/>
+<i>SSBC Team
+<br/>
+051-90496120</i>
+</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0)"><b>Kamyab jawan Sports League Talent Hunt weightlifting is being organized at  COMSATS University Islamabad Male Gym in the basement of CUI JZ Library from today  May 20-21, 2022  requested to show your talent and become the part of HEC ( Islamabad region team) for national and international level university Sports competition</b></a>
+</li>
+
+
+<!--<li class="list-item">
+<a target="" href="javascript:void(0);"><b>
+Dear Students!<br />
+Asalam o alaikum!<br />
+HEC has requested all HEI's including COMSATS University Islamabad (CUI) to share the following survey link with the students and encourage them to fill out the same۔
+<br />
+<li class="list-item" font>
+<a target="_blank" href="https://pkyouth.typeform.com/to/Plcq6Ejo"><font color="red">please click here to complete the survey: </font></a>
+</li>
+</b>
+</a>
+</li>-->
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdsd.zip"><b>Announcement of BEEF Scholarship for 2020-21</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/dsfvdf.zip"><b>Announcement of PEEF Master Level Scholarship 2021-22 (Fall-2021 and Spring-2022 Intakes)</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/anvd.pdf"><b>Important Circular</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/sdcvsd.zip"><b>1 DAY TO GO FOR L'OREAL</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/FeeNotification.jpeg"><b>Important Notification (Registration of Spring 2022)</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Announcement_for_Habbah_Educational_Trust_Loan_Facility.zip"><b>Announcement for Habbah Educational Trust Loan Facility</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Request_to_place_ORIC-PD_flyers_on_CU_online_portal.zip"><b>ORIC-PD</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/LorealBrandstorm2022.pdf"><b>Loreal Brand Storm 2022</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Interactive Sessionarranged by ORIC-PD.jpeg"><b>Announcement of Workshop on Entrepreneurship</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/dsd.docx"><b>Announcement of PEEF Undergraduate Scholarship (Fall-2021 Intake)</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0)"><b>-- Students graduating in session Fall 2021 are required to submit their final clearance certificate and other outstanding documents through respective Heads of Department by Jan 26, 2022. Final transcript and degree shall not be processed for the student who fails to submit the clearance within said date.</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/4323.docx"><b>Ehsaas UG Scholarship Project Phase III has been extended till December 31, 2021</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0)"><b>Ehsaas Undergraduate Scholarship Program Phase-III, is now open for Spring-2021 Intake. Deadline to apply remains the same 3oth November 2021.</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/PhD_Scholarship_Ad.zip"><b>PhD Scholarship</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/hfd.zip"><b>DIRECT ADMISSION AND SCHOLARSHIPS UNDERGRADUATE STUDIES 2022-23(CONSULATE GENERAL OF PAKISTAN HONG KONG)</b></a>
+</li>
+
+
+<li class="list-item">
+
+<b>Free Eye camp AL SHIFA EYE TRUST at COMSATS University </b>
+<br>
+It is apprised for the information of all concerned that a comprehensive Free Eye camp has been arranged by Medical Centre in collaboration with AL SHIFA EYE TRUST at COMSATS University Islamabad. Details are as under:-
+<br>
+Dates:-  8th and 9th November 2021 (Monday & Tuesday)
+<br>
+Time:- 9.30 am to 3.30 pm (each day)
+<br>
+Venue:- Basement -Junaid Zaidi Library  (each day)
+<br>
+Faculty members are also requested to kindly encourage the students to avail the facility 
+<br>
+<br>
+Regards
+<br>
+Incharge Medical Centre
+<br>
+CUI, Islamabad Campus
+<br>
+<br>
+<br>
+
+
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/fdsa.zip"><b>USAID-funded Merit and Needs-based Scholarship Program </b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/6325.zip"><b>Announcement of USAID Merit and Needs- based Scholarship program </b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/gtr.zip"><b>Announcement of Ehsaas Undergraduate Scholarship Program Phase-III</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/369.zip"><b>Announcement of Al-Falah Scholarship Scheme</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/098.zip"><b>Tabeer Scholarship Program Punjab 2021 (Phase-II)</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/786.zip"><b>UNDERGRADUATE SCHOLARSHIP PROGRAM FOR THE STUDENTS OF GILGIT-BALTISTAN (GB)</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/DLSEI.pdf"><b>Dear Students,<br />
+The Digital Learning & Skills Enrichment Initiative (DLSEI) program is introduced by the Higher Education Commission to enhance online learning and skills development among passionate students. The relevant information is given in the file. The last date to apply for Registration is the 6th October 2021. Thanks</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/4321.zip"><b>Announcement of USAID Merit and Needs- based Scholarship program For MS program Students</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/NIB-City.pdf"><b>*Information dissemination among CUI Students* National Idea Bank Pakistan-Launch Event 27 Sept, 2021</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="../../PortalSubmissions/Portal Attachments/123321.zip"><b>Announcement of USAID Graduate Scholarship.</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>Dear Student! <br /> 
+The classes of Fall2021 semester will commence w.e.f Monday, September 13,2021. The teaching mode in first week will be online. You are advised to get yourself fully vaccinated before commencement of physical classes. Any student without vaccination Certificate will not be allowed to sit in the class. Get vaccinated, stay safe and keep others safe as well.</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/1212.jpg"><b>Master in Computer Science Scholarship for international Student 2021 Nusa Putra University-Indonesia </b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/att123.zip"><b>Scotland Pakistan Scholarship Scheme for Young Women and Girls 2021-22 </b></a>
+</li>
+
+<!--<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/attacment_scottland.zip"><b>Scotland Pakistan Scholarship Scheme for Young Women and Girls 2021-22 </b></a>
+</li>-->
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/attachment123.zip"><b>Announcement of USAID Graduate Scholarship </b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Amazon.jpeg"><b>3 Weeks workshop on Amzon FBA</b></a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>Attention: Students graduating in session Spring 2021 are required to submit their final clearance certificate and other outstanding documents by Friday, July 30, 2021</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/CamScanner06-29-202111.38.pdf"><b>Attention Students (Fee Fall 2021)</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/kamyabJawanProgram.pdf"><b>KAMYAB JAWAN PEPSICO ROSHAN KAL INTERNSHIP PROGRAMME</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/PhD_Programme_and_Postdoctoral_Fellowships.zip"><b>PhD Programme and Postdoctoral Fellowships offered by the Communications, Signal Processing, and Networking Center (CoSINC), Istanbul Medipol University, Istanbul, Turkey.</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/2021_KOICA_SCHOLARSHIP.pdf"><b>2021 KOICA SCHOLARSHIP PROGRAM FOR MASTER’S DEGREE</b></a>
+</li>
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+Attention students,</b></a><br>
+Due to Technical error on Microsoft Cloud MS Teams is not working. Technical Teams of HEC and Microsoft are working to resolve the issue ASAP.
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/International_Competitions_from_TUBITAK_Turkey.pdf" target="_blank"><b>International Competitions from TUBITAK Turkey</b></a>
+</li>
+
+
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>
+Attention students,</b></a><br>
+Please submit the following documents to the Academics Department at earliest.<br>
+1:Migration Certificate  (NOC).<br>
+2: Result card of HSS (Intermediate).<br>
+3: A Levels Equivalence Certificate.<br>
+Note. Please verify the followings<br>
+1: Your Name , Father's Name, in terms of spelling and sequence as per SSC ( Matric / O Levels ).<br>
+2: D.O.B as per SSC ( Matric/ O Levels).<br>
+3:CNIC NO.<br>
+on CUI portal record to avoid any complication at later stage.<br>
+
+</li>
+
+
+
+
+
+
+<li class="list-item">
+<a href="javascript:void(0);"><b>Students graduating in session Fall 2020 are required to submit thier final clearance certificate and other outstanding documents by Friday, January 22, 2021. They may contact their respective departmental coordinators regarding entry at campus to this effect.</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/ms_teams_tutorial.pptx"><b>Tutorial: How to Use Microsoft Teams.</b></a>
+<br>For FALL 2020 students, MS Teams Account is issued to Undergraducate Students only.
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/FATAScholaShipAdv2020-21.jpeg"><b>Announcement of Undergraduate Scholarships for Students of Balochistan and Erstwhile FATA Phase II, Website Banner </b></a>
+</li>
+
+<li class="list-item">
+<b>Undergraduate programs teaching in Fall 2020</b>
+All undergraduate teaching except for the first semester will start from 14th September 2020. All courses will be initially taught online and labs will be conducted physically on campus. Timetable for online teaching and on-campus laboratory sessions will be shared by respective departments.  
+</li>
+
+
+<li class="list-item">
+<b>Orientation Semester Fall 2020</b>
+The orientation of newly admitted students is scheduled to be held, department wise from September 18 – 20, 2020 at COMSATS University Islamabad, Islamabad Campus. This time, due to precautionary measures for Covid-19 Pandemic, parents are not invited to attend the orientation session. The schedules of orientation for different departments will be communicated by Monday September 14, 2020 by noon.  <br>
+Regular online classes for first semester students will start from September 21, 2020. 
+</li>
+
+
+<li class="list-item">
+<b>Graduate programs teaching in Fall 2020</b>
+All graduate teaching except for first semester will start from 14th September 2020. All course will be taught physically on campus. Timetable for on campus teaching will be shared by the respective departments.  <br />
+First semester graduate teaching will start from 21st September 2020. 
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/under_graduate.jpg"><b>Notification: Fee Fall 2020 Extention (Undergraduate)</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/graduate.jpg"><b>Notification: Fee Fall 2020 Extention (Graduate)</b></a>
+</li>
+
+
+<!--<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/RemoteAccessToCUIDigitalResources.pdf"><b>Remote Access to CUI Digital Resources</b></a>
+</li>-->
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/NotificationRevisedUndergraduateCalendar.pdf"><b>Notification: Revised Undergraduate Calendar</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/NotificationRevisedGraduateCalendar.pdf"><b>Notification: Revised Graduate Calendar</b></a>
+</li>
+
+
+
+<!--	
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Fee_Fall_2019_Extension_Undergradutate_Program.jpg">
+<b>Fee Fall 2019 Extension Undergradutate Program</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Fee_Fall_2019_Extension_Graduate_Program.jpg">
+<b>Fee Fall 2019 Extension Graduate Program</b>
+</a>
+</li> 
+
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Revised Undergraduate Schedule.pdf"><b style="font-size: 24px; text-decoration: underline; color: pink; ">Revised Undergraduate Schedule</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../../PortalSubmissions/Portal Attachments/Revised Graduate Schedule.pdf"><b style="font-size: 24px; text-decoration: underline; color: pink; ">Revised Graduate Schedule</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="https://service.elsevier.com/app/answers/detail/a_id/28208/supporthub/elsevieraccess/p/15095/"><b>Elsevier's Remote Access Guide for Your University</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="https://onlinelibrary.wiley.com/action/showLogin?uri=%2F"><b>Wiley Online Library's Access through UN/PW through UN/PW for your university</b></a>
+<p>
+In the present situation across the world, where every body is being asked to stay at home and keep safe which  has caused universities to closed down all over the world. Wiley to support the students, faculty and the researchers during the COVID-19 lockdown period have provided the username/password access which they can benefit from while remaining in their homes or away from the university campuses as well.
+</p>
+<p>
+Username: HIGHEDUPAKIS <br />
+Password: Wiley12345
+</p>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="https://ieeexplore.ieee.org/Xplore/home.jsp"><b>AIEEE access through UN/PW for your university</b></a>
+<p>
+As per the extraordinary outcome of the COVID-19 in the world, IEEE is completely committed to support the students/faculties/researchers from the IEL subscribing universities within Pakistan to be able to continue their research work through our databases, as usual from their homes as were they doing from the university campuses. For this we have activated the access for your university through username/password. Please let your faculty and students know to simply go to
+</p>
+<p>
+Username: 15COMM77 <br />
+Password: BPgY3F
+</p>
+</li>
+
+<li class="list-item">
+<a target="_blank" ><b>Attention Students: (Office365 Email Accounts Created for All Students)</b></a>
+<p>
+Please login to your CUOnline Portal and Click on "Profile" to view your credentials. You will have official Email and several Apps to help you in learning remotely.
+</p>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/New Doc 2020-01-28 14.09.14_1.pdf"><b>Attention Students: (Fee Spring 2020-Probation)</b></a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Announcement of PEEF Scholarship for Minorities only-Science Group Students of FA-19 Semester.zip"><b>Announcement of PEEF Scholarship for Minorities only-Science Group Students of FA-19 Semester. Click To Download</b></a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Peef Announcement for the FA-19 Semester.zip"><b>Peef Announcement for the FA-19 Semester. Click To Download</b></a>
+
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Announcement_of_National_Bank_of_Pakistan_Loan_Scheme_for_Educations_(Mark-up_Free).zip"><b>Announcement of National Bank of Pakistan Loan Scheme for Educations (Mark-up Free)</b></a>
+
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Announcement_of_BEEF_Scholarship_Fall-2019_Intake.zip"><b>Announcement of BEEF Scholarship Fall-2019 Intake</b></a>
+
+</li>
+
+
+<li class="list-item">
+<b>
+As per the directives of the Islamabad High Court, academics activities at all Campuses of COMSATS University Islamabad including examination will continue uninterrupted. Students are advised to appear in their Examination as earlier scheduled.
+</b>
+</li>
+
+
+<li class="list-item">
+<b>FALL 2019 Datesheet is now avaiable at Student Portal. Please login and check your datesheet accordinly.</b>
+</li>
+
+
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Financial_assistance.zip">
+<b>Announcement of Financial Assistance for FA-19 Semester</b>
+</a>
+</li> -->
+
+<li class="list-item">
+<b>Mobile Application</b>
+View your marks,notifications,news,events etc.
+<a target="_blank" href="https://play.google.com/store/apps/details?id=cuonline.com.cui">
+<img style="width:17%;" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">
+</a>
+</li>
+
+
+<!--
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/announcement _ehsaas_program.zip">
+<b>Announcement of EHSAAS Undergraduate Scholarshp for BS Level</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a href="javascript:void(0);">
+<b>CUI Islamabad campus will have regular classes as per routine from Tuesday, 5th November 2019.</b>
+</a>
+<p>It is to inform all that CUI Islamabad campus will have regular classes as per routine from Tuesday, 5th November 2019.</p>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/OnlineCourses.pdf">
+<b>DigiSkills: Learn online - Earn online</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Fwd__FFC_Scholarships_For_the_Ward_of_Farmers_-_2019.zip">
+<b>Announcement of Scholarship, Form of Scholarship and Brochure of Scholarship for the Ward  Of Farmers for FA-19</b>
+</a>
+</li>
+
+<li class="list-item">
+<b>In view of tragic incident on Friday, October 4, 2019 at Islamabad Campus, all sessional exams at Islamabad Campus are hereby postponed until next Monday, October 14, 2019.
+No classes shall be held on Monday October 7, 2019. Regular classes shall be held from Tuesday, October 8, 2019.
+All Faculty members are required to observe regular office hours on Monday October 7, 2019.</b>
+</li> 
+
+<li class="list-item">
+<b>Last date for submission of online application form for Postgraduate Scholarships has been extended till Monday, August 26, 2019.</b>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Announcement.zip">
+<b>Announcement-Postgraduate Scholarships for studetns of balochistan and Erstwhile FATA</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Pakistani Scottish Scholarship 2019 Announcement for the Year 2019 -20.docx">
+<b>Invitation of Applications for Pakistani Scottish Scholarship for the year 2019-20</b>
+</a>
+</li>
+
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Scottish Scholarship 2019-20 Bachelor's Flyer.pdf">
+<b>Scottish Scholarship 2019-20 Bachelor's Flyer</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/Scottish Scholarship 2019-20 Master's Flyer.pdf">
+<b>Scottish Scholarship 2019-20 Master's Flyer</b>
+</a>
+</li>
+
+
+
+<li class="list-item">
+<b>Attention Students - Terminal Examinations</b>
+<br>Terminal Examinations Spring 2019 of CUI, Islamabad Campus are being commenced w.e.f June25, 2019 and students of CUI, Islamabad Campus are requested to please login at portal to check your final date sheet.</br>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/fee_extension_undergrad.jpg">
+<b>Fee Extension Notification for Under Graduate Students</b>
+</a>
+</li>
+
+<li class="list-item">
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/fee_extension_grad.jpg">
+<b>Fee Extension Notification for Graduate Students</b>
+</a>
+</li>
+
+<li class="list-item">
+<b>Tentative datesheet for SP19 is now available. Please login to your portal to review the datesheet.</b>
+</li>
+
+
+<li class="list-item">
+<b>Join COMSATS Leader Shift Program fully funded by COMSATS University Islamabad.</b>
+<br>Eligibility : Undergraduate students. Semesters 5 & 6. CGPA 3.2 or above. 
+<br><a target="_blank" href="../PortalSubmissions/Portal Attachments/LeaderShiftProgram.zip" target="_blank">
+For more details Click Here.
+</a>
+</li>
+
+<li class="list-item">
+<b>Attention Students (FEE Fall 2019 for Under Graduate Program)</b>
+<a target="_blank" href="../PortalSubmissions/Portal Attachments/FeeFall2019UnderGrad.pdf" target="_blank">
+Click Here to Download
+</a>
+</li>-->
+
+<li class="list-item">
+<b>Issues and Complaints</b>
+* Make sure to clear your browser cache for this website to receive portal updates.
+<br /> In case of any issue or complaint regarding portal please contact your Departmental Coordinator.
+</li>
+
+</ul>
+</div>
+
+<div class="col-md-4 tab_area">
+<div class="tabbable" id="tabs-745958">
+<ul class="nav nav-tabs">
+<li class="nav-item"><a class="nav-link" href="#panel-629396" data-toggle="tab" id="show_masked">By Roll No</a></li>
+<li class="nav-item"><a class="nav-link" href="#panel-105945" data-toggle="tab" id="show_regular">By List</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="panel-629396">
+<form method="post" onsubmit="return validateForm()" role="form" class="form1">
+
+
+<span id='ErrorMessage' title="ISB" style="font-size:12px;color:Red;font-style:italic;">
+
+<span id='ApiExceptionDetails' style="display:none;">
+
+</span>
+</span>
+
+<div id="masked_contaner" class="form-group masked_class controls_container">
+
+
+<!--<input id="MaskedRegNo" type="text" placeholder="AA00-BBB-000" pattern="\w\w\d\d-\w\w\w-\d\d\d" class="masked form-control" data-charset="__XX-___-XXX" title="Enter 10 Character Registration Number(Input is Auto Correct).">-->
+
+<input id="MaskedRegNo" class="masked form-control" title="Enter 10 Character Registration Number(Input is Auto Correct)." data-inputmask-regex="[A-Za-z]{2}\d{2}-[A-Za-z]{1}[A-Za-z\d]{2}-\d{3}" />
+
+
+
+
+
+</div>
+<div id="reguler_contaner" class="form-group regular_class controls_container">
+<div id="URL_LoadSessionsAndPrograms" style="display:none;">/Login/LoadSessionsAndPrograms</div>
+<div id="SessionsAndPrograms" class="form-group regular_class controls_container loader">
+<div id='Sessions'></div>
+<div id='Programs'></div>
+<input type="text" name="reg_last_part" id="ComboRegNo" class="disable_regular_reg form-control" maxlength="3" />
+</div>
+</div>
+<div class="form-group pass_contaner controls_container">
+<input class="form-control" id="Password" name="Password" required="required" type="password" placeholder="Password" />
+</div>
+<div class="form-group captcha_contaner controls_container">
+<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LfOHSYUAAAAAPqmsHGoc8qhToQTsK9nGFUsrTmF"></div>
+</div>
+<div class="checkbox rememberme controls_container">
+<button style="height: 45px; width: 70px;" id="LoginSubmit" type="submit" googlecaptchcheckattribute class="btn btn-primary">Login</button>
+<input type="hidden" id="RegNo" name="RegNo" />
+<input type="hidden" id="Local_InternetInformation" name="Local_InternetInformation" />
+<input type="hidden" id="Public_InternetInformation" name="Public_InternetInformation" />
+<input type="hidden" id="ClientAppAndOSVersion" name="ClientAppAndOSVersion" />
+Forgot Password ? <a href="/ResetPassword/Request">Click Here!</a>
+<br />
+<div id="LogoLoginTypeLink">
+</div>
+</div>
+
+</form>
+</div>
+
+<div class="tab-pane" id="panel-629396">
+<p>Tab2 Container</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-8 latest_news">
+<div class="page-header"><h1>Latest</h1></div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-block">
+<h5 class="card-title">CPR Guide</h5>
+<p class="card-text">
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/bAM0YkNLf7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>How to do CPR on an Adult over 12 years age.
+</p>
+<p style="margin:0;"><a class="btn btn-primary" target="_blank" href="https://www.youtube.com/channel/UCNP6oTsWBxIyiprLhQ8xg1g">Learn More</a></p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-block">
+<h5 class="card-title">COMSATS</h5>
+<p class="card-text">
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/8kJAeYR7-xw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+COMSATS University Islamabad Introduction.
+</p>
+<p style="margin:0;"><a class="btn btn-primary" target="_blank" href="http://ww3.comsats.edu.pk/ciitblogs/Aboutus.aspx">Learn More</a></p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-block">
+<h5 class="card-title">NEWS</h5>
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/r9jgXMq7Iaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p class="card-text">
+Eagle Eye With Moazam Shahbaz, 20 Oct 2019 (Din News)
+</p>
+<p style="margin:0;"><a class="btn btn-primary" target="_blank" href="http://ww3.comsats.edu.pk/ciitblogs/Blogs.aspx">Learn More</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 events">
+<div class="page-header"><h1>Events</h1></div>
+
+<div class="event_container">
+<div class="single_event">
+<div class="date_time">
+<p class="date_month"><span class="date">22</span><span class="month">July</span></p>
+<p class="time">22-31 July, 2019</p>
+</div>
+<div class="event_text"><p>COMSATS Summer Workshops Art, Design & Architecture</p></div>
+<a target="_blank" href="http://ww3.comsats.edu.pk/CIITBlogs/BlogsDetailsOuter.aspx?ArticleId=155037">Read More</a>
+</div>
+
+<div class="single_event">
+<div class="date_time">
+<p class="date_month"><span class="date">11</span><span class="month">July</span></p>
+<p class="time">11-12 July, 2019</p>
+</div>
+<div class="event_text"><p>Training Workshop on "PYTHON: Data Analysis and Visualization"</p></div>
+<a target="_blank" href="http://ww3.comsats.edu.pk/ciitblogs/BlogsDetailsOuter.aspx?ArticleId=155026">Read More</a>
+</div>
+
+<div class="single_event">
+<div class="date_time">
+<p class="date_month"><span class="date">22</span><span class="month">April</span></p>
+<p class="time">22 April 2019</p>
+</div>
+<div class="event_text"><p>Seminar: Interpreting Data and Improving Public Health Communication’ </p></div>
+<a target="_blank" href="https://www.comsats.edu.pk/NEFiles/Card.jpg">Read More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+                </div>
+            </div>
+
+        <footer>
+    <div class="col-md-12 column footer_menu">
+        <div title="CUONLINE Student Portal Update Version Number 7.0" class="inner_row">
+            <p>
+                <a  style="font-weight: bold;font-size: 15px;" href="http://itscomsats.com/" target="_blank">
+                    CUOnline
+                </a>, Principal Seat &copy; 2018-COMSATS &reg;
+            </p>
+        </div>
+    </div>
+</footer>
+    </div>
+    
+</body>
+</html>
