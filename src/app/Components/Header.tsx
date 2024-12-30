@@ -19,7 +19,7 @@ export default function Header() {
           height={71}
           style={{ marginLeft: "0.92%", paddingTop: "3%" }}
         />
-        <div className="w-[238px] h-[50px] mt-[3%] mb-[0.85%]">
+        <div className="w-[238px] h-[50px] mt-[2%] mb-[0.85%]">
           <p className="font-inknut text-clamp(16px, 4vw, 32px)">BUCKEYE</p>
           <p className="font-inknut text-clamp(12px, 1.37vw, 20px) ">-WEB SOLUTIONS-</p>
         </div>
