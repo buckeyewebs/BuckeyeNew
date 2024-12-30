@@ -49,7 +49,7 @@ export default function ContactUs() {
                     <Image alt="Comp person" src="/assets/svgs/Comp_person.png" />
                     <div >
                         <button className="flex flex-row justify-center bg-[rgba(255,255,255,1)] rounded-[11px] ml-[1%] mr-[1%] lg:w-[201px] md:w-[185px] sm:w-[150px] w-[130px] h-auto p-[4] outline outline-black hover:scale-105 transition-all duration-200 mb-[20px] sm:mb-[30px] md:mb-[40px] lg:mb-[60px]">
-                            <Image alt="Flyer" src="/assets/svgs/Flyer.svg" className="lg:w-[31px] p-[4] md:w-[25px] sm:w-[20px] w-[18px] lg:h-[22px] mt-[6px] mb-[6px]" />
+                            <Image alt="Flyer" src="/assets/svgs/Flyer.svg" className="lg:w-[31px] p-[4] md:w-[25px] sm:w-[20px] w-[18px] lg:h-[22px] mt-[6px] mb-[6px] ml-[3px]" />
                             <p className="font-istokWeb text-clamp(16px, 2.5vw, 26px) ml:[1.11%]">Send Now</p>
                         </button>
 
