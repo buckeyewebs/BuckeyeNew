@@ -21,7 +21,7 @@ export default function Header() {
         />
         <div className="w-[238px] h-[50px] mt-[23px] mb-[0.85%] ml-[1.125%]">
           <p className="font-inknut text-clamp(16px, 4vw, 32px)">BUCKEYE</p>
-          <p className="font-inknut text-clamp(12px, 1.37vw, 20px) ml-[3.33%]">-WEB SOLUTIONS-</p>
+          <p className="font-inknut text-clamp(12px, 1.37vw, 20px) ml-[1.33%]">-WEB SOLUTIONS-</p>
         </div>
 
         {/* Desktop Menu (visible only on large screens) */}
