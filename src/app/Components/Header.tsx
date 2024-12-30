@@ -46,7 +46,7 @@ export default function Header() {
         {/* Hamburger Icon for Mobile (visible only on small screens) */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-white focus:outline-none absolute right-4 top-8"
+          className="lg:hidden text-white focus:outline-none absolute right-4 top-11"
         >
           <svg
             className="w-6 h-6"
