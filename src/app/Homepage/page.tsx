@@ -13,8 +13,8 @@ export default function HomePage(){
         <div className="overflow-x-hidden">
           <Header />
           {/* Main Content */}
-          <div className="w-[1280px] h-auto flex items-center justify-center md:items-start md:justify-start">
-            <div className="w-[1280px] h-auto pt-[50px] pr-[108px] pl-[81px] pb-[20px] sm:pb-[130px] md:pb-[140px] lg:pb-[152px] flex flex-row">
+          <div className="w-[1280px] h-auto">
+            <div className="w-[1280px] h-auto pt-[50px] pr-[108px] pl-[81px] pb-[20px] sm:pb-[130px] md:pb-[140px] lg:pb-[152px] flex flex-row md:flex-col">
               <div className="mt-[20px] mb-[37px] w-[549px] h-auto flex items-center justify-center md:items-start md:justify-start">
                 <p className="font-lancelot lg:text-[68px] tracking-tight leading-[1.3] text-[40px] sm:text-[46px] md:text-[58px]  ">
                   Building Websites <br />
