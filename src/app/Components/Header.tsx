@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <div className="w-[1280px] h-[106px] bg-[rgba(112,154,90,1)]">
-      <div className="w-[1141px] h-[89.26px] lg:ml-[76px] md:ml-[66px] sm:ml-[56px] ml-[45px] flex flex-row">
+      <div className="w-[1141px] h-[89.26px] ml-[4.75%] flex flex-row">
         <Image
           alt='logo'
           src="/assets/svgs/logo.svg"
@@ -19,9 +19,9 @@ export default function Header() {
           height={71}
           style={{ marginLeft: "17.77px", paddingTop: "12px" }}
         />
-        <div className="w-[238px] h-[50px] mt-[23px] mb-[16.26px] ml-[0px]">
-          <p className="font-inknut text-[16px] sm:text-[18px] md:text-[20px] lg:text-[27px]">BUCKEYE</p>
-          <p className="font-inknut text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] ml-[0px] sm:ml-[24px] md:ml-[28px] lg:ml-[20px]">-WEB SOLUTIONS-</p>
+        <div className="w-[238px] h-[50px] mt-[23px] mb-[16.26px] ml-[3.125%]">
+          <p className="font-inknut text-[4.375%]">BUCKEYE</p>
+          <p className="font-inknut text-[1.37%] ml-[3.33%]">-WEB SOLUTIONS-</p>
         </div>
 
         {/* Desktop Menu (visible only on large screens) */}
