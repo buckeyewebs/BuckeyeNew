@@ -20,7 +20,7 @@ export default function Header() {
           style={{ marginLeft: "0.92%", paddingTop: "3%" }}
         />
         <div className="w-[238px] h-[50px] mt-[2%] mb-[0.85%]">
-          <p className="font-inknut text-clamp(16px, 4vw, 32px) ml-[25px]">BUCKEYE</p>
+          <p className="font-inknut text-clamp(16px, 4vw, 32px) ml-[35px]">BUCKEYE</p>
           <p className="font-inknut text-clamp(12px, 1.37vw, 20px) ">-WEB SOLUTIONS-</p>
         </div>
 
@@ -67,7 +67,7 @@ export default function Header() {
 
       {/* Mobile Menu (visible only when the hamburger menu is open) */}
       {isMenuOpen && (
-        <div className="absolute top-[70px] right-0 w-[250px] bg-white py-4 lg:hidden z-10">
+        <div className="absolute top-[70px] flex items-center justify-center right-0 w-[250px] bg-white py-4 lg:hidden z-10">
           <a href="/Homepage" className="block text-black font-istok text-[17px] text-center py-2">Home</a>
           <a href="/Services" className="block text-black font-istok text-[17px] text-center py-2">Services</a>
           <a href="/Portfolio" className="block text-black font-istok text-[17px] text-center py-2">Portfolio</a>
