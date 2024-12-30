@@ -20,8 +20,8 @@ export default function Header() {
           style={{ marginLeft: "0.92%", paddingTop: "75%" }}
         />
         <div className="w-[238px] h-[50px] mt-[23px] mb-[0.85%] ml-[3.125%]">
-          <p className="font-inknut text-[4.375%]">BUCKEYE</p>
-          <p className="font-inknut text-[1.37%] ml-[3.33%]">-WEB SOLUTIONS-</p>
+          <p className="font-inknut text-clamp(16px, 4vw, 32px)">BUCKEYE</p>
+          <p className="font-inknut text-clamp(12px, 1.37vw, 20px) ml-[3.33%]">-WEB SOLUTIONS-</p>
         </div>
 
         {/* Desktop Menu (visible only on large screens) */}
