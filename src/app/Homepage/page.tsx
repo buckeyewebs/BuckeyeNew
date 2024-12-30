@@ -14,7 +14,7 @@ export default function HomePage(){
           <Header />
           {/* Main Content */}
           <div className="w-[1280px] h-auto">
-            <div className="w-[1280px] h-auto pt-[50px] pr-[108px] pl-[81px] pb-[20px] sm:pb-[130px] md:pb-[140px] lg:pb-[152px] flex flex-row">
+            <div className="w-[1280px] h-auto pt-[50px] pr-[108px] pl-[81px] pb-[20px] sm:pb-[130px] md:pb-[140px] lg:pb-[152px] flex flex-col md:flex-row">
               <div className="mt-[20px] mb-[37px] w-[549px] h-auto">
                 <p className="font-lancelot lg:text-[68px] tracking-tight leading-[1.3] text-[40px] sm:text-[46px] md:text-[58px]  ">
                   Building Websites <br />
