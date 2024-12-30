@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <div className="w-[1280px] h-[106px] bg-[rgba(112,154,90,1)]">
-      <div className="w-[1141px] h-[89.26px] ml-[1.75%] flex flex-row">
+      <div className="w-[1141px] h-[89.26px] ml-[0.75%] flex flex-row">
         <Image
           alt='logo'
           src="/assets/svgs/logo.svg"
