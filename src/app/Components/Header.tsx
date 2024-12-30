@@ -70,7 +70,7 @@ export default function Header() {
         <div className="absolute top-[70px] flex flex-col items-center justify-center  right-0 w-[250px] bg-white py-4 lg:hidden z-10">
           <a href="/Homepage" className="block text-black font-istok text-[17px] text-center py-2">Home</a>
           <a href="/Services" className="block text-black font-istok text-[17px] text-center py-2">Services</a>
-          <a href="/Portfolio" className="block text-black font-istok text-[17px] text-center py-2">Portfolio</a>
+          <a href="/Portfolio" className="block text-black font-istok text-[17px] text-center py-2">Portfolio22</a>
           <a href="/About_Us" className="block text-black font-istok text-[17px] text-center py-2">About us</a>
           <a href="/ContactUs" className="block text-black font-istok text-[17px] text-center py-2">Contact us</a>
         </div>
