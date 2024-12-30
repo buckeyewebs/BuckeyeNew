@@ -19,9 +19,9 @@ export default function Header() {
           height={71}
           style={{ marginLeft: "17.77px", paddingTop: "12px" }}
         />
-        <div className="w-[238px] h-[50px] mt-[23px] mb-[16.26px] ml-[20px]">
+        <div className="w-[238px] h-[50px] mt-[23px] mb-[16.26px] ml-[0px]">
           <p className="font-inknut text-[16px] sm:text-[18px] md:text-[20px] lg:text-[27px]">BUCKEYE</p>
-          <p className="font-inknut text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] ml-[20px] sm:ml-[24px] md:ml-[28px] lg:ml-[20px]">-WEB SOLUTIONS-</p>
+          <p className="font-inknut text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] ml-[0px] sm:ml-[24px] md:ml-[28px] lg:ml-[20px]">-WEB SOLUTIONS-</p>
         </div>
 
         {/* Desktop Menu (visible only on large screens) */}
