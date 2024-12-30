@@ -46,7 +46,7 @@ export default function Header() {
         {/* Hamburger Icon for Mobile (visible only on small screens) */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-white focus:outline-none absolute right-4 top-6"
+          className="lg:hidden text-white focus:outline-none absolute right-4 top-8"
         >
           <svg
             className="w-6 h-6"
@@ -67,7 +67,7 @@ export default function Header() {
 
       {/* Mobile Menu (visible only when the hamburger menu is open) */}
       {isMenuOpen && (
-        <div className="absolute top-[85px] flex items-center justify-center  right-0 w-[250px] bg-white py-6 lg:hidden z-15">
+        <div className="absolute top-[70px] flex items-center justify-center  right-0 w-[250px] bg-white py-4 lg:hidden z-10">
           <a href="/Homepage" className="block text-black font-istok text-[17px] text-center py-2">Home</a>
           <a href="/Services" className="block text-black font-istok text-[17px] text-center py-2">Services</a>
           <a href="/Portfolio" className="block text-black font-istok text-[17px] text-center py-2">Portfolio</a>
