@@ -54,7 +54,7 @@ export default function About_Us() {
                 </div>
 
                 <div className="flex flex-row justify-center lg:mb-[201px]" >
-                    <p className="font-istokWeb text-[24px] w-[523px]  lg:mr-[47px] text-justify leading-[43px] flex items-center">Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit   interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    <p className="font-istokWeb text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] xl:text-[24px] 2xl:text-[28px] w-[523px]  lg:mr-[47px] text-justify leading-[43px] flex items-center">Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit   interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
 
                     <p className="lg:w-[550px] lg:h-[276px] rounded-[13px] bg-[rgba(112,154,90,10)] flex justify-center items-center font-inknut text-[24px] text-white tracking-17percent">OUR MISSION</p>
 
@@ -63,7 +63,7 @@ export default function About_Us() {
                 <div className="flex flex-row justify-center lg:mb-[201px]" >
 
                     <p className="lg:w-[550px] lg:h-[276px] rounded-[13px] bg-[rgba(112,154,90,10)] flex justify-center items-center font-inknut text-[24px] text-white tracking-17percent">OUR VISION</p>
-                    <p className="font-istokWeb text-[24px] w-[523px]  lg:ml-[47px] text-justify leading-[43px] flex items-center">Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit   interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    <p className="font-istokWeb text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] xl:text-[24px] 2xl:text-[28px] w-[523px]  lg:ml-[47px] text-justify leading-[43px] flex items-center">Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit   interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
 
                 </div>
 
@@ -83,7 +83,7 @@ export default function About_Us() {
                     <div className="flex flex-col">
                         <p className="text-[24px] font-istok tracking-4percent font-semibold ">Miles Morales</p>
                         <p className="text-[18px] font-istokWeb text-[rgba(112,154,90,10)]">HR Manager</p>
-                        <p className="text-[20px] font-istokWeb lg:w-[750px] h-auto text-justify leading-[31px] tracking-4percent">
+                        <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] font-istokWeb lg:w-[750px] h-auto text-justify leading-[31px] tracking-4percent">
                             Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                         </p>
                     </div>
@@ -95,7 +95,7 @@ export default function About_Us() {
                     <div className="flex flex-col">
                         <p className="text-[24px] font-istok tracking-4percent font-semibold ">Miles Morales</p>
                         <p className="text-[18px] font-istokWeb text-[rgba(112,154,90,10)]">HR Manager</p>
-                        <p className="text-[20px] font-istokWeb lg:w-[750px] h-auto text-justify leading-[31px] tracking-4percent">
+                        <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] font-istokWeb lg:w-[750px] h-auto text-justify leading-[31px] tracking-4percent">
                             Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                         </p>
                     </div>
