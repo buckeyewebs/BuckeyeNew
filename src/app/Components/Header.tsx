@@ -17,9 +17,9 @@ export default function Header() {
           src="/assets/svgs/logo.svg"
           width={108}
           height={71}
-          style={{ marginLeft: "17.77px", paddingTop: "12px" }}
+          style={{ marginLeft: "0.92%", paddingTop: "12px" }}
         />
-        <div className="w-[238px] h-[50px] mt-[23px] mb-[16.26px] ml-[3.125%]">
+        <div className="w-[238px] h-[50px] mt-[23px] mb-[0.85%] ml-[3.125%]">
           <p className="font-inknut text-[4.375%]">BUCKEYE</p>
           <p className="font-inknut text-[1.37%] ml-[3.33%]">-WEB SOLUTIONS-</p>
         </div>
