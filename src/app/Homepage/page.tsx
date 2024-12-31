@@ -47,17 +47,17 @@ export default function HomePage(){
                 <div className="w-[360px] h-[418px] pt-[57px] ml-[-264px] mt-[40px] border-[3px] border-solid rounded-[16px] mr-[22px]" style={{ borderColor: "rgba(221, 221, 221, 1)" }}>
                   <Image alt='vector' src="/assets/svgs/Vector.svg" width={88.14} height={88.14} style={{ marginLeft: "134px" }} />
                   <div className="w-[291px] h-[89px] ml-[34px] mr-[35px] flex items-center justify-center space-x-4">
-                    <p className="font-lancelot text-[45px]">Web</p>
-                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">development</p>
+                    <p className="font-lancelot text-[45px]">Custom</p>
+                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">web design</p>
                   </div>
                   <div className="w-[294px] h-[76px] ml-[33px] text-[rgba(255,255,255,1)] flex justify-between items-center grid place-items-center">
-                    <p className="text-justify">Lorem ipsum dolor sit amet. Aut expedita consequuntur ab esse iste qui debitis necessitatibus ab distinctio sunt et pariatur magnam! Est excepturi blanditiis</p>
+                    <p className="text-justify">Tailored websites designed to reflect your brand and engage your customers.</p>
                   </div>
-                  <button>
+                  {/* <button>
                     <div className="absolute w-[50px] h-[50px] bg-[rgba(112,154,90,1)] rounded-full mt-[17px] ml-[280px] flex justify-center items-center z-40">
                       <Image alt='arrow' src="/assets/svgs/arrow.svg" width={27.5} height={41.24}/>
                     </div>
-                  </button>
+                  </button> */}
                 </div>
     
                 {/* SEO Optimization */}
@@ -68,30 +68,30 @@ export default function HomePage(){
                     <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">optimization</p>
                   </div>
                   <div className="w-[294px] h-[76px] ml-[33px] text-[rgba(255,255,255,1)] flex justify-between items-center grid place-items-center">
-                    <p className="text-justify">Lorem ipsum dolor sit amet. Aut expedita consequuntur ab esse iste qui debitis necessitatibus ab distinctio sunt et pariatur magnam! Est excepturi blanditiis</p>
+                    <p className="text-justify">Optimized websites to improve your visibility and drive traffic to your business.</p>
                   </div>
-                  <button>
+                  {/* <button>
                     <div className="absolute w-[50px] h-[50px] bg-[rgba(112,154,90,1)] rounded-full mt-[17px] ml-[280px] flex justify-center items-center z-40">
                       <Image alt='Arrow' src="/assets/svgs/arrow.svg" width={27.5} height={41.24} />
                     </div>
-                  </button>
+                  </button> */}
                 </div>
     
                 {/* Marketing Solutions */}
                 <div className="w-[360px] h-[418px] pt-[57px] ml-[22px] mt-[40px] border-[3px] border-solid rounded-[16px] mr-[22px]" style={{ borderColor: "rgba(221, 221, 221, 1)" }}>
                   <Image alt='Marketing' src="/assets/svgs/Marketing.svg" width={88.14} height={88.14} style={{ marginLeft: "134px" }} />
                   <div className="w-[291px] h-[89px] ml-[34px] mr-[35px] flex items-center justify-center space-x-4">
-                    <p className="font-lancelot text-[45px]">Marketing</p>
-                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">Solutions</p>
+                    <p className="font-lancelot text-[45px]">Website</p>
+                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">Management & Maintenance</p>
                   </div>
                   <div className="w-[294px] h-[76px] ml-[33px] text-[rgba(255,255,255,1)] flex justify-between items-center grid place-items-center">
-                    <p className="text-justify">Lorem ipsum dolor sit amet. Aut expedita consequuntur ab esse iste qui debitis necessitatibus ab distinctio sunt et pariatur magnam! Est excepturi blanditiis</p>
+                    <p className="text-justify">We take care of your website, keeping it secure, updated, and running smoothly.</p>
                   </div>
-                  <button>
+                  {/* <button>
                     <div className="absolute w-[50px] h-[50px] bg-[rgba(112,154,90,1)] rounded-full mt-[17px] ml-[280px] flex justify-center items-center z-40">
                       <Image alt='Arrow' src="/assets/svgs/arrow.svg" width={27.5} height={41.24} />
                     </div>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

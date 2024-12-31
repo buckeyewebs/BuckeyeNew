@@ -10,10 +10,9 @@ const Carousel = () => {
   const sliderRef = useRef<Slider | null>(null);
 
   const data = [
-    { image: '/assets/svgs/Person1.svg', info: 'This is a customer quote. The customer is going to share their opinion about our product or service, hopefully it’s going to be a positive one. The social proof section is important when you want to increase trust of your company.' },
-    { image: '/assets/svgs/Person2.svg', info: 'This is a customer quote. The customer is going to share their opinion about our product or service, hopefully it’s going to be a positive one. The social proof section is important when you want to increase trust of your company.' },
-    { image: '/assets/svgs/Person3.svg', info: 'This is a customer quote. The customer is going to share their opinion about our product or service, hopefully it’s going to be a positive one. The social proof section is important when you want to increase trust of your company.' },
-    { image: '/assets/svgs/Person4.svg', info: 'This is a customer quote. The customer is going to share their opinion about our product or service, hopefully it’s going to be a positive one. The social proof section is important when you want to increase trust of your company.' },
+    {  info: "“The team at BuckeyeWebs is incredible! Anytime I need changes or have a question, they respond quickly and handle it.”",person:'- Emma K.' },
+    {  info: "“Working with BuckeyeWebs has been amazing. They built a great website for my business and take care of everything.”",person:'- Gary P.'},
+    {  info: '"The pricing at BuckeyeWebs is reasonable for the services they provide. They made changes free of charge.”',person:'- Steven M.' },
     // Add more items as needed
   ];
 
@@ -42,14 +41,15 @@ const Carousel = () => {
           <div key={index} className="flex flex-col items-center p-4 relative">
             {/* Circular Image */}
             <div className="relative w-full flex justify-center">
-              <div className="absolute top-[-10px] w-24 h-24 rounded-full overflow-hidden">
+              {/* <div className="absolute top-[-10px] w-24 h-24 rounded-full overflow-hidden">
                 <Image src={item.image} alt={`Customer ${index + 1}`} className="w-full h-full object-cover" />
-              </div>
+              </div> */}
             </div>
             {/* Info Box */}
             <div className="w-[306px] h-[373px] bg-[rgba(112,154,90,0.29)] border border-gray-200 rounded-md flex flex-col items-center justify-start mt-12 pt-12">
-              <p className="w-full h-full px-6 pt-6 text-center text-justify">{item.info}</p>
+              <p className="w-full h-full px-6 pt-6 text-center text-justify">{item.info}{item.person}</p>
             </div>
+            
           </div>
         ))}
       </Slider>

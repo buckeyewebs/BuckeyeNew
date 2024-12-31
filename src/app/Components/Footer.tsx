@@ -27,10 +27,10 @@ export default function Footer() {
                 <div className="hidden lg:block">
                     <p className="font-inknut text-[18px] mb-4">QUICK LINKS</p>
                     <div className="flex flex-col space-y-2">
-                        <a href="#" className="text-[13px] font-inknut">Home</a>
-                        <a href="#" className="text-[13px] font-inknut">Services</a>
-                        <a href="#" className="text-[13px] font-inknut">Portfolio</a>
-                        <a href="#" className="text-[13px] font-inknut">About us</a>
+                        <a href="/Homepage" className="text-[13px] font-inknut">Home</a>
+                        <a href="/Services" className="text-[13px] font-inknut">Services</a>
+                        <a href="/Portfolio" className="text-[13px] font-inknut">Portfolio</a>
+                        <a href="/About_Us" className="text-[13px] font-inknut">About us</a>
                     </div>
                 </div>
 
@@ -38,10 +38,8 @@ export default function Footer() {
                 <div className="hidden lg:block">
                     <p className="font-inknut text-[18px] mb-4">LEGAL</p>
                     <div className="flex flex-col space-y-2">
-                        <a href="#" className="text-[13px] font-inknut">Privacy Policy</a>
-                        <a href="#" className="text-[13px] font-inknut">Terms of Use</a>
-                        <a href="#" className="text-[13px] font-inknut">Refund and Cancellation</a>
-                        <a href="#" className="text-[13px] font-inknut">Policy</a>
+                        <a href="/Privacy_Policy" className="text-[13px] font-inknut">Privacy Policy</a>
+                        <a href="/Refund_Cancellation" className="text-[13px] font-inknut">Refund and Cancellation</a>
                     </div>
                 </div>
 
@@ -51,16 +49,16 @@ export default function Footer() {
                     <div className="flex flex-col space-y-4">
                         <div className="flex items-center">
                             <Image src="/assets/svgs/envelope.svg" alt="Email" className="w-6 h-6 mr-3" />
-                            <a href="#" className="text-[13px] font-inknut">support@mail.com</a>
+                            <a href="#" className="text-[13px] font-inknut"> info@buckeyewebs.com</a>
                         </div>
                         <div className="flex items-center">
                             <Image src="/assets/svgs/Telephone.svg" alt="Phone" className="w-5 h-5 mr-3" />
-                            <a href="#" className="text-[13px] font-inknut">+002200220022</a>
+                            <a href="#" className="text-[13px] font-inknut">(216) 482-1085</a>
                         </div>
                         <div className="flex items-center">
                             <Image src="/assets/svgs/Location.svg" alt="Location" className="w-5 h-5 mr-3" />
                             <a href="#" className="text-[13px] font-inknut">
-                                abc street, def city, USA
+                            Cleveland, OH 
                             </a>
                         </div>
                     </div>
@@ -82,3 +80,5 @@ export default function Footer() {
         </div>
     );
 }
+
+
