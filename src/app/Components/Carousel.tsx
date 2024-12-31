@@ -9,9 +9,9 @@ const Carousel = () => {
   const sliderRef = useRef<Slider | null>(null);
 
   const data = [
-    {  info: "“The team at BuckeyeWebs is incredible! Anytime I need changes or have a question, they respond quickly and handle it.”",person:'- Emma K.' },
-    {  info: "“Working with BuckeyeWebs has been amazing. They built a great website for my business and take care of everything.”",person:'- Gary P.'},
-    {  info: '"The pricing at BuckeyeWebs is reasonable for the services they provide. They made changes free of charge.”',person:'- Steven M.' },
+    { info: "“The team at BuckeyeWebs is incredible! Anytime I need changes or have a question, they respond quickly and handle it.”", person: '- Emma K.' },
+    { info: "“Working with BuckeyeWebs has been amazing. They built a great website for my business and take care of everything.”", person: '- Gary P.' },
+    { info: '"The pricing at BuckeyeWebs is reasonable for the services they provide. They made changes free of charge.”', person: '- Steven M.' },
     // Add more items as needed
   ];
 
@@ -46,9 +46,10 @@ const Carousel = () => {
             </div>
             {/* Info Box */}
             <div className="w-[306px] h-[373px] bg-[rgba(112,154,90,0.29)] border border-gray-200 rounded-md flex flex-col items-center justify-start mt-12 pt-12">
-              <p className="w-full h-full px-8 italic pt-6 text-center text-justify">{item.info}{item.person}</p>
+            <p className="w-full h-full px-4 py-4 italic text-center overflow-auto">{item.info}{item.person}</p>
             </div>
-            
+
+
           </div>
         ))}
       </Slider>
