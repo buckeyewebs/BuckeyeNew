@@ -72,7 +72,7 @@ export default function Portfolio() {
                     <div className="flex flex-row lg:mt-[100px] md:mt-[80px] sm:mt-[60px] mt-[45px]">
                         <div className="sm:w-[400px] md:w-[450px] lg:w-[523px] w-[340px]  h-auto bg-black lg:ml-[50px] md:ml-[100px] sm:ml-[100px] ml-[100px] mt-[20px]">
 
-                            <Image src="/assets/svgs/Proj1.jpeg" alt="FirstProject" />
+                            <Image src="/assets/svgs/Proj2.jpeg" alt="FirstProject" />
                         </div>
                         <div>
                             <p className="font-istokWeb lg:text-[18px] ml-[20px] mt-[20px]">Featured Project</p>
@@ -116,7 +116,7 @@ export default function Portfolio() {
                         </div>
                         <div className="sm:w-[400px] md:w-[450px] lg:w-[523px] w-[340px]  h-auto bg-black ml-[100px] md:mt-[20px] sm:mt-[20px] lg:mt-[0px] mt-[20px]">
 
-                            <Image src="/assets/svgs/Proj2.jpeg" alt="FirstProject" />
+                            <Image src="/assets/svgs/Proj3.png" alt="FirstProject" />
                         </div>
                     </div>
                 </div>
