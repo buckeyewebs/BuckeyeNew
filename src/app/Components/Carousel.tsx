@@ -46,7 +46,7 @@ const Carousel = () => {
             </div>
             {/* Info Box */}
             <div className="w-[306px] h-[373px] bg-[rgba(112,154,90,0.29)] border border-gray-200 rounded-md flex flex-col items-center justify-center mt-22 pt-12">
-            <p className="w-full h-full px-4 py-4 italic text-center overflow-auto">{item.info}{item.person}</p>
+            <p className="w-full h-full px-4 py-12 italic text-center overflow-auto">{item.info}{item.person}</p>
             </div>
 
 
