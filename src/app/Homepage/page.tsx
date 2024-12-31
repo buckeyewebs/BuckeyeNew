@@ -84,7 +84,11 @@ export default function HomePage(){
                   <Image alt='Marketing' src="/assets/svgs/Marketing.svg" width={88.14} height={88.14} style={{ marginLeft: "134px" }} />
                   <div className="w-[291px] h-[89px] ml-[34px] mr-[35px] flex items-center justify-center space-x-4">
                     <p className="font-lancelot text-[45px]">Website</p>
-                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">Management & Maintenance</p>
+                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">Management</p>
+                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">&</p>
+
+                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">Mantainence</p>
+
                   </div>
                   <div className="w-[294px] h-[76px] ml-[33px] text-[rgba(255,255,255,1)] flex justify-between items-center grid place-items-center">
                     <p className="text-justify">We take care of your website, keeping it secure, updated, and running smoothly.</p>
