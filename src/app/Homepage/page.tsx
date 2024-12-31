@@ -46,7 +46,7 @@ export default function HomePage(){
                 {/* Web Development */}
                 <div className="w-[360px] h-[418px] pt-[57px] ml-[-264px] mt-[40px] border-[3px] border-solid rounded-[16px] mr-[22px]" style={{ borderColor: "rgba(221, 221, 221, 1)" }}>
                   <Image alt='vector' src="/assets/svgs/Vector.svg" width={88.14} height={88.14} style={{ marginLeft: "134px" }} />
-                  <div className="w-[291px] h-[89px] ml-[34px] mr-[35px] flex items-center justify-center space-x-4">
+                  <div className="w-auto h-[89px] ml-[34px] mr-[35px] flex items-center justify-center space-x-4">
                     <p className="font-lancelot text-[45px]">Custom</p>
                     <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">web design</p>
                   </div>
