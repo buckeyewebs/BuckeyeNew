@@ -13,7 +13,7 @@ export default function FAQs() {
     };
 
     return (
-        <div>
+        <div className="max-w-[1440px] mx-auto">
             <Header />
             <div className="min-h-screen flex flex-col justify-center items-center">
                 <div className="w-[1280px] h-[431px] bg-[rgba(70,76,74,0.15)] flex flex-col justify-center items-center space-y-[20px] text-center mt-[-127.25px]">

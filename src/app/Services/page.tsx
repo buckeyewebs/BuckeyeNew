@@ -6,7 +6,7 @@ import Footer from "../Components/Footer"
 import Image from "next/image";
 export default function Services() {
     return (
-        <div>
+        <div className="max-w-[1440px] mx-auto">
             <Header />
             <div className="relative w-full lg:max-w-[1280px] md:max-w-[940px] w-[500px]  md:h-[625px] ">
                 <Image

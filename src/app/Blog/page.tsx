@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 
 export default function Blog() {
     return (
-        <div>
+        <div className="max-w-[1440px] mx-auto">
 
             <Header />
             <div className=" flex justify-center h-auto mt-[79px] mb-[40px] sm:mb-[50px] md:mb-[60px] lg:mb-[71px] ">

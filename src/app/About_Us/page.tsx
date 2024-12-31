@@ -3,7 +3,7 @@ import Footer from "../Components/Footer"
 import Image from "next/image"
 export default function About_Us() {
     return (
-        <div>
+        <div className="max-w-[1440px] mx-auto">
             <Header />
             <div className=" bg-[rgba(w-[600px] sm:w-[780px] md:w-[900px] lg:w-[1280px] h-auto flex flex-col justify-center items-center bg-[rgba(70,76,74,0.15)]">
                 <div className="w-[280px] sm:w-[480px] md:w-[720px] lg:w-[954px] h-auto mt-[10px] sm:mt-[30px] md:mt-[50px] lg:mt-[91px] flex justify-center mb-[20px] sm:mb-[40px] md:mb-[60px] lg:mb-[82px] ">

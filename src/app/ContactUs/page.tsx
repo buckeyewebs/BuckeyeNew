@@ -3,7 +3,7 @@ import Footer from "../Components/Footer";
 import Image from "next/image";
 export default function ContactUs() {
     return (
-        <div>
+        <div className="max-w-[1440px] mx-auto">
             <Header />
             <div className="flex flex-row ml-[20px] sm:ml-[30px] md:ml-[50px] lg:ml-[80px]">
                 <div>

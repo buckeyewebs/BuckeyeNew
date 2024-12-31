@@ -10,7 +10,7 @@ export default function HomePage(){
  
 
     return (
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden max-w-[1440px] mx-auto">
           <Header />
           {/* Main Content */}
           <div className="w-[1280px] h-auto">

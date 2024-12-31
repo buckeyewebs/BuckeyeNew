@@ -164,7 +164,7 @@ const QuoteRequestForm: React.FC = () => {
 
 
   return (
-    <div className="bg-[#D8D8D8]">
+    <div className="bg-[#D8D8D8] max-w-[1440px] mx-auto">
       <Header />
       <div className="text-start mt-10 md:pl-16 px-4 text-[#1E1E1E] md:w-2/3 w-full">
         <h1
