@@ -48,7 +48,9 @@ export default function HomePage(){
                   <Image alt='vector' src="/assets/svgs/Vector.svg" width={88.14} height={88.14} style={{ marginLeft: "134px" }} />
                   <div className="w-auto h-[89px] ml-[34px] mr-[35px] flex items-center justify-center space-x-4">
                     <p className="font-lancelot text-[45px]">Custom</p>
-                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">web design</p>
+                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">web</p>
+                    <p className="font-lancelot text-[45px] text-[rgba(112,154,90,1)]">design</p>
+
                   </div>
                   <div className="w-[294px] h-[76px] ml-[33px] text-[rgba(255,255,255,1)] flex justify-between items-center grid place-items-center">
                     <p className="text-justify">Tailored websites designed to reflect your brand and engage your customers.</p>
