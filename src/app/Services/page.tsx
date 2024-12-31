@@ -21,12 +21,10 @@ export default function Services() {
 
                     }}
                 >
-                    <p className="lg:text-[78px] font-bold font-abhayaLibre text-[rgba(30,30,30,1)] mt-[122px] ml-[80px] mr-[535px] sm:text-[24px]">Revolutionize your</p>
-                    <p className="lg:text-[78px] font-bold font-abhayaLibre text-[rgba(30,30,30,1)]  lg:mt-[-30px] ml-[80px] mr-[535px] sm:text-[24px] sm:mt-[10px]">Digital Presence</p>
+                    <p className="lg:text-[78px] font-bold font-abhayaLibre text-[rgba(30,30,30,1)] mt-[122px] ml-[80px] mr-[535px] sm:text-[24px]">Our Services</p>
                     <div className="lg:w-[645px] w-[200px] h-[130px] ml-[80px] ">
                         <p className="font-istokWeb text-[rgba(0,0,0,1)]  text-[12px] lg:text-[18px] break-words ">
-                            Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
-                        </p>
+                        At BuckeyeWebs, we offer a range of professional services designed to meet the unique needs of your business. Whether you need a new website, ongoing maintenance, or expert SEO services, we are here to help.                        </p>
                         <div className="lg:w-[275px] w-[140px] h-[60px] rounded-[43px] border border-black transition duration-300 ease-in-out hover:bg-black group mt-[18px] flex items-center justify-center">
                             <Link href="/QuoteRequestForm">
                             <button className="text-[rgba(0,0,0,1)] lg:text-[20px]  text-[10px] group-hover:text-white transition duration-300 ease-in-out">
@@ -49,9 +47,9 @@ export default function Services() {
                 <div className=" flex flex-wrap justify-center items-center ">
                     <ServicesComp
                         FrameImage="/assets/svgs/Frame.svg"
-                        title="Web Design and Development"
+                        title="Custom Web Design"
                         subTitle="Custom, responsive and Engaging Websites "
-                        Description="We craft stunning, user-friendly websites tailored to your brand, ensuring seamless performance across all devices.We craft stunning, user-friendly websites tailored to brand, ensuring seamless performance.."
+                        Description="We design websites that are as unique as your business. Our team works with you to create a site that not only looks great but also works seamlessly. Whether you're launching a new business or refreshing your online presence, we'll build a website that fits your goals and speaks to your audience."
 
                         features={["Custom Design", "SEO Optimization", "Responsive Design", "Maintenance"]}
 
@@ -60,8 +58,8 @@ export default function Services() {
                     <ServicesComp
                         FrameImage="/assets/svgs/svg8.svg"
                         title="Search Engine Optimization(SEO)"
-                        subTitle="Custom, responsive and Engaging Websites "
-                        Description="We craft stunning, user-friendly websites tailored to your brand, ensuring seamless performance across all devices.We craft stunning, user-friendly websites tailored to brand, ensuring seamless performance.."
+                        subTitle="Enabling websites to drive more traffic "
+                        Description="We help your website get found by the people who matter most—your customers. Our SEO strategies ensure your site ranks higher on search engines like Google, bringing more traffic your way. From optimizing content to improving site speed, we handle everything to boost your online visibility."
 
                         features={["Custom Design", "SEO Optimization", "Responsive Design", "Maintenance"]}
 
@@ -69,30 +67,18 @@ export default function Services() {
 
                     <ServicesComp
                         FrameImage="/assets/svgs/NewFrane.svg"
-                        title="E-Commerce Solutions"
-                        subTitle="Custom, responsive and Engaging Websites "
-                        Description="We craft stunning, user-friendly websites tailored to your brand, ensuring seamless performance across all devices.We craft stunning, user-friendly websites tailored to brand, ensuring seamless performance.."
+                        title="Website Redesign and Refresh"
+                        subTitle="Redesign for more business"
+                        Description="If your website feels outdated or isn't delivering the results you want, we can help. We’ll give your site a fresh new look, improve user experience, and make sure it works perfectly across all devices. Whether it’s a small refresh or a complete redesign, we’ll make sure your website is ready for the future."
 
                         features={["Custom Design", "SEO Optimization", "Responsive Design", "Maintenance"]}
 
                     />
-
-
-                    <ServicesComp
-                        FrameImage="/assets/svgs/Dollars.svg"
-                        title="Digital Marketing"
-                        subTitle="Custom, responsive and Engaging Websites "
-                        Description="We craft stunning, user-friendly websites tailored to your brand, ensuring seamless performance across all devices.We craft stunning, user-friendly websites tailored to brand, ensuring seamless performance.."
-
-                        features={["Custom Design", "SEO Optimization", "Responsive Design", "Maintenance"]}
-
-                    />
-
                     <ServicesComp
                         FrameImage="/assets/svgs/Globe.svg"
-                        title="Custom Web Solutions"
-                        subTitle="Custom, responsive and Engaging Websites "
-                        Description="We craft stunning, user-friendly websites tailored to your brand, ensuring seamless performance across all devices.We craft stunning, user-friendly websites tailored to brand, ensuring seamless performance.."
+                        title="Website Management and Protection"
+                        subTitle="Custom, responsive and secure Websites "
+                        Description="We take care of your website so you don't have to. From keeping it secure to ensuring it’s always running smoothly, we manage all the behind-the-scenes details. You can trust us to handle updates, backups, and security, giving you peace of mind to focus on your business."
 
                         features={["Custom Design", "SEO Optimization", "Responsive Design", "Maintenance"]}
 
