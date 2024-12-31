@@ -22,20 +22,13 @@ export default function Portfolio() {
                     }}
                 >
                     <p className="lg:text-[68px] md:text-[54px]  w-auto font-bold font-abhayaLibre text-[rgba(30,30,30,1)] lg:mt-[122px] md:mt-[80px] sm:mt-[50px] mt-[35px]  flex justify-center items-center">
-                        Harness Digital Power to
+                        Explore Our Work
                     </p>
-                    <p className="lg:text-[68px] font-bold font-abhayaLibre text-[rgba(30,30,30,1)] lg:mt-[-30px] sm:text-[24px] flex justify-center items-center">
-                        Transform your
-                    </p>
-                    <p className="lg:text-[68px] font-bold font-abhayaLibre text-[rgba(30,30,30,1)] lg:mt-[-30px] sm:text-[24px] sm:mt-[10px] flex justify-center items-center">
-                        Organization
-                    </p>
-
+                    
                     <div className="flex justify-center items-center">
                         <div className="lg:w-[780px] w-[200px] h-auto flex flex-col items-center justify-center">
                             <p className="text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] break-words">
-                                Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
-                            </p>
+                            Take a look at the websites we have built for our amazing clients. Each one tells a story, and we are proud to have helped these businesses grow and succeed online with custom, easy-to-use designs.                            </p>
                             <div className="lg:w-[275px] w-[140px] h-[60px] rounded-[43px] border border-black transition duration-300 ease-in-out hover:bg-black group mt-[18px] flex items-center justify-center">
                                 <Link href="/QuoteRequestForm">
                                 <button className="text-[rgba(0,0,0,1)] lg:text-[20px] text-[10px] group-hover:text-white transition duration-300 ease-in-out">
@@ -68,7 +61,7 @@ export default function Portfolio() {
                         </div>
                         <div className="sm:w-[400px] md:w-[450px] lg:w-[523px] w-[340px]  h-auto bg-black ml-[100px] md:mt-[20px] sm:mt-[20px] lg:mt-[0px] mt-[20px]">
 
-                            <Image src="/assets/svgs/Projectpic1.png" alt="FirstProject" />
+                            <Image src="/assets/svgs/Proj1.jpeg" alt="FirstProject" />
                         </div>
                     </div>
                 </div>
@@ -79,7 +72,7 @@ export default function Portfolio() {
                     <div className="flex flex-row lg:mt-[100px] md:mt-[80px] sm:mt-[60px] mt-[45px]">
                         <div className="sm:w-[400px] md:w-[450px] lg:w-[523px] w-[340px]  h-auto bg-black lg:ml-[50px] md:ml-[100px] sm:ml-[100px] ml-[100px] mt-[20px]">
 
-                            <Image src="/assets/svgs/Projectpic1.png" alt="FirstProject" />
+                            <Image src="/assets/svgs/Proj1.jpeg" alt="FirstProject" />
                         </div>
                         <div>
                             <p className="font-istokWeb lg:text-[18px] ml-[20px] mt-[20px]">Featured Project</p>
@@ -104,7 +97,7 @@ export default function Portfolio() {
                         </div>
                         <div className="sm:w-[400px] md:w-[450px] lg:w-[523px] w-[340px]  h-auto bg-black ml-[100px] md:mt-[20px] sm:mt-[20px] lg:mt-[0px] mt-[20px]">
 
-                            <Image src="/assets/svgs/Projectpic1.png" alt="FirstProject" />
+                            <Image src="/assets/svgs/Proj2.jpeg" alt="FirstProject" />
                         </div>
 
                     </div>
@@ -123,7 +116,7 @@ export default function Portfolio() {
                         </div>
                         <div className="sm:w-[400px] md:w-[450px] lg:w-[523px] w-[340px]  h-auto bg-black ml-[100px] md:mt-[20px] sm:mt-[20px] lg:mt-[0px] mt-[20px]">
 
-                            <Image src="/assets/svgs/Projectpic1.png" alt="FirstProject" />
+                            <Image src="/assets/svgs/Proj2.jpeg" alt="FirstProject" />
                         </div>
                     </div>
                 </div>
