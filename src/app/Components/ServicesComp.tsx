@@ -13,7 +13,7 @@ export default function ServicesComp(props: ServicesProps) {
                 <div className="flex flex-row flex justify-center items-center 5xl:pt-[30px]">
                     <div className="mb-[10px] lg:w-[117px] lg:h-[117px]  md:w-[98px] md:h-[98px] sm:w-[54px] sm:h-[70px] w-[54px] h-[70px] lg:ml-[33px] lg:mt-[19px] md:ml-[25px] md:mt-[15px] sm:ml-[15px] sm:mt-[10px] ml-[10px] mt-[10px] rounded-[24px]">
 
-                        <Image src={props.FrameImage} alt="logo" />
+                        <img src={props.FrameImage} alt="logo" />
 
                     </div>
                     <div className="lg:w-[354px] lg:h-[118px] flex justify-center items-center   md:w-[250px] md:h-[98px] sm:w-[180px] sm:h-[70px] w-[180px] h-[72px] lg:ml-[25px] md:ml-[20px] sm:ml-[10px] ml-[10px] mb-[20px]">
@@ -21,12 +21,8 @@ export default function ServicesComp(props: ServicesProps) {
                     </div>
 
                 </div>
-                <Image src="/assets/svgs/Line.svg" className=" w-[90%] h-[2px] mx-auto mb-[10px] sm:mb-[15px] md:mb-[20px] lg:mb-[25px]" alt="logo" />
-                <div className="lg:w-[499px] h-auto md:w-[250px] h-auto sm:w-[180px] sm:h-[70px] w-[180px] h-[72px] font-abhaya mx-auto lg:mt-[27px] md:mt-[20px] sm:mt-[15px] mt-[10px] flex justify-center items-center">
-                    <p className=" 5xl:text-[38px] 3xl:text-[28px] lg:text-[25px] md:text-[23px] sm:text-[16px] text-[18px]  whitespace-nowrap">
-                        {props.subTitle}
-                    </p>
-                </div>
+                <img src="/assets/svgs/Line.svg" className=" w-[90%] h-[2px] mx-auto mb-[10px] sm:mb-[15px] md:mb-[20px] lg:mb-[25px]" alt="logo" />
+               
                 <div className="flex justify-center items-center">
                     <div className="lg:[w-499px]   h-auto  lg:mt-[29px] md:mt-[0px] sm:mt-[15px] mt-[0px] lg:leading-[28.79px] md:leading-[24px] sm:leading-[20px] leading-[18px] mx-auto flex justify-center lg:ml-[22px] md:ml-[18px] sm:ml-[12px] ml-[8px] lg:mr-[29px] md:mr-[24px] sm:mr-[16px] mr-[10px]">
 
@@ -54,12 +50,12 @@ export default function ServicesComp(props: ServicesProps) {
                     </ul>
                 </div>
                 <div className="flex justify-center">
-  <a href="/ContactUs" className="inline-block">
-    <button className="w-[170px] 5xl:w-[280px] 5xl:h-[85px] h-[35px] lg:w-[210px] lg:h-[53px] md:w-[180px] md:h-[43px] sm:w-[150px] sm:h-[43px] md:mt-[20px] lg:mb-[0px] mt-[10px] bg-[rgba(112,154,90,0.72)] rounded-[20px] flex justify-center items-center mb-[34px] border-[1px] border-black hover:bg-black hover:text-white transition-colors duration-300">
-      <p className="text-[24px] whitespace-nowrap 5xl:text-[44px] font-istokWeb">Learn More</p>
-    </button>
-  </a>
-</div>
+                    <a href="/ContactUs" className="inline-block">
+                        <button className="w-[170px] 5xl:w-[280px] 5xl:h-[85px] h-[35px] lg:w-[210px] lg:h-[53px] md:w-[180px] md:h-[43px] sm:w-[150px] sm:h-[43px] md:mt-[20px] lg:mb-[0px] mt-[10px] bg-[rgba(112,154,90,0.72)] rounded-[20px] flex justify-center items-center mb-[34px] border-[1px] border-black hover:bg-black hover:text-white transition-colors duration-300">
+                            <p className="text-[24px] whitespace-nowrap 5xl:text-[44px] font-istokWeb">Learn More</p>
+                        </button>
+                    </a>
+                </div>
 
 
             </div>
