@@ -23,10 +23,14 @@ export default {
          // Add "Inknut Antiqua" as a custom font
       },
       screens: {
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1280px',
+        sm: '640px',  // Small devices (default)
+        md: '768px',  // Medium devices (default)
+        lg: '1024px', // Large devices (default)
+        xl: '1280px', // Extra large devices (default)
+        '2xl': '1536px', // 2x extra large (default)
+        '3xl': '1920px', // 3x extra large
+        '4xl': '2560px', // 4x extra large
+        '5xl': '3200px',
       },
       boxShadow: {
         custom: '0 4px 6px rgba(214, 214, 214, 0.14)',

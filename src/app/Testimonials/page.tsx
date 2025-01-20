@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Testimonials() {
     return (
-        <div className="max-w-[1440px] mx-auto">
+        <div>
             <Header />
 
 

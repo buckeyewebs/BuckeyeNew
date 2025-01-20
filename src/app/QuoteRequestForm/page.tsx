@@ -155,27 +155,25 @@ const QuoteRequestForm: React.FC = () => {
   // Get service label
   const getServiceLabel = (value: string): string => {
     const services: { [key: string]: string } = {
-      "web-development": "Web Development",
-      "ui-ux": "UI/UX Design",
-      "mobile-app": "Mobile App Development",
+      "Custom Website Design": "Custom Website Design",
+      "Website Management & Protection": "Website Management & Protection",
+      "Website Redesign & Refresh": "Website Redesign & Refresh",
     };
     return services[value] || value;
   };
 
 
   return (
-    <div className="bg-[#D8D8D8] max-w-[1440px] mx-auto">
+    <div className="bg-[#D8D8D8]">
       <Header />
       <div className="text-start mt-10 md:pl-16 px-4 text-[#1E1E1E] md:w-2/3 w-full">
         <h1
           className="text-4xl md:text-5xl font-abhayaLibre"
           style={{ lineHeight: "4rem" }}
         >
-          Get your Estimated Budget Today
+          Enter Project Details For A Free Estimate
         </h1>
-        <p className="text-[#2E2E2E] mt-2 text-opacity-65">
-          Morem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+        
       </div>
 
       <div className="max-w-4xl mx-auto mt-10 md:px-0 px-2">
@@ -288,9 +286,9 @@ const QuoteRequestForm: React.FC = () => {
                   onChange={handleInputChange}
                 >
                   <option value="">Choose your desired services</option>
-                  <option value="web-development">Web Development</option>
-                  <option value="ui-ux">UI/UX Design</option>
-                  <option value="mobile-app">Mobile App Development</option>
+                  <option value="web-development">Custom Web Design</option>
+                  <option value="ui-ux">Website Management & Protection</option>
+                  <option value="mobile-app">Website Redesign & Refresh</option>
                 </select>
                 {errors.services && (
                   <p className="text-red-500 text-sm">{errors.services}</p>
@@ -358,7 +356,7 @@ const QuoteRequestForm: React.FC = () => {
               </div>
               <div className="mb-4 w-full md:w-2/3 space-y-3">
                 <label className="block text-gray-700">
-                  Preferred Timeline
+                Preferred Project Completion Time
                 </label>
                 <input
                   className={`w-full p-2 border rounded-xl ${errors.preferredTimeline ? "border-red-500" : ""
@@ -374,29 +372,7 @@ const QuoteRequestForm: React.FC = () => {
                   </p>
                 )}
               </div>
-              <div className="mb-4 w-full md:w-2/3 space-y-3">
-                <label className="block text-gray-700">
-                  Estimated Project Duration
-                </label>
-                <select
-                  className={`w-full p-2 border rounded-xl ${errors.projectDuration ? "border-red-500" : ""
-                    }`}
-                  name="projectDuration"
-                  value={formData.projectDuration}
-                  onChange={handleInputChange}
-                >
-                  <option value="">Select project duration</option>
-                  <option value="1-3">1-3 months</option>
-                  <option value="3-6">3-6 months</option>
-                  <option value="6-12">6-12 months</option>
-                  <option value="12+">12+ months</option>
-                </select>
-                {errors.projectDuration && (
-                  <p className="text-red-500 text-sm">
-                    {errors.projectDuration}
-                  </p>
-                )}
-              </div>
+              
               <div className="flex flex-col items-end gap-y-3">
                 <button
                   onClick={handleBack}
