@@ -13,7 +13,7 @@ export default function ServicesComp(props: ServicesProps) {
                 <div className="flex flex-row flex justify-center items-center 5xl:pt-[30px]">
                     <div className="mb-[10px] lg:w-[117px] lg:h-[117px]  md:w-[98px] md:h-[98px] sm:w-[54px] sm:h-[70px] w-[54px] h-[70px] lg:ml-[33px] lg:mt-[19px] md:ml-[25px] md:mt-[15px] sm:ml-[15px] sm:mt-[10px] ml-[10px] mt-[10px] rounded-[24px]">
 
-                        <img src={props.FrameImage} alt="logo" />
+                        <Image src={props.FrameImage} alt="logo" />
 
                     </div>
                     <div className="lg:w-[354px] lg:h-[118px] flex justify-center items-center   md:w-[250px] md:h-[98px] sm:w-[180px] sm:h-[70px] w-[180px] h-[72px] lg:ml-[25px] md:ml-[20px] sm:ml-[10px] ml-[10px] mb-[20px]">
@@ -21,7 +21,7 @@ export default function ServicesComp(props: ServicesProps) {
                     </div>
 
                 </div>
-                <img src="/assets/svgs/Line.svg" className=" w-[90%] h-[2px] mx-auto mb-[10px] sm:mb-[15px] md:mb-[20px] lg:mb-[25px]" alt="logo" />
+                <Image src="/assets/svgs/Line.svg" className=" w-[90%] h-[2px] mx-auto mb-[10px] sm:mb-[15px] md:mb-[20px] lg:mb-[25px]" alt="logo" />
                
                 <div className="flex justify-center items-center">
                     <div className="lg:[w-499px]   h-auto  lg:mt-[29px] md:mt-[0px] sm:mt-[15px] mt-[0px] lg:leading-[28.79px] md:leading-[24px] sm:leading-[20px] leading-[18px] mx-auto flex justify-center lg:ml-[22px] md:ml-[18px] sm:ml-[12px] ml-[8px] lg:mr-[29px] md:mr-[24px] sm:mr-[16px] mr-[10px]">
