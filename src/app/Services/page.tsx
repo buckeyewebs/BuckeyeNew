@@ -87,7 +87,7 @@ export default function Services() {
                         FrameImage="/assets/svgs/Dollars.svg"
                         title="Website Redesign & Refresh"
                         subTitle="Custom, responsive and Engaging Websites "
-                        Description="If your website feels outdated or isn't delivering the results you want, we can help. We will give your site a fresh new look, improve user experience, and make sure it works perfectly across all devices. Whether it’s a small refresh or a complete redesign, we’ll make sure your website is ready for the future."
+                        Description="If your website feels outdated or isn't delivering the results you want, we can help. We will give your site a fresh new look, improve user experience, and make sure it works perfectly across all devices."
 
                         features={["Custom Design", "SEO Optimization", "Responsive Design", "Maintenance"]}
 
