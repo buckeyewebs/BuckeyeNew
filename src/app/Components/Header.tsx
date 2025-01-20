@@ -81,7 +81,7 @@ export default function Header() {
 
       {/* Mobile Menu (visible only when the hamburger menu is open) */}
       {isMenuOpen && (
-        <div className="absolute top-[100px] right-0 w-[250px] bg-white py-4 lg:hidden z-10">
+        <div className="absolute top-[68px] right-0 w-[250px] bg-white py-4 lg:hidden z-10">
           <a href="/Homepage" className="block text-black font-istok text-[17px]  text-center py-2">Home</a>
           <a href="/Services" className="block text-black font-istok text-[17px] text-center py-2">Services</a>
           <a href="/Portfolio" className="block text-black font-istok text-[17px] text-center py-2">Portfolio</a>
