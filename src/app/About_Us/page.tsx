@@ -15,7 +15,7 @@ export default function About_Us() {
                         }}
                     ></div>
 
-                    <p className="relative font-abhaya md:text-[88px] text-[68px] 4xl:text-[190px] 5xl:text-[220px]">Who we are</p>
+                    <p className="relative font-abhaya md:text-[88px] text-[48px] 4xl:text-[190px] 5xl:text-[220px] whitespace-nowrap">Who we are</p>
 
                 </div>
                 <div className=" mb-[10%] m-[5%] mt-[4%] ">
@@ -70,7 +70,7 @@ export default function About_Us() {
                         }}
                     ></div>
 
-                    <p className="relative font-abhaya text-[58px]  md:text-[88px] 4xl:text-[190px] 5xl:text-[220px] whitespace nowrap">Meet Our Team</p>
+                    <p className="relative font-abhaya text-[48px]  md:text-[88px] 4xl:text-[190px] 5xl:text-[220px] whitespace-nowrap">Meet Our Team</p>
 
                 </div>
 
