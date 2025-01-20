@@ -48,7 +48,7 @@ export default function Footer() {
                     <p className="font-inknut text-[15px] md:text-[20px] lg:text-[20px] xl:text-[22px] 2xl:text-[30px] 3xl:text-[35px] 4xl:text-[59px] 5xl:text-[59px]  mb-4">GET IN TOUCH</p>
                     <div className="flex flex-col space-y-4">
                             <div className="flex items-center">
-                                <Image src="/assets/svgs/envelope.svg" alt="Email" className="w-6 h-auto w-auto mr-3" />
+                                <Image src="/assets/svgs/envelope.svg" alt="Email" className="h-auto w-auto mr-3" />
                                 <a href="#" className="lg:text-[12px] md:text-[10px] sm:text-[18px] 3xl:text-[25px] 4xl:text-[30px]  5xl:text-[40px] font-inknut">info@buckeyewebs.com</a>
                             </div>
                         <div className="flex items-center">
