@@ -51,7 +51,7 @@ export default function Portfolio() {
             {/* Image and Overlay Section */}
             <div className="relative w-full h-auto mb-[8%]">
                 <Image
-                    src="/assets/svgs/PortfolioNew.png"
+                    src="/assets/svgs/Portfolionew.png"
                     alt="services"
                     className="w-full max-h-[1600px]  h-auto "
                 />
