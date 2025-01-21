@@ -86,7 +86,9 @@ export default function About_Us() {
                 <div className=" mb-[10%] m-[5%] mt-[4%] ">
                     <p className="font-inknut  text-[24px]   md:text-[24px] lg:text-[30px] xl:text-[32px] 2xl:text-[40px] 3xl:text-[45px]  4xl:text-[60px] 5xl:text-[68px] ">BUCKEYE</p>
                     <p className="font-inknut lg:text-[26px]  text-[20px]   md:text-[24px] lg:text-[27px] xl:text-[32px] 2xl:text-[40px] 3xl:text-[45px]  4xl:text-[55px] 5xl:text-[68px] ">-WEB SOLUTIONS-</p>
-                    <p className="w-auto  5xl:w-auto   text-justify h-auto font-istokWeb text-[16px] md:text-[22px] lg:text-[30px] xl:text-[30px] 2xl:text-[36px] 3xl:text-[42px] 4xl:text-[62px] 5xl:text-[79px]">Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
+                    <p className="w-auto  5xl:w-auto   text-justify h-auto font-istokWeb text-[16px] md:text-[22px] lg:text-[30px] xl:text-[30px] 2xl:text-[36px] 3xl:text-[42px] 4xl:text-[62px] 5xl:text-[79px]">Founded in 2024, BuckeyeWebs began with a vision to make high-quality web design accessible to small businesses. Since its inception, we have crafted impactful websites that help businesses connect with customers. Our mission is to empower businesses by delivering functional and efficient websites that engage and convert visitors. We are dedicated to offering outstanding service and continuous support to keep your website secure, up-to-date, and performing at its best. We envision a world where small businesses are equipped with the necessary tools to thrive online, and we strive to make web design and management simple, affordable, and effective for all.
+
+</p>
                 </div>
 
 
