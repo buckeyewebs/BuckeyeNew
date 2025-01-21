@@ -80,7 +80,7 @@ export default function About_Us() {
                         }}
                     ></div>
 
-                    <p className="relative font-abhaya md:text-[88px] text-[68px] 4xl:text-[190px] 5xl:text-[220px]">Who we are</p>
+                    <p className="relative font-abhaya md:text-[88px] text-[58px] 4xl:text-[190px] 5xl:text-[220px]">Who we are</p>
 
                 </div>
                 <div className=" mb-[10%] m-[5%] mt-[4%] ">
