@@ -1,7 +1,54 @@
+"use client"
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 export default function ContactUs() {
+    
+    const [animateFirst, setAnimateFirst] = useState(false);
+    const [animateSecond, setAnimateSecond] = useState(false);
+
+    useEffect(() => {
+        // Observer for first element
+        const observerFirst = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setAnimateFirst(true); // Trigger animation when in view
+                } else {
+                    setAnimateFirst(true); // Reset animation when out of view
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        const elementFirst = document.querySelector(".animate-first");
+        if (elementFirst) observerFirst.observe(elementFirst);
+
+        // Observer for second element
+        const observerSecond = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setAnimateSecond(true); // Trigger animation when in view
+                } else {
+                    setAnimateSecond(true); // Reset animation when out of view
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        const elementSecond = document.querySelector(".animate-second");
+        if (elementSecond) observerSecond.observe(elementSecond);
+
+        // Observer for third element
+        
+
+        
+        return () => {
+            if (elementFirst) observerFirst.unobserve(elementFirst);
+            if (elementSecond) observerSecond.unobserve(elementSecond);
+        };
+    }, []);
+
     return (
         <div>
             <Header />
@@ -22,7 +69,11 @@ export default function ContactUs() {
 
                     <div className="w-auto  4xl:pl-10 4xl:pr-10  h-auto bg-[rgba(70,76,74,0.15)] flex justify-center md:rounded-l-[23px] ">
                         <div className="w-auto sm:m-7  h-auto xl:pl-12 xl:pr-12">
-                            <p className="font-abhaya  p-2 text-[35px] sm:text-[35px] md:text-[40px] lg:text-[60px] 3xl:text-[69px] 4xl:text-[79px] 5xl:text-[89px] font-bold sm:font-normal md:font-medium lg:font-normal">Send us a message</p>
+                        <p
+                                className={` animate-first  font-abhaya  p-2 text-[35px] sm:text-[35px] md:text-[40px] lg:text-[60px] 3xl:text-[69px] 4xl:text-[79px] 5xl:text-[89px] font-bold sm:font-normal md:font-medium lg:font-normal transform ${animateFirst ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
+                                    } `}
+                            >
+                            Send us a message</p>
                             <div className="flex flex-row w-full mt-2 sm:gap-2 md:gap-6">
                                 <div className="flex-1 p-4">
                                     <input
@@ -60,7 +111,11 @@ export default function ContactUs() {
 
                     <div className=" w-auto xl:pl-12 xl:pr-12 4xl:pl-10 4xl:pr-10 mt-[12px] md:mt-[0px] h-auto flex justify-center items-center  md:bg-[rgba(112,154,90,1)] rounded-r-[23px]  flex md:flex-col sm:flex-row">
                         <Image alt="Comp person" className="sm:block hidden" src="/assets/svgs/Comp_person.png" />
-                        <div >
+                        
+                        <div
+                                className={` animate-second transition duration-300 ease-in-out transform ${animateSecond ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
+                                    } `}
+                            >
                             <button className="flex flex-row justify-center  bg-[rgba(255,255,255,1)] rounded-[11px] w-auto p-4 mt-3 h-auto outline outline-black hover:scale-105 transition-all duration-200 ">
                                 <p className="font-istokWeb text-[26px] 5xl:text-[38px] ">Send Now</p>
                             </button>

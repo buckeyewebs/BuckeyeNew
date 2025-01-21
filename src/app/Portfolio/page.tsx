@@ -1,9 +1,49 @@
+"use client"
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Link from 'next/link';
 import Image from "next/image";
-
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 export default function Portfolio() {
+    const [isVisible, setIsVisible] = useState(false);
+    const [animate, setAnimate] = useState(false);
+    const [isVisible2, setIsVisible2] = useState(false);
+
+
+    const { ref: ref1 } = useInView({
+        threshold: 0.2, // Trigger when 20% of the element is visible
+        onChange: (inView) => setIsVisible(inView),
+    });
+
+    const { ref: ref2 } = useInView({
+        threshold: 0.2,
+        onChange: (inView) => setIsVisible2(inView),
+      });
+
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setAnimate(true); // Trigger animation when in view
+                } else {
+                    setAnimate(false); // Reset animation when out of view
+                }
+            },
+            { threshold: 0.5 } // Trigger when 50% of the component is visible
+        );
+
+        const element = document.querySelector(".animate-container");
+        if (element) observer.observe(element);
+
+        return () => {
+            if (element) observer.unobserve(element);
+        };
+    }, []);
+
+
     return (
         <div>
             <Header />
@@ -11,7 +51,7 @@ export default function Portfolio() {
             {/* Image and Overlay Section */}
             <div className="relative w-full h-auto mb-[8%]">
                 <Image
-                    src="/assets/svgs/BgImg.png"
+                    src="/assets/svgs/PortfolioNew.png"
                     alt="services"
                     className="w-full max-h-[1600px]  h-auto "
                 />
@@ -21,7 +61,11 @@ export default function Portfolio() {
                         backdropFilter: 'blur(0.8px)',
                     }}
                 >
-                    <div className="flex items-center justify-center flex-col  ">
+                    <div
+                        ref={ref1}
+                        className={` flex items-center justify-center flex-col  transition-transform duration-700 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
+                            }`}
+                    >
                     <p className="lg:text-[68px] 2xl:text-[88px] text-[24px] 3xl:text-[108px]  4xl:text-[128px]  5xl:text-[148px] md:text-[35px] w-auto font-bold font-abhayaLibre text-[rgba(30,30,30,1)] leading-tight ">
                     Explore Our Work
                     </p>
@@ -30,9 +74,15 @@ export default function Portfolio() {
 
                     <div className="flex justify-center items-center ">
                         <div className="w-full md:w-[600px]  max-w-[800px]  h-auto flex flex-col items-center justify-center">
-                            <p className="sm:block hidden text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]  ">
+                            <p
+                                className={` animate-container  sm:block hidden text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]   transition duration-300 ease-in-out transform ${animate ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
+                                    } `}
+                            >
                             Take a look at the websites we’ve built for our amazing clients. Each one tells a story, and we’re proud to have helped these businesses grow and succeed online with custom, easy-to-use designs.    </p>
-                            <div className="w-auto h-auto pl-7 pr-7 sm:pt-5 sm:pb-5 pt-[7%] pb-[7%]  rounded-[43px] border border-black transition duration-300 ease-in-out hover:bg-black group mt-[5%] flex items-center justify-center">
+                            <div
+                                className={` w-auto h-auto pl-7 pr-7 sm:pt-5 sm:pb-5 pt-[7%] pb-[7%]  rounded-[43px] border border-black transition duration-300 ease-in-out hover:bg-black group mt-[5%] flex items-center justify-center transition duration-300 ease-in-out transform ${animate ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
+                                    } hover:bg-black hover:text-white group`}
+                            >
                                 <Link href="/QuoteRequestForm">
                                 <button className="text-[rgba(0,0,0,1)] lg:text-[20px] 4xl:text-[44px] 5xl:text-[72px] 3xl:text-[32px] 2xl:text-[25px] md:text-[18px] whitespace-nowrap text-[15px] group-hover:text-white transition duration-300 ease-in-out">
                                     Get in touch now
@@ -46,7 +96,11 @@ export default function Portfolio() {
 
             {/* New Section Below */}
             <div className="flex justify-center items-center">
-                <div className="w-auto  pt-[1%] pb-[1%] pr-[5%] pl-[5%]   h-auto flex justify-center items-center bg-custom-gradient  rounded-[29px]">
+                <div
+                        ref={ref2}
+                        className={` "w-auto  pt-[1%] pb-[1%] pr-[5%] pl-[5%]   h-auto flex justify-center items-center bg-custom-gradient  rounded-[29px] transition-transform duration-700 ease-out ${isVisible2 ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
+                            }`}
+                    >
                     <p className="font-abhayaLibre  whitespace-nowrap 5xl:text-[120px] 4xl:text-[100px] 3xl:text-[80px] 2xl:text-[60px] lg:text-[60px] text-[30px]">Recent Projects</p>
                 </div>
             </div>

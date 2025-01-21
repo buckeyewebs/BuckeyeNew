@@ -4,7 +4,47 @@ import Link from 'next/link';
 import ServicesComp from "../Components/ServicesComp"
 import Footer from "../Components/Footer"
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 export default function Services() {
+    const [isVisible, setIsVisible] = useState(false);
+    const [animate, setAnimate] = useState(false);
+    const [isVisible2, setIsVisible2] = useState(false);
+
+
+    const { ref: ref1 } = useInView({
+        threshold: 0.2, // Trigger when 20% of the element is visible
+        onChange: (inView) => setIsVisible(inView),
+    });
+
+    const { ref: ref2 } = useInView({
+        threshold: 0.2,
+        onChange: (inView) => setIsVisible2(inView),
+      });
+
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setAnimate(true); // Trigger animation when in view
+                } else {
+                    setAnimate(false); // Reset animation when out of view
+                }
+            },
+            { threshold: 0.5 } // Trigger when 50% of the component is visible
+        );
+
+        const element = document.querySelector(".animate-container");
+        if (element) observer.observe(element);
+
+        return () => {
+            if (element) observer.unobserve(element);
+        };
+    }, []);
+
+
     return (
         <div>
             <Header />
@@ -21,21 +61,32 @@ export default function Services() {
 
                     }}
                 >
-                    <div className="flex flex-col">
+                    <div
+                        ref={ref1}
+                        className={` flex flex-col transition-transform duration-700 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
+                            }`}
+                    >
 
-                    <p className="lg:text-[68px] 2xl:text-[88px] text-[24px] 3xl:text-[108px]  4xl:text-[128px]  5xl:text-[148px] md:text-[35px] w-auto font-bold font-abhayaLibre text-[rgba(30,30,30,1)] leading-tight ">Our Sevices</p>
-                   
+                        <p className="lg:text-[68px] 2xl:text-[88px] text-[24px] 3xl:text-[108px]  4xl:text-[128px]  5xl:text-[148px] md:text-[35px] w-auto font-bold font-abhayaLibre text-[rgba(30,30,30,1)] leading-tight ">Our Sevices</p>
+
 
                     </div>
-                    <div className="flex justify-center items-center ">
+                    <div className=" flex justify-center items-center ">
                         <div className="w-full md:w-[600px]  max-w-[800px]  h-auto flex flex-col items-center justify-center">
-                            <p className="sm:block hidden text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]  ">
-                            At BuckeyeWebs, we offer a range of professional services designed to meet the unique needs of your business. Whether you need a new website, ongoing maintenance, or expert SEO services, we are here to help.  </p>
-                            <div className="w-auto h-auto pl-7 pr-7 sm:pt-5 sm:pb-5 pt-[7%] pb-[7%]  rounded-[43px] border border-black transition duration-300 ease-in-out hover:bg-black group mt-[5%] flex items-center justify-center">
+
+                            <p
+                                className={` animate-container  sm:block hidden text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px] transition duration-300 ease-in-out transform ${animate ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
+                                    } `}
+                            >
+                                At BuckeyeWebs, we offer a range of professional services designed to meet the unique needs of your business. Whether you need a new website, ongoing maintenance, or expert SEO services, we are here to help.  </p>
+                            <div
+                                className={` w-auto h-auto pl-7 pr-7 sm:pt-5 sm:pb-5 pt-[7%] pb-[7%]  rounded-[43px] border border-black transition duration-300 ease-in-out hover:bg-black group mt-[5%] flex items-center justify-centertransition duration-300 ease-in-out transform ${animate ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
+                                    } hover:bg-black hover:text-white group`}
+                            >
                                 <Link href="/QuoteRequestForm">
-                                <button className="text-[rgba(0,0,0,1)] lg:text-[20px] 4xl:text-[44px] 5xl:text-[72px] 3xl:text-[32px] 2xl:text-[25px] md:text-[18px] whitespace-nowrap text-[15px] group-hover:text-white transition duration-300 ease-in-out">
-                                    Get in touch now
-                                </button>
+                                    <button className="text-[rgba(0,0,0,1)] lg:text-[20px] 4xl:text-[44px] 5xl:text-[72px] 3xl:text-[32px] 2xl:text-[25px] md:text-[18px] whitespace-nowrap text-[15px] group-hover:text-white transition duration-300 ease-in-out">
+                                        Get in touch now
+                                    </button>
                                 </Link>
                             </div>
                         </div>
@@ -45,7 +96,11 @@ export default function Services() {
             </div>
 
             <div className="flex items-center justify-center  ">
-                <div className="relative w-full h-auto flex items-center justify-center mt-[5%]">
+                <div
+                        ref={ref2}
+                        className={` "relative w-full h-auto flex items-center justify-center mt-[5%] transition-transform duration-700 ease-out ${isVisible2 ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
+                            }`}
+                    >
                     <p className="font-abhayaLibre  whitespace-nowrap 5xl:text-[120px] 4xl:text-[100px] 3xl:text-[80px] 2xl:text-[60px] lg:text-[60px] md:text-[40px] text-[30px]">Services we offer</p>
                 </div>
             </div>
@@ -87,13 +142,13 @@ export default function Services() {
                         FrameImage="/assets/svgs/Dollars.svg"
                         title="Website Redesign & Refresh"
                         subTitle="Custom, responsive and Engaging Websites "
-                        Description="If your website feels outdated or isn't delivering the results you want, we can help. We will give your site a fresh new look, improve user experience, and make sure it works perfectly across all devices."
+                        Description="If your website feels outdated or isn't delivering the results you want, we can help. We will give your site a fresh new look, improve user experience, and make sure it works perfectly across all devices. Whether it’s a small refresh or a complete redesign, we’ll make sure your website is ready for the future."
 
                         features={["Custom Design", "SEO Optimization", "Responsive Design", "Maintenance"]}
 
                     />
 
-                    
+
 
 
                 </div>

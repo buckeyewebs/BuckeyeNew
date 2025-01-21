@@ -9,7 +9,7 @@ interface ServicesProps {
 export default function ServicesComp(props: ServicesProps) {
     return (
         <div className="">
-            <div className="lg:w-[550px] md:w-[440px] 5xl:w-[750px] sm:w-[230px]  w-[380px] 5xl:h-[1130px] lg:h-[700px] 3xl:h-[770px] md:h-[650px] sm:h-[580px] h-[500px] bg-[rgba(70,76,74,0.15)] mt-[41px] ml-[18px] rounded-[24px] mr-[17px]">
+            <div className="lg:w-[550px] md:w-[440px] 5xl:w-[750px] sm:w-[230px]  w-[380px] 5xl:h-[1260px] lg:h-[700px] 3xl:h-[920px] md:h-[650px] sm:h-[580px] h-[500px] bg-[rgba(70,76,74,0.15)] mt-[41px] ml-[18px] rounded-[24px] mr-[17px]">
                 <div className="flex flex-row flex justify-center items-center 5xl:pt-[30px]">
                     <div className="mb-[10px] lg:w-[117px] lg:h-[117px]  md:w-[98px] md:h-[98px] sm:w-[54px] sm:h-[70px] w-[54px] h-[70px] lg:ml-[33px] lg:mt-[19px] md:ml-[25px] md:mt-[15px] sm:ml-[15px] sm:mt-[10px] ml-[10px] mt-[10px] rounded-[24px]">
 
@@ -50,12 +50,12 @@ export default function ServicesComp(props: ServicesProps) {
                     </ul>
                 </div>
                 <div className="flex justify-center">
-                    <a href="/ContactUs" className="inline-block">
-                        <button className="w-[170px] 5xl:w-[280px] 5xl:h-[85px] h-[35px] lg:w-[210px] lg:h-[53px] md:w-[180px] md:h-[43px] sm:w-[150px] sm:h-[43px] md:mt-[20px] lg:mb-[0px] mt-[10px] bg-[rgba(112,154,90,0.72)] rounded-[20px] flex justify-center items-center mb-[34px] border-[1px] border-black hover:bg-black hover:text-white transition-colors duration-300">
-                            <p className="text-[24px] whitespace-nowrap 5xl:text-[44px] font-istokWeb">Learn More</p>
-                        </button>
-                    </a>
-                </div>
+  <a href="/ContactUs" className="inline-block">
+    <button className="w-[170px] 5xl:w-[280px] 5xl:h-[85px] h-[35px] lg:w-[210px] lg:h-[53px] md:w-[180px] md:h-[43px] sm:w-[150px] sm:h-[43px] md:mt-[20px] lg:mb-[0px] mt-[10px] bg-[rgba(112,154,90,0.72)] rounded-[20px] flex justify-center items-center mb-[34px] border-[1px] border-black hover:bg-black hover:text-white transition-colors duration-300">
+      <p className="text-[24px] whitespace-nowrap 5xl:text-[44px] font-istokWeb">Learn More</p>
+    </button>
+  </a>
+</div>
 
 
             </div>
