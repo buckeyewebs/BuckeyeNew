@@ -17,7 +17,7 @@ export const POST = async (req: Request) => {
 
     // Mail options
     const mailOptions = {
-      from: '"Your Name" <fatimaabbasi270@gmail.com>',
+      from: '"Your Name" <buckeywebs@gmail.com>',
       to: email,
       subject: "Business Information",
       html: `
