@@ -14,7 +14,7 @@ export default function Header() {
     <div className="w-full h-auto bg-[rgba(112,154,90,1)]">
       <div className="w-full h-auto   flex flex-row flex justify-between ">
         <div className='flex flex-row items-center w-full h-auto   '>
-          <img
+          <Image
             alt='logo'
             src="/assets/svgs/logo.svg"
             // width={108}
