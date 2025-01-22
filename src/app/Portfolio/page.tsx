@@ -66,14 +66,15 @@ export default function Portfolio() {
 
     
 
-    return (
+    
+      return (
         <div>
             <Header />
 
             {/* Image and Overlay Section */}
             <div className="relative w-full h-auto mb-[8%]">
                 <Image
-                    src="/assets/svgs/Portfolionew.png"
+                    src="/assets/svgs/PortfolioNew.png"
                     alt="services"
                     className="w-full max-h-[1600px]  h-auto "
                 />
@@ -88,7 +89,7 @@ export default function Portfolio() {
                         className={` flex items-center justify-center flex-col  transition-transform duration-700 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
                             }`}
                     >
-                    <p className="lg:text-[68px] 2xl:text-[88px] text-[24px] 3xl:text-[108px]  4xl:text-[128px]  5xl:text-[148px] md:text-[35px] w-auto font-bold font-abhayaLibre text-[rgba(30,30,30,1)] leading-tight ">
+                    <p className="lg:text-[48px] 2xl:text-[68px] text-[24px] 3xl:text-[88px]  4xl:text-[98px]  5xl:text-[128px] md:text-[35px] w-auto font-bold font-abhayaLibre text-[rgba(30,30,30,1)] leading-tight ">
                     Explore Our Work
                     </p>
                     
@@ -97,7 +98,7 @@ export default function Portfolio() {
                     <div className="flex justify-center items-center ">
                         <div className="w-full md:w-[600px]  max-w-[800px]  h-auto flex flex-col items-center justify-center">
                             <p
-                                className={` animate-first  sm:block hidden text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]   transition duration-300 ease-in-out transform ${animateFirst ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
+                                className={` animate-first  sm:block hidden text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] sm:block hidden text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]   transition duration-300 ease-in-out transform ${animateFirst ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
                                     } `}
                             >
                             Take a look at the websites we’ve built for our amazing clients. Each one tells a story, and we’re proud to have helped these businesses grow and succeed online with custom, easy-to-use designs.    </p>

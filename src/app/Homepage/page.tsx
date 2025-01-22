@@ -25,7 +25,24 @@ export default function HomePage() {
     onChange: (inView) => setIsVisible2(inView),
   });
 
+  const [message, setMessage] = useState("");
 
+  useEffect(() => {
+      // Get the message from localStorage
+      const storedMessage = localStorage.getItem("homepageMessage");
+      if (storedMessage) {
+          setMessage(storedMessage);
+
+          // Clear the message after 15 seconds
+          const timer = setTimeout(() => {
+              setMessage("");
+              localStorage.removeItem("homepageMessage");
+          }, 15000);
+
+          // Cleanup timer
+          return () => clearTimeout(timer);
+      }
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -50,12 +67,20 @@ export default function HomePage() {
   return (
     <div className="overflow-x-hidden">
       <Header />
+      <div>
+            {message && (
+                <div className="bg-green-500 text-white p-4 rounded-md mb-4">
+                    {message}
+                </div>
+            )}
+            
+        </div>
       <div className="w-full h-auto animate-container">
         <div className="w-full h-auto flex justify-between items-center pt-[5%] flex-row">
           {/* Text and Button Section */}
           <div className={`ml-[3%] mb-[5%] w-auto h-auto ${animate ? "animate-slide-in-left" : ""}`}>
             {/* Animated Heading */}
-            <p className="p-3 font-lancelot xl:text-[78px] 2xl:text-[88px] 3xl:text-[95px] 4xl:text-[140px] 5xl:text-[180px] lg:text-[68px] tracking-tight leading-[1.3] text-[40px] sm:text-[46px] md:text-[58px]">
+            <p className="p-3 font-lancelot tracking-tight leading-[1.3] xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px]">
               Building Websites <br />
               that grow your <br />
               business
@@ -76,7 +101,7 @@ export default function HomePage() {
 
           {/* Image Section */}
           <div
-            className={`hidden sm:block pb-2 md:w-[40%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%] 3xl:w-[40%] 4xl:w-[35%] 5xl:w-[30%] h-auto mr-[3%] ${animate ? "animate-slide-in-right" : ""
+            className={`hidden sm:block pb-2 md:w-[35%] lg:w-[35%] xl:w-[35%] 2xl:w-[30%] 3xl:w-[30%] 4xl:w-[30%] 5xl:w-[30%] h-auto mr-[3%] ${animate ? "animate-slide-in-right" : ""
               }`}
           >
             <Image
@@ -96,8 +121,8 @@ export default function HomePage() {
             className={`w-full flex flex-row justify-center items-center space-x-2 transition-transform duration-700 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
               }`}
           >
-            <p className="font-lancelot text-[78px] xl:text-[84px] 2xl:text-[98px] 3xl:text-[95px] 4xl:text-[105px] 5xl:text-[200px] lg:text-[68px] ">What we</p>
-            <p className="font-lancelot text-[78px] xl:text-[84px] 2xl:text-[98px] 3xl:text-[95px] 4xl:text-[105px] 5xl:text-[200px] lg:text-[68px]  pl-[0.5%] text-[rgba(112,154,90,1)] ">provide</p>
+            <p className="font-lancelot  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px]">What we</p>
+            <p className="font-lancelot  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px]  pl-[0.5%] text-[rgba(112,154,90,1)] ">provide</p>
           </div>
           <div className="w-[100%] mt-[3%]  mb-[3%] flex flex-row justify-center items-center">
             {/* Web Development */}
@@ -115,7 +140,7 @@ export default function HomePage() {
 
                 <div className='flex items-center justify-center ml-[1%] mr-[1%]'>
                   <div className="w-full h-auto text-[rgba(255,255,255,1)] p-5">
-                    <p className=" text-justify text-[15px] md:text-[20px] lg:text-[20px] xl:text-[30px] 2xl:text-[38px] text-3xl 4xl:text-[50px] 5xl:text-[69px] text-sm leading-tight">Tailored websites designed to reflect your brand and engage your customers.</p>
+                    <p className=" text-justify text-[15px] md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[24px] 3xl:text-[25px] 4xl:text-[35px] 5xl:text-[49px] text-sm leading-tight">Tailored websites designed to reflect your brand and engage your customers.</p>
                   </div>
                 </div>
               </div>
@@ -134,7 +159,7 @@ export default function HomePage() {
 
                 <div className='flex items-center ml-[1%] mr-[1%] justify-center'>
                   <div className="w-full h-auto text-[rgba(255,255,255,1)] p-5">
-                    <p className="text-[15px] md:text-[20px] lg:text-[20px] xl:text-[30px] 2xl:text-[38px] text-3xl 4xl:text-[50px] 5xl:text-[69px] text-justify text-sm leading-tight">Optimized websites to improve your visibility and drive traffic to your business.</p>
+                    <p className="text-[15px] md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[24px] 3xl:text-[25px] 4xl:text-[35px] 5xl:text-[49px] text-justify text-sm leading-tight">Optimized websites to improve your visibility and drive traffic to your business.</p>
                   </div>
                 </div>
               </div>
@@ -153,7 +178,7 @@ export default function HomePage() {
 
                 <div className='flex items-center ml-[1%] mr-[1%] justify-center'>
                   <div className="w-full h-auto text-[rgba(255,255,255,1)] p-5">
-                    <p className="text-[15px] md:text-[20px] lg:text-[20px] xl:text-[30px] 2xl:text-[38px] text-3xl 4xl:text-[50px] 5xl:text-[69px] text-justify text-sm leading-tight">We take care of your website, keeping it secure, updated, and running smoothly.</p>
+                    <p className="text-[15px] md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[24px] 3xl:text-[25px] 4xl:text-[35px] 5xl:text-[49px] text-justify text-sm leading-tight">We take care of your website, keeping it secure, updated, and running smoothly.</p>
                   </div>
                 </div>
               </div>
@@ -169,8 +194,8 @@ export default function HomePage() {
         <div
         ref={ref2}
           className={`w-full pt-[95px] flex flex-col sm:flex-row items-center justify-center text-center px-4 transition-transform duration-700 ease-out ${isVisible2 ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"}`}
-        >          <p className="font-abhaya text-[48px] sm:text-[64px] text-[78px] xl:text-[78px] 2xl:text-[88px] 3xl:text-[95px] 4xl:text-[105px] 5xl:text-[200px] lg:text-[68px] ">Hear from our</p>
-          <p className="font-abhaya text-[64px] text-[rgba(112,154,90,1)] sm:text-[64px] text-[78px] xl:text-[78px] 2xl:text-[88px] 3xl:text-[95px] 4xl:text-[105px] 5xl:text-[200px] lg:text-[68px]  ml-[30px]">customers</p>
+        >          <p className="font-abhaya  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px] ">Hear from our</p>
+          <p className="font-abhaya text-[64px] text-[rgba(112,154,90,1)]  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px]  ml-[30px]">customers</p>
         </div>
 
         {/* Carousel Section */}

@@ -12,6 +12,7 @@ export default function About_Us() {
         threshold: 0.2, // Trigger when 20% of the element is visible
         onChange: (inView) => setIsVisible(inView),
     });
+
     const { ref: ref2 } = useInView({
         threshold: 0.2,
         onChange: (inView) => setIsVisible2(inView),
@@ -55,7 +56,7 @@ export default function About_Us() {
 
         // Observer for third element
         
-        return () => {
+         return () => {
             if (elementFirst) observerFirst.unobserve(elementFirst);
             if (elementSecond) observerSecond.unobserve(elementSecond);
         };
@@ -80,15 +81,13 @@ export default function About_Us() {
                         }}
                     ></div>
 
-                    <p className="relative font-abhaya md:text-[88px] text-[58px] 4xl:text-[190px] 5xl:text-[220px]">Who we are</p>
+                    <p className="relative font-abhaya md:text-[88px] text-[68px] 4xl:text-[190px] 5xl:text-[220px]">Who we are</p>
 
                 </div>
-                <div className=" mb-[10%] m-[5%] mt-[4%] ">
-                    <p className="font-inknut  text-[24px]   md:text-[24px] lg:text-[30px] xl:text-[32px] 2xl:text-[40px] 3xl:text-[45px]  4xl:text-[60px] 5xl:text-[68px] ">BUCKEYE</p>
-                    <p className="font-inknut lg:text-[26px]  text-[20px]   md:text-[24px] lg:text-[27px] xl:text-[32px] 2xl:text-[40px] 3xl:text-[45px]  4xl:text-[55px] 5xl:text-[68px] ">-WEB SOLUTIONS-</p>
-                    <p className="w-auto  5xl:w-auto   text-justify h-auto font-istokWeb text-[16px] md:text-[22px] lg:text-[30px] xl:text-[30px] 2xl:text-[36px] 3xl:text-[42px] 4xl:text-[62px] 5xl:text-[79px]">BuckeyeWebs aims to provide small businesses with accessible, high-quality web design. Our mission is to create functional websites that engage customers, while offering continuous support to ensure optimal performance. We envision a world where small businesses succeed online with affordable and effective web design solutions.
-
-</p>
+                <div className=" mb-[5%] m-[5%] mt-[4%] ">
+                    <p className="font-inknut  text-[24px]   md:text-[24px] lg:text-[20px] xl:text-[22px] 2xl:text-[30px] 3xl:text-[35px]  4xl:text-[50px] 5xl:text-[58px] ">BUCKEYE</p>
+                    <p className="font-inknut lg:text-[26px]  text-[20px]   md:text-[24px] lg:text-[27px] xl:text-[22px] 2xl:text-[30px] 3xl:text-[35px]  4xl:text-[45px] 5xl:text-[58px] ">-WEB SOLUTIONS-</p>
+                    <p className="w-auto  5xl:w-auto  sm:block hidden  flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]">Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
                 </div>
 
 
@@ -150,7 +149,7 @@ export default function About_Us() {
                         }}
                     ></div>
 
-                    <p className="relative font-abhaya text-[58px]  md:text-[88px] 4xl:text-[190px] 5xl:text-[220px] whitespace-nowrap">Meet Our Team</p>
+                    <p className="relative font-abhaya text-[58px]  md:text-[88px] 4xl:text-[190px] 5xl:text-[220px] whitespace nowrap">Meet Our Team</p>
 
                 </div>
 
@@ -159,25 +158,25 @@ export default function About_Us() {
 
 
 
-                <div className="w-auto h-auto mt-4  flex flex-row items-center space-x-6">
+                <div className="w-auto h-auto mt-2  flex flex-row items-center space-x-6">
 
                     <div className="flex flex-col m-[5%]">
                         <p className="sm:text-[14px] text-[16px]   md:text-[18px] lg:text-[24px] xl:text-[32px] 2xl:text-[40px] 3xl:text-[45px]  4xl:text-[50px] 5xl:text-[68px] font-istok tracking-4percent font-semibold ">Justin A.</p>
-                        <p className="text-[16px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl:text-[36px] 3xl:text-[42px] 4xl:text-[62px] 5xl:text-[79px]  font-istokWeb text-[rgba(112,154,90,10)]">Founder & Lead Designer</p>
-                        <p className="text-[14px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl:text-[36px] 3xl:text-[42px] 4xl:text-[62px] 5xl:text-[79px] font-istokWeb  h-auto text-justify  tracking-4percent">
+                        <p className="text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px] font-istokWeb text-[rgba(112,154,90,10)]">Founder & Lead Designer</p>
+                        <p className="text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px] font-istokWeb  h-auto text-justify  tracking-4percent">
                             As the founder of BuckeyeWebs, I am passionate about bringing your business to life using eye appealing and efficient websites that capture the essence of each business. With years of experience in design we create custom, user-friendly websites that not only look great but also deliver results.
                         </p>
                     </div>
 
                 </div>
 
-                <div className="w-auto h-auto  mb-[2%] flex flex-row items-center justify-center space-x-6 lg:mb-[157px]">
+                <div className="w-auto h-auto  flex flex-row items-center justify-center space-x-6 lg:mb-[67px]">
 
-                    <div className="flex flex-col m-[5%]">
+                    <div className="flex flex-col  ml-[5%] mr-[5%]">
                         <p className="sm:text-[14px] text-[16px]   md:text-[18px] lg:text-[24px] xl:text-[32px] 2xl:text-[40px] 3xl:text-[45px]  4xl:text-[50px] 5xl:text-[68px] font-istok tracking-4percent font-semibold ">Adam A.</p>
-                        <p className="text-[16px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl:text-[36px] 3xl:text-[42px] 4xl:text-[62px] 5xl:text-[79px]  font-istokWeb text-[rgba(112,154,90,10)]">Web Developer</p>
-                        <p className="text-[14px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl:text-[36px] 3xl:text-[42px] 4xl:text-[62px] 5xl:text-[79px] font-istokWeb  h-auto text-justify  tracking-4percent">
-                            As the web developer at BuckeyeWebs, I focus on building websites that are fast, functional, and secure. I know how important it is to translate your ideas into an experience that works for your customers. Whether it is through developing custom features or making sure your site is protected from potential threats, I ensure that your website doesn not just look great—it works hard for you. My goal is to give you a website that is secure, efficient, and always ready to help your business grow.    </p>
+                        <p className="text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]  font-istokWeb text-[rgba(112,154,90,10)]">Web Developer</p>
+                        <p className="text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px] font-istokWeb  h-auto text-justify  tracking-4percent">
+                            As the web developer at BuckeyeWebs, I focus on building websites that are fast, functional, and secure. I know how important it is to translate your ideas into an experience that works for your customers. Whether it is through developing custom features or making sure your site is protected from potential threats, I ensure that your website doesn’t just look great—it works hard for you. My goal is to give you a website that is secure, efficient, and always ready to help your business grow.    </p>
                     </div>
                 </div>
 

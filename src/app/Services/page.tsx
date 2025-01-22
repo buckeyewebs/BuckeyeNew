@@ -63,7 +63,7 @@ export default function Services() {
               if (elementSecond) observerSecond.unobserve(elementSecond);
           };
       }, []);
-    return (
+      return (
         <div>
             <Header />
             <div className="relative w-full h-auto ">
@@ -85,7 +85,7 @@ export default function Services() {
                             }`}
                     >
 
-                        <p className="lg:text-[68px] 2xl:text-[88px] text-[24px] 3xl:text-[108px]  4xl:text-[128px]  5xl:text-[148px] md:text-[35px] w-auto font-bold font-abhayaLibre text-[rgba(30,30,30,1)] leading-tight ">Our Sevices</p>
+                        <p className="lg:text-[48px] 2xl:text-[68px] text-[24px] 3xl:text-[88px]  4xl:text-[108px]  5xl:text-[128px] md:text-[35px] w-auto font-bold font-abhayaLibre text-[rgba(30,30,30,1)] leading-tight ">Our Sevices</p>
 
 
                     </div>

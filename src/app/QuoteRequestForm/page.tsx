@@ -12,7 +12,6 @@ const QuoteRequestForm: React.FC = () => {
     email: "",
     services: "",
     projectDescription: "",
-    budgetRange: "",
     preferredTimeline: "",
     projectDuration: "",
   });
@@ -62,12 +61,10 @@ const QuoteRequestForm: React.FC = () => {
 
   const validateStep3 = () => {
     const newErrors: Record<string, string> = {};
-    if (!formData.budgetRange)
-      newErrors.budgetRange = "Budget range is required";
+    
     if (!formData.preferredTimeline)
       newErrors.preferredTimeline = "Timeline is required";
-    if (!formData.projectDuration)
-      newErrors.projectDuration = "Duration is required";
+   
     return newErrors;
   };
 
@@ -113,11 +110,12 @@ const QuoteRequestForm: React.FC = () => {
         emailnew:formData.email,
         services: formData.services,
         projectDescription:formData.projectDescription ,
-        budgetRange: formData.budgetRange,
+   
         preferredTimeline: formData.preferredTimeline,
         projectDuration: formData.projectDuration,
 
       };
+      console.log(formDataToSend);
 
       // API Call
       const response = await fetch("/api/send-email", {
@@ -335,25 +333,7 @@ const QuoteRequestForm: React.FC = () => {
           <div className={currentStep === 3 ? "block" : "hidden"}>
             <h2 className="text-xl font-bold mb-4">Project Budget</h2>
             <form onSubmit={(e) => e.preventDefault()}>
-              <div className="mb-4 w-full md:w-2/3 space-y-3">
-                <label className="block text-gray-700">Budget Range</label>
-                <select
-                  className={`w-full p-2 border rounded-xl ${errors.budgetRange ? "border-red-500" : ""
-                    }`}
-                  name="budgetRange"
-                  value={formData.budgetRange}
-                  onChange={handleInputChange}
-                >
-                  <option value="">Select budget range</option>
-                  <option value="5000-10000">$5,000 - $10,000</option>
-                  <option value="10000-20000">$10,000 - $20,000</option>
-                  <option value="20000-50000">$20,000 - $50,000</option>
-                  <option value="50000+">$50,000+</option>
-                </select>
-                {errors.budgetRange && (
-                  <p className="text-red-500 text-sm">{errors.budgetRange}</p>
-                )}
-              </div>
+              
               <div className="mb-4 w-full md:w-2/3 space-y-3">
                 <label className="block text-gray-700">
                 Preferred Project Completion Time
@@ -443,12 +423,7 @@ const QuoteRequestForm: React.FC = () => {
                           {getServiceLabel(formData.services)}
                         </p>
                       </div>
-                      <div>
-                        <label className="block text-gray-600 text-sm">
-                          Budget Range
-                        </label>
-                        <p className="font-medium">{formData.budgetRange}</p>
-                      </div>
+                      
                       <div>
                         <label className="block text-gray-600 text-sm">
                           Timeline
