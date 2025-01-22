@@ -21,6 +21,48 @@ export default function Portfolio() {
         onChange: (inView) => setIsVisible2(inView),
       });
 
+      const [animateFirst, setAnimateFirst] = useState(false);
+      const [animateSecond, setAnimateSecond] = useState(false);
+  
+      useEffect(() => {
+          // Observer for first element
+          const observerFirst = new IntersectionObserver(
+              ([entry]) => {
+                  if (entry.isIntersecting) {
+                      setAnimateFirst(true); // Trigger animation when in view
+                  } else {
+                      setAnimateFirst(true); // Reset animation when out of view
+                  }
+              },
+              { threshold: 0.5 }
+          );
+  
+          const elementFirst = document.querySelector(".animate-first");
+          if (elementFirst) observerFirst.observe(elementFirst);
+  
+          // Observer for second element
+          const observerSecond = new IntersectionObserver(
+              ([entry]) => {
+                  if (entry.isIntersecting) {
+                      setAnimateSecond(true); // Trigger animation when in view
+                  } else {
+                      setAnimateSecond(true); // Reset animation when out of view
+                  }
+              },
+              { threshold: 0.5 }
+          );
+  
+          const elementSecond = document.querySelector(".animate-second");
+          if (elementSecond) observerSecond.observe(elementSecond);
+  
+          // Observer for third element
+          
+          return () => {
+              if (elementFirst) observerFirst.unobserve(elementFirst);
+              if (elementSecond) observerSecond.unobserve(elementSecond);
+          };
+      }, []);
+
 
 
     useEffect(() => {
@@ -75,12 +117,12 @@ export default function Portfolio() {
                     <div className="flex justify-center items-center ">
                         <div className="w-full md:w-[600px]  max-w-[800px]  h-auto flex flex-col items-center justify-center">
                             <p
-                                className={` animate-container  sm:block hidden text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]   transition duration-300 ease-in-out transform ${animate ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
+                                className={` animate-first  sm:block hidden text-center flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]   transition duration-300 ease-in-out transform ${animateFirst ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
                                     } `}
                             >
                             Take a look at the websites we’ve built for our amazing clients. Each one tells a story, and we’re proud to have helped these businesses grow and succeed online with custom, easy-to-use designs.    </p>
                             <div
-                                className={` w-auto h-auto pl-7 pr-7 sm:pt-5 sm:pb-5 pt-[7%] pb-[7%]  rounded-[43px] border border-black transition duration-300 ease-in-out hover:bg-black group mt-[5%] flex items-center justify-center transition duration-300 ease-in-out transform ${animate ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
+                                className={`animate-second w-auto h-auto pl-7 pr-7 sm:pt-5 sm:pb-5 pt-[7%] pb-[7%]  rounded-[43px] border border-black transition duration-300 ease-in-out hover:bg-black group mt-[5%] flex items-center justify-center transition duration-300 ease-in-out transform ${animateSecond ? "opacity-100 animate-pulse-fade-in" : "opacity-0"
                                     } hover:bg-black hover:text-white group`}
                             >
                                 <Link href="/QuoteRequestForm">
