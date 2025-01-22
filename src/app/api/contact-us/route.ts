@@ -17,8 +17,8 @@ export const POST = async (req: Request) => {
 
     // Mail options
     const mailOptions = {
-      from: '"Your Name" <buckeywebs@gmail.com>',
-      to: email,
+      from: '"Your Name" <Buckeyewebsinfo@gmail.com>',
+      to: "Buckeyewebsinfo@gmail.com",
       subject: "Business Information",
       html: `
         <div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
