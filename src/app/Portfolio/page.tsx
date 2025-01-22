@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 export default function Portfolio() {
     const [isVisible, setIsVisible] = useState(false);
-    const [animate, setAnimate] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);
 
 
@@ -65,26 +64,7 @@ export default function Portfolio() {
 
 
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setAnimate(true); // Trigger animation when in view
-                } else {
-                    setAnimate(false); // Reset animation when out of view
-                }
-            },
-            { threshold: 0.5 } // Trigger when 50% of the component is visible
-        );
-
-        const element = document.querySelector(".animate-container");
-        if (element) observer.observe(element);
-
-        return () => {
-            if (element) observer.unobserve(element);
-        };
-    }, []);
-
+    
 
     return (
         <div>

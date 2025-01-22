@@ -5,9 +5,9 @@ import ServicesComp from "../Components/ServicesComp"
 import Footer from "../Components/Footer"
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 export default function Services() {
     const [isVisible, setIsVisible] = useState(false);
-    const [animate, setAnimate] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);
 
 
@@ -67,7 +67,7 @@ export default function Services() {
         <div>
             <Header />
             <div className="relative w-full h-auto ">
-                <img
+                <Image
                     src="/assets/svgs/image.png"
                     alt="services"
                     className="w-full h-auto max-h-[1600px]  object-cover"
