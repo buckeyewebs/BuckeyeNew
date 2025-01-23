@@ -62,7 +62,7 @@ const Carousel = () => {
           <div key={index} className=" m-2 flex flex-col items-center p-4   ">
             {/* Info Box */}
             <div className="max-h-[700px]   min-w-[250px]  md:w-auto w-auto h-full pt-8  bg-[rgba(112,154,90,0.29)] border border-gray-200 rounded-md flex flex-col items-center  ">
-              <p className=" w-full h-full  px-6 pb-6 5xl:text-[59px] 4xl:text-[48px] 2xl:text-[30px] 3xl:text-[30px] md:text-[16px] xl:text-[16px] lg:text-[16px] text-center ">
+              <p className=" w-full h-full  px-6 pb-6 5xl:text-[59px] 4xl:text-[48px] 2xl:text-[30px] 3xl:text-[30px] md:text-[16px] xl:text-[16px] lg:text-[16px]  ">
                 {item.info}
                 <p className="font-bold text-center italic">{item.person}</p>
               </p>
