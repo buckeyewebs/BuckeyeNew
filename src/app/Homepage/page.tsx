@@ -78,9 +78,9 @@ export default function HomePage() {
       <div className="w-full h-auto animate-container">
         <div className="w-full h-auto flex justify-between items-center pt-[5%] flex-row">
           {/* Text and Button Section */}
-          <div className={`ml-[3%] mb-[5%] w-auto h-auto ${animate ? "animate-slide-in-left" : ""}`}>
+          <div className={`ml-[3%] sm:mb-[5%] w-auto h-auto ${animate ? "animate-slide-in-left" : ""}`}>
             {/* Animated Heading */}
-            <p className="p-3 font-lancelot tracking-tight leading-[1.3] xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px]">
+            <p className="p-3 font-lancelot tracking-tight leading-[1.3] xl:text-[37px] 2xl:text-[50px] 3xl:text-[55px] 4xl:text-[90px] 5xl:text-[110px] lg:text-[38px]  text-[30px] sm:text-[36px] md:text-[28px]">
               Building Websites <br />
               that grow your <br />
               business
@@ -92,7 +92,7 @@ export default function HomePage() {
   } hover:bg-black hover:text-white group`}
 >
               <Link href="/QuoteRequestForm">
-                <button className="text-[16px] text-center whitespace-nowrap lg:text-[22px] md:text-[20px] sm:text-[18px] 3xl:text-[35px] 4xl:text-[40px] 5xl:text-[50px] w-full">
+                <button className="text-[16px] text-center whitespace-nowrap lg:text-[18px] md:text-[14px] sm:text-[18px] 3xl:text-[35px] 4xl:text-[40px] 5xl:text-[50px] w-auto">
                   REQUEST A QUOTE
                 </button>
               </Link>
@@ -101,7 +101,7 @@ export default function HomePage() {
 
           {/* Image Section */}
           <div
-            className={`hidden sm:block pb-2 md:w-[35%] lg:w-[35%] xl:w-[35%] 2xl:w-[30%] 3xl:w-[30%] 4xl:w-[30%] 5xl:w-[30%] h-auto mr-[3%] ${animate ? "animate-slide-in-right" : ""
+            className={`hidden sm:block pb-2 md:w-[36%] lg:w-[26%] xl:w-[26%] 2xl:w-[26%] 3xl:w-[26%] 4xl:w-[26%] 5xl:w-[26%] h-auto mr-[3%] ${animate ? "animate-slide-in-right" : ""
               }`}
           >
             <Image
@@ -121,21 +121,21 @@ export default function HomePage() {
             className={`w-full flex flex-row justify-center items-center space-x-2 transition-transform duration-700 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"
               }`}
           >
-            <p className="font-lancelot  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px]">What we</p>
-            <p className="font-lancelot  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px]  pl-[0.5%] text-[rgba(112,154,90,1)] ">provide</p>
+            <p className="font-lancelot  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[48px]">What we</p>
+            <p className="font-lancelot  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[48px]  pl-[0.5%] text-[rgba(112,154,90,1)] ">provide</p>
           </div>
           <div className="w-[100%] mt-[3%]  mb-[3%] flex flex-row justify-center items-center">
             {/* Web Development */}
             <div className=" flex-1  ml-[2%] mb-[2%] max-w-full h-full overflow-hidden flex justify-center items-center   w-full h-auto pt-[2%]  mt-[1.5%] border-[3px] border-solid rounded-[16px] mr-[1%]" style={{ borderColor: "rgba(221, 221, 221, 1)" }}>
               <div>
                 <div className='flex justify-center '>
-                  <Image alt='vector' src="/assets/svgs/Vector.svg" width={88.14} height={88.14} className='w-[30%] 4xl:w-[20%]' />
+                  <Image alt='vector' src="/assets/svgs/Vector.svg" width={88.14} height={88.14} className='w-[20%] 4xl:w-[20%]' />
                 </div>
                 <div className="w-full h-auto mt-[3%] flex items-center justify-center space-x-4">
-                  <p className="font-lancelot 4xl:text-[84px] 3xl:text-[60px] 2xl:text-[60px] xl:text-[55px] lg:text-[45px] md:text-[38px] 5xl:text-[134px]  ">Custom</p>
-                  <p className=" font-lancelot 5xl:text-[134px] 4xl:text-[84px] 3xl:text-[60px] 2xl:text-[60px]  xl:text-[55px] lg:text-[45px] md:text-[38px] sm:text-[64px]  text-[rgba(112,154,90,1)]">Web</p>
+                  <p className="font-lancelot text-[64px]  xl:text-[38px] 2xl:text-[38px] 3xl:text-[55px] 4xl:text-[80px] 5xl:text-[90px] lg:text-[38px]  text-[25px] sm:text-[36px] md:text-[23px]  ">Custom</p>
+                  <p className=" font-lancelot text-[64px]  xl:text-[38px] 2xl:text-[38px] 3xl:text-[55px] 4xl:text-[80px] 5xl:text-[90px] lg:text-[38px]  text-[25px] sm:text-[36px] md:text-[23px]  text-[rgba(112,154,90,1)]">Web</p>
                 </div>
-                <p className=" font-lancelot 5xl:text-[134px] 4xl:text-[84px] 3xl:text-[60px] 2xl:text-[60px]  xl:text-[55px] lg:text-[45px] md:text-[38px] sm:text-[64px]  text-[rgba(112,154,90,1)] text-center">Design</p>
+                <p className=" font-lancelot text-[64px]  xl:text-[38px] 2xl:text-[38px] 3xl:text-[55px] 4xl:text-[80px] 5xl:text-[90px] lg:text-[38px]  text-[25px] sm:text-[36px] md:text-[23px]  text-[rgba(112,154,90,1)] text-center">Design</p>
 
 
                 <div className='flex items-center justify-center ml-[1%] mr-[1%]'>
@@ -150,12 +150,12 @@ export default function HomePage() {
             <div className="flex-1  ml-[2%] mb-[2%] max-w-full h-full overflow-hidden flex justify-center items-center   w-full h-auto pt-[2%]  mt-[1.5%] border-[3px] border-solid rounded-[16px] mr-[1%]" style={{ borderColor: "rgba(221, 221, 221, 1)" }}>
               <div>
                 <div className='flex justify-center '>
-                  <Image alt='vector' src="/assets/svgs/SEO.svg" width={88.14} height={88.14} className='w-[30%] 4xl:w-[20%]' />
+                  <Image alt='vector' src="/assets/svgs/SEO.svg" width={88.14} height={88.14} className='w-[20%] 4xl:w-[20%]' />
                 </div>
                 <div className="w-full h-auto mt-[3%] flex items-center justify-center space-x-4">
-                  <p className="font-lancelot 4xl:text-[84px] 3xl:text-[60px] 2xl:text-[60px] xl:text-[55px] lg:text-[45px] md:text-[38px]   5xl:text-[134px]">SEO</p>
+                  <p className="font-lancelot text-[64px]  xl:text-[38px] 2xl:text-[38px]  3xl:text-[55px] 4xl:text-[80px] 5xl:text-[90px] lg:text-[38px]  text-[25px] sm:text-[36px] md:text-[23px]">SEO</p>
                 </div>
-                <p className="text-center font-lancelot 5xl:text-[134px] 4xl:text-[84px]  3xl:text-[60px] 2xl:text-[60px] xl:text-[55px] lg:text-[45px] md:text-[38px]  text-[rgba(112,154,90,1)]">optimization</p>
+                <p className="text-center font-lancelot text-[64px]  xl:text-[38px] 2xl:text-[38px]  3xl:text-[55px] 4xl:text-[80px] 5xl:text-[90px] lg:text-[38px]  text-[25px] sm:text-[36px] md:text-[23px] text-[rgba(112,154,90,1)]">optimization</p>
 
                 <div className='flex items-center ml-[1%] mr-[1%] justify-center'>
                   <div className="w-full h-auto text-[rgba(255,255,255,1)] p-5">
@@ -169,12 +169,12 @@ export default function HomePage() {
             <div className="flex-1  ml-[2%] mb-[2%] max-w-full h-full overflow-hidden flex justify-center items-center   w-full h-auto pt-[2%]  mt-[1.5%] border-[3px] border-solid rounded-[16px] mr-[1%]" style={{ borderColor: "rgba(221, 221, 221, 1)" }}>
               <div>
                 <div className='flex justify-center '>
-                  <Image alt='vector' src="/assets/svgs/Marketing.svg" width={88.14} height={88.14} className='w-[30%] 4xl:w-[20%]' />
+                  <Image alt='vector' src="/assets/svgs/Marketing.svg" width={88.14} height={88.14} className='w-[20%] 4xl:w-[20%]' />
                 </div>
                 <div className="w-full h-auto  mt-[3%] flex items-center justify-center space-x-4">
-                  <p className="font-lancelot 4xl:text-[84px] 3xl:text-[60px] 2xl:text-[60px] xl:text-[55px] lg:text-[45px] md:text-[38px]   5xl:text-[134px] text-center">Website</p>
+                  <p className="font-lancelot text-[64px]  xl:text-[38px] 2xl:text-[38px] 3xl:text-[55px] 4xl:text-[80px] 5xl:text-[90px] lg:text-[38px]  text-[25px] sm:text-[36px] md:text-[23px] text-center">Website</p>
                 </div>
-                <p className="font-lancelot 5xl:text-[134px] 4xl:text-[84px] 3xl:text-[60px] 2xl:text-[60px] xl:text-[55px] lg:text-[45px] md:text-[38px]  text-[rgba(112,154,90,1)] text-center">Management</p>
+                <p className="font-lancelot text-[64px]  xl:text-[38px] 2xl:text-[38px] 3xl:text-[55px] 4xl:text-[80px] 5xl:text-[90px] lg:text-[38px]  text-[25px] sm:text-[36px] md:text-[23px]  text-[rgba(112,154,90,1)] text-center">Management</p>
 
                 <div className='flex items-center ml-[1%] mr-[1%] justify-center'>
                   <div className="w-full h-auto text-[rgba(255,255,255,1)] p-5">
@@ -194,8 +194,8 @@ export default function HomePage() {
         <div
         ref={ref2}
           className={`w-full pt-[95px] flex flex-col sm:flex-row items-center justify-center text-center px-4 transition-transform duration-700 ease-out ${isVisible2 ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"}`}
-        >          <p className="font-abhaya  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px] ">Hear from our</p>
-          <p className="font-abhaya text-[64px] text-[rgba(112,154,90,1)]  xl:text-[58px] 2xl:text-[68px] 3xl:text-[75px] 4xl:text-[120px] 5xl:text-[150px] lg:text-[68px]  text-[40px] sm:text-[46px] md:text-[58px]  ml-[30px]">customers</p>
+        >          <p className="font-abhaya  text-[44px]  xl:text-[38px] 2xl:text-[48px] 3xl:text-[65px] 4xl:text-[80px] 5xl:text-[90px] lg:text-[48px]  text-[15px] sm:text-[26px] md:text-[38px] ">Hear from our</p>
+          <p className="font-abhaya text-[44px] text-[rgba(112,154,90,1)]  xl:text-[38px] 2xl:text-[48px] 3xl:text-[65px] 4xl:text-[80px] 5xl:text-[90px] lg:text-[48px]  text-[15px] sm:text-[26px] md:text-[38px]  ml-[30px]">customers</p>
         </div>
 
         {/* Carousel Section */}

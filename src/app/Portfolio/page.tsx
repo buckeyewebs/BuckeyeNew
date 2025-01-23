@@ -140,7 +140,7 @@ export default function Portfolio() {
 
                         </div>
                         <div className="flex justify-center items-center">
-                        <div className="w-full 4xl:min-w-[1000px]  3xl:min-w-[700px]  mt-[20px] lg:mt-[0px]  sm:w-[400px] h-full bg-black ml-[5%]  ">
+                        <div className="w-full 4xl:min-w-[1000px]  3xl:min-w-[700px]  mt-[20px] lg:mt-[0px]  sm:w-[400px] h-full bg-white ml-[5%]  ">
 
                             <Image src="/assets/svgs/proj1.webp" alt="FirstProject" />
                         </div>
@@ -155,7 +155,7 @@ export default function Portfolio() {
                 <div className="mt-[7%]  m-[5%] flex justify-center items-center">
                     <div className="flex flex-col w-full  lg:flex-row  justify-between sm:mr-[0%] mr-[5%]">
                     <div className="flex justify-center items-center mr-[5%]">
-                        <div className=" w-full 4xl:min-w-[1000px]  3xl:min-w-[700px] mt-[20px] lg:mt-[0px]  sm:w-[400px] h-full bg-black ml-[5%]  ">
+                        <div className=" w-full 4xl:min-w-[1000px]  3xl:min-w-[700px] mt-[20px] lg:mt-[0px]  sm:w-[400px] h-full bg-white ml-[5%]  ">
 
                             <Image src="/assets/svgs/proj2.webp" alt="FirstProject" />
                         </div>
@@ -188,7 +188,7 @@ export default function Portfolio() {
 
                         </div>
                         <div className="flex justify-center items-center">
-                        <div className="w-full  mt-[20px] lg:mt-[0px]  sm:w-[400px] h-auto bg-black ml-[5%]  ">
+                        <div className="w-full  mt-[20px] lg:mt-[0px]  sm:w-[400px] h-auto bg-white ml-[5%]  ">
 
                             <Image src="/assets/svgs/proj2.webp" alt="FirstProject" />
                         </div>
@@ -214,7 +214,7 @@ export default function Portfolio() {
 
                         </div>
                         <div className="flex justify-center items-center">
-                        <div className="w-full 3xl:min-w-[700px] 4xl:min-w-[1000px] h-full mt-[20px] lg:mt-[0px]  sm:w-[400px]  bg-black ml-[5%]  ">
+                        <div className="w-full 3xl:min-w-[700px] 4xl:min-w-[1000px] h-full mt-[20px] lg:mt-[0px]  sm:w-[400px]  bg-white ml-[5%]  ">
 
                             <Image src="/assets/svgs/proj3.webp" alt="FirstProject" />
                         </div>
