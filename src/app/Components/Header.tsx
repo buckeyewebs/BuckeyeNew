@@ -20,7 +20,7 @@ export default function Header() {
             // width={108}
             // height={71}
             // className={{ marginLeft: "17.77px", paddingTop: "12px" }}
-            className='ml-[2%]  w-[20%] md:w-[7%] lg:w-[7%] xl:w-[10%] 2xl:w-[7.5%] 3xl:w-[7%] 4xl:w-[7%] 5xl:w-[7%] h-auto pt-[1%]'
+            className='ml-[2%]  w-[20%] md:w-[7%] lg:w-[7%] xl:w-[7%] 2xl:w-[7.5%] 3xl:w-[7%] 4xl:w-[7%] 5xl:w-[7%] h-auto pt-[1%]'
           />
           <div className="w-auto   h-auto  mt-[2%]   pb-[1%]   flex flex-col justify-center items-center">
             <p className="font-inknut pt-[2%]   text-[18px] md:text-[10px] lg:text-[10px] xl:text-[12px]  2xl:text-[14px] 3xl:text-[25px] 4xl:text-[29px] 5xl:text-[30px]">BUCKEYE</p>
