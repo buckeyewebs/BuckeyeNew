@@ -23,27 +23,27 @@ export default function Header() {
             className='ml-[2%]  w-[20%] md:w-[7%] lg:w-[7%] xl:w-[10%] 2xl:w-[7.5%] 3xl:w-[7%] 4xl:w-[7%] 5xl:w-[7%] h-auto pt-[1%]'
           />
           <div className="w-auto   h-auto  mt-[2%]   pb-[1%]   flex flex-col justify-center items-center">
-            <p className="font-inknut pt-[2%]   text-[18px] md:text-[10px] lg:text-[10px] xl:text-[20px]  2xl:text-[14px] 3xl:text-[25px] 4xl:text-[29px] 5xl:text-[30px]">BUCKEYE</p>
-            <p className="font-inknut   text-[15px] md:text-[10px] lg:text-[11px] xl:text-[`2px] 2xl:text-[12px] 3xl:text-[15px] 4xl:text-[17px] 5xl:text-[29px] whitespace-nowrap">-WEB SOLUTIONS-</p>
+            <p className="font-inknut pt-[2%]   text-[18px] md:text-[10px] lg:text-[10px] xl:text-[12px]  2xl:text-[14px] 3xl:text-[25px] 4xl:text-[29px] 5xl:text-[30px]">BUCKEYE</p>
+            <p className="font-inknut   text-[15px] md:text-[10px] lg:text-[11px] xl:text-[12px] 2xl:text-[12px] 3xl:text-[15px] 4xl:text-[17px] 5xl:text-[29px] whitespace-nowrap">-WEB SOLUTIONS-</p>
           </div>
         </div>
 
         {/* Desktop Menu (visible only on large screens) */}
         <div className='flex justify-center items-center mr-[10%]'>
         <div className="whitespace-nowrap w-auto   flex items-center gap-[5%]  hidden lg:flex">
-          <a href="/Homepage" className="link-underline  font-istok  text-[15px] md:text-[20px] lg:text-[15px] xl:text-[20px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
+          <a href="/Homepage" className="link-underline  font-istok  text-[15px] md:text-[20px] lg:text-[15px] xl:text-[13px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
             Home
           </a>
-          <a href="/Services" className="link-underline  font-istok text-[15px] md:text-[20px] lg:text-[15px] xl:text-[20px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
+          <a href="/Services" className="link-underline  font-istok text-[15px] md:text-[20px] lg:text-[15px] xl:text-[12px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
             Services
           </a>
-          <a href="/Portfolio" className="link-underline  font-istok text-[15px] md:text-[20px] lg:text-[15px] xl:text-[20px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
+          <a href="/Portfolio" className="link-underline  font-istok text-[15px] md:text-[20px] lg:text-[15px] xl:text-[12px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
             Portfolio
           </a>
-          <a href="/About_Us" className="link-underline  font-istok text-[15px] md:text-[20px] lg:text-[15px] xl:text-[20px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
+          <a href="/About_Us" className="link-underline  font-istok text-[15px] md:text-[20px] lg:text-[15px] xl:text-[12px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
             About us
           </a>
-          <a href="/ContactUs" className="link-underline font-istok text-[15px] md:text-[20px] lg:text-[15px] xl:text-[20px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
+          <a href="/ContactUs" className="link-underline font-istok text-[15px] md:text-[20px] lg:text-[15px] xl:text-[12px] 2xl:text-[14px] 3xl:text-[20px] 4xl:text-[25px] 5xl:text-[39px] text-white">
             Contact us
           </a>
         </div>
