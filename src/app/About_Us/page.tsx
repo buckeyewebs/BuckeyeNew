@@ -81,13 +81,13 @@ export default function About_Us() {
                         }}
                     ></div>
 
-                    <p className="relative font-abhaya md:text-[88px] text-[68px] 4xl:text-[190px] 5xl:text-[220px]">Who we are</p>
+                    <p className="relative font-abhaya md:text-[88px] text-[45px] 4xl:text-[190px] 5xl:text-[220px] whitespace-nowrap">Who we are</p>
 
                 </div>
                 <div className=" mb-[5%] m-[5%] mt-[4%] ">
                     <p className="font-inknut  text-[24px]   md:text-[24px] lg:text-[20px] xl:text-[22px] 2xl:text-[30px] 3xl:text-[35px]  4xl:text-[50px] 5xl:text-[58px] ">BUCKEYE</p>
                     <p className="font-inknut lg:text-[26px]  text-[20px]   md:text-[24px] lg:text-[27px] xl:text-[22px] 2xl:text-[30px] 3xl:text-[35px]  4xl:text-[45px] 5xl:text-[58px] ">-WEB SOLUTIONS-</p>
-                    <p className="w-auto  5xl:w-auto  sm:block hidden  flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]">BuckeyeWebs, founded in 2024, is dedicated to empowering small businesses with accessible, affordable, and effective web design solutions. Our mission is to create efficient, engaging websites that attract, convert, and help businesses thrive online. We envision a world where every small business has the tools and support needed to succeed, with secure, high-performing websites backed by exceptional service and ongoing care.</p>
+                    <p className="w-auto  5xl:w-auto    flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]">BuckeyeWebs, founded in 2024, is dedicated to empowering small businesses with accessible, affordable, and effective web design solutions. Our mission is to create efficient, engaging websites that attract, convert, and help businesses thrive online. We envision a world where every small business has the tools and support needed to succeed, with secure, high-performing websites backed by exceptional service and ongoing care.</p>
                 </div>
 
 
@@ -149,7 +149,7 @@ export default function About_Us() {
                         }}
                     ></div>
 
-                    <p className="relative font-abhaya text-[58px]  md:text-[88px] 4xl:text-[190px] 5xl:text-[220px] whitespace nowrap">Meet Our Team</p>
+                    <p className="relative font-abhaya text-[45px]  md:text-[88px] 4xl:text-[190px] 5xl:text-[220px] whitespace-nowrap">Meet Our Team</p>
 
                 </div>
 
@@ -170,7 +170,7 @@ export default function About_Us() {
 
                 </div>
 
-                <div className="w-auto h-auto  flex flex-row items-center justify-center space-x-6 lg:mb-[67px]">
+                <div className="w-auto h-auto mb-[3%]  flex flex-row items-center justify-center space-x-6 lg:mb-[67px]">
 
                     <div className="flex flex-col  ml-[5%] mr-[5%]">
                         <p className="sm:text-[14px] text-[16px]   md:text-[18px] lg:text-[24px] xl:text-[32px] 2xl:text-[40px] 3xl:text-[45px]  4xl:text-[50px] 5xl:text-[68px] font-istok tracking-4percent font-semibold ">Adam A.</p>
