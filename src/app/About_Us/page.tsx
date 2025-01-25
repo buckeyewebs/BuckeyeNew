@@ -85,8 +85,8 @@ export default function About_Us() {
 
                 </div>
                 <div className=" mb-[5%] m-[5%] mt-[4%] ">
-                    <p className="font-inknut  text-[24px]   md:text-[24px] lg:text-[20px] xl:text-[22px] 2xl:text-[30px] 3xl:text-[35px]  4xl:text-[50px] 5xl:text-[58px] ">BUCKEYE</p>
-                    <p className="font-inknut lg:text-[26px]  text-[20px]   md:text-[24px] lg:text-[27px] xl:text-[22px] 2xl:text-[30px] 3xl:text-[35px]  4xl:text-[45px] 5xl:text-[58px] ">-WEB SOLUTIONS-</p>
+                    <p className="font-inknut  text-[14px]   md:text-[24px] lg:text-[20px] xl:text-[22px] 2xl:text-[30px] 3xl:text-[35px]  4xl:text-[50px] 5xl:text-[58px] ">BUCKEYE</p>
+                    <p className="font-inknut lg:text-[26px]  text-[12px]   md:text-[24px] lg:text-[27px] xl:text-[22px] 2xl:text-[30px] 3xl:text-[35px]  4xl:text-[45px] 5xl:text-[58px] ">-WEB SOLUTIONS-</p>
                     <p className="w-auto  5xl:w-auto    flex justify-center items-center font-istokWeb text-[rgba(0,0,0,1)] text-[12px] lg:text-[18px] md:text-[20px] 2xl:text-[25px] 3xl:text-[30px] 4xl:text-[35px] 5xl:text-[50px] 4xl:w-[1000px] 5xl:w-[1300px]">BuckeyeWebs, founded in 2024, is dedicated to empowering small businesses with accessible, affordable, and effective web design solutions. Our mission is to create efficient, engaging websites that attract, convert, and help businesses thrive online. We envision a world where every small business has the tools and support needed to succeed, with secure, high-performing websites backed by exceptional service and ongoing care.</p>
                 </div>
 
