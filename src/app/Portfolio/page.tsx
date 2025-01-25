@@ -76,6 +76,7 @@ export default function Portfolio() {
                 <Image
                     src="/assets/svgs/Portfolionew.png"
                     alt="services"
+                    priority
                     className="w-full max-h-[1600px]  h-auto "
                 />
                 <div
