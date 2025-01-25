@@ -70,10 +70,11 @@ export default function Services() {
                 <Image
                     src="/assets/svgs/image.png"
                     alt="services"
+                    priority
                     className="w-full h-auto max-h-[1600px]  object-cover"
                 />
                 <div
-                    className="absolute justify-center items-center inset-0 flex flex-col  text-white  "
+                    className="absolute justify-center items-center inset-0 flex flex-col  text-white"
                     style={{
                         backdropFilter: 'blur(0.8px)',
 
