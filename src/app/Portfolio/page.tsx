@@ -82,7 +82,7 @@ export default function Portfolio() {
                 <div
                     className="absolute justify-center items-center inset-0 flex flex-col text-white"
                     style={{
-                        backdropFilter: 'blur(0.8px)',
+                        backdropFilter: 'blur(0.8px)' ,
                     }}
                 >
                     <div
